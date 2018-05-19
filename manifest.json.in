@@ -1,0 +1,15 @@
+{
+    "name": "tedit.fulvio",
+    "description": "simple notes editor",
+    "architecture": "armhf",
+    "title": "tedit",
+    "hooks": {
+        "edit": {
+            "apparmor": "tedit.apparmor",
+            "desktop":  "tedit.desktop"
+        }
+    },
+    "version": "1.0",
+    "maintainer": "fulvio <fulvio999@gmail.com>",
+    "framework" : "ubuntu-sdk-15.04.5"
+}

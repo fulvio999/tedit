@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tedit.fulvio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-05-19 14:00+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/components/ProductInfo.qml:10
+msgid "Product Info"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:11
+msgid "version"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:11
+msgid "Author"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:12
+msgid "A simple and basic text, notes editor"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:14 ../qml/ui/LocalFilePicker.qml:36
+msgid "Close"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:10
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/Main.qml:260
+msgid "Save as"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:22
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/Main.qml:246
+msgid "Save"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:32
+msgid "Couldn't write"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:91
+msgid "Saved"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:43
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:8
+msgid "Remove file"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:9
+msgid "Are you sure you want to remove the selected file?"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:11
+msgid "Yes"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:27
+msgid "No"
+msgstr ""
+
+#: ../qml/Main.qml:158 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr ""
+
+#: ../qml/Main.qml:166
+msgid "About"
+msgstr ""
+
+#: ../qml/Main.qml:177
+msgid "Undo"
+msgstr ""
+
+#: ../qml/Main.qml:185
+msgid "Redo"
+msgstr ""
+
+#: ../qml/Main.qml:194 ../qml/ui/SettingsPage.qml:9
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:207
+msgid "Clear All"
+msgstr ""
+
+#: ../qml/Main.qml:219
+msgid "Paste from clipboard"
+msgstr ""
+
+#: ../qml/Main.qml:228
+msgid "Select all"
+msgstr ""
+
+#: ../qml/Main.qml:237
+msgid "Copy to clipboard"
+msgstr ""
+
+#: ../qml/Main.qml:268
+msgid "Local files"
+msgstr ""
+
+#: ../qml/Main.qml:299
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:28
+msgid "Attention"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:29
+msgid "Remove ALL saved files ? (No restore)"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:42
+msgid "Delete"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:67
+msgid "Local files saved"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:72
+msgid "Delete all"
+msgstr ""
+
+#: ../qml/ui/LocalFilePicker.qml:133
+msgid "Remove"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:25
+msgid "Enable text prediction"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:29
+msgid "Text prediction"
+msgstr ""
