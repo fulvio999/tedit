@@ -15,7 +15,7 @@ MainView {
 
     // Note! applicationName needs to match the "name" field of the click manifest
     applicationName: "tedit.fulvio"
-    property string appVersion : "1.0"
+    property string appVersion : "1.2"
 
     /* application hidden folder where are saved the file. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
