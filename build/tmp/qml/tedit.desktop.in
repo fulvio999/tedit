@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=tedIt
-Comment=Create and edit text files in a simple way.\n\nThis application let you to create new text files or open existing ones using the Content Hub.\n\nCurrently it is not possible to save files outside the applications directory. The saved files are stored in ~/.local/share/com.ubuntu.developer.pawstr.edit.
-Exec=@EXEC@
-Icon=@ICON@
-Terminal=false
-Type=Application
-X-Ubuntu-Touch=true

@@ -1,5 +1,0 @@
-# Hashes of file build rules.
-dc8898c04970dff32e0c21d0b23bfca5 CMakeFiles/tedit.desktop
-1b43b8fe86f319faf0b5372fe263a30b CMakeFiles/tedit_FILES
-ead28cb5f48495b84e0b7fb523b7dec0 plugins/EdIt/CMakeFiles/EdIt_automoc
-d720a243e0a70c6961c81dbbdbaf0d89 po/CMakeFiles/tedit.fulvio.pot
