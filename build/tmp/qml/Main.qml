@@ -53,12 +53,13 @@ MainView {
        property bool textPrediction: false
     }
 
-    /* To notify messages at the user */
+    /* To notify something at the user */
     Component {
         id: popover
         Dialog {
             id: po
             text: "<b>"+infoText+"</b>"
+
             MouseArea {
                 anchors.fill: parent
                 onClicked: PopupUtils.close(po)

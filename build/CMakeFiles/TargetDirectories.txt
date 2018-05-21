@@ -1,0 +1,5 @@
+/home/fulvio/Dropbox/ubuntu-devel/my-apps/tedit/source/tedit/build/plugins/EdIt/CMakeFiles/EdIt.dir
+/home/fulvio/Dropbox/ubuntu-devel/my-apps/tedit/source/tedit/build/plugins/EdIt/CMakeFiles/EdIt_automoc.dir
+/home/fulvio/Dropbox/ubuntu-devel/my-apps/tedit/source/tedit/build/CMakeFiles/tedit.desktop.dir
+/home/fulvio/Dropbox/ubuntu-devel/my-apps/tedit/source/tedit/build/po/CMakeFiles/tedit.fulvio.pot.dir
+/home/fulvio/Dropbox/ubuntu-devel/my-apps/tedit/source/tedit/build/CMakeFiles/tedit_FILES.dir
