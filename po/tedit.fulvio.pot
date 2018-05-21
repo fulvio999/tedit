@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-21 15:58+0000\n"
+"POT-Creation-Date: 2018-05-21 16:15+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,12 +63,12 @@ msgid ""
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:18
-#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:234
+#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:233
 msgid "Save"
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:32
-#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:248
+#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:247
 msgid "Save as"
 msgstr ""
 
@@ -84,7 +84,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:91
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:90
 msgid "Saved"
 msgstr ""
 
@@ -92,55 +92,55 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Main.qml:146 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
+#: ../qml/Main.qml:145 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:154
+#: ../qml/Main.qml:153
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:165
+#: ../qml/Main.qml:164
 msgid "Undo"
 msgstr ""
 
-#: ../qml/Main.qml:173
+#: ../qml/Main.qml:172
 msgid "Redo"
 msgstr ""
 
-#: ../qml/Main.qml:182 ../qml/ui/SettingsPage.qml:9
+#: ../qml/Main.qml:181 ../qml/ui/SettingsPage.qml:9
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:195
+#: ../qml/Main.qml:194
 msgid "Clear All"
 msgstr ""
 
-#: ../qml/Main.qml:207
+#: ../qml/Main.qml:206
 msgid "Paste from clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:216
+#: ../qml/Main.qml:215
 msgid "Select all"
 msgstr ""
 
-#: ../qml/Main.qml:225
+#: ../qml/Main.qml:224
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:255
 msgid "Local files"
 msgstr ""
 
-#: ../qml/Main.qml:292
+#: ../qml/Main.qml:291
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:292
+#: ../qml/Main.qml:291
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:308
+#: ../qml/Main.qml:307
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
