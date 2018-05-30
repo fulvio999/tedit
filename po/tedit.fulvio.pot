@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the tedit.fulvio package.
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-28 10:33+0000\n"
+"POT-Creation-Date: 2018-05-30 14:44+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,8 +33,24 @@ msgstr ""
 msgid "A simple and basic text, notes editor"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:14 ../qml/ui/LocalFilePicker.qml:36
+#: ../qml/components/ProductInfo.qml:14
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/ConfirmClearAll.qml:16 ../qml/ui/LocalFilePicker.qml:36
 msgid "Close"
+msgstr ""
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/ConfirmClearAll.qml:10
+msgid "Confirmation"
+msgstr ""
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:11
+msgid "Insert Clipboard content ?"
+msgstr ""
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/ConfirmClearAll.qml:21
+msgid "Confirm"
 msgstr ""
 
 #: ../qml/components/RemoveFileDialog.qml:8
@@ -53,6 +69,10 @@ msgstr ""
 msgid "No"
 msgstr ""
 
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr ""
+
 #: ../qml/components/UnsavedDialog.qml:14
 msgid "Unsaved changes"
 msgstr ""
@@ -62,13 +82,13 @@ msgid ""
 "There are unsaved changes. Do you want to save this file before closing?"
 msgstr ""
 
-#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/Main.qml:233
+#: ../qml/components/UnsavedDialog.qml:18
+#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:246
 msgid "Save"
 msgstr ""
 
-#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
-#: ../qml/Main.qml:247
+#: ../qml/components/UnsavedDialog.qml:32
+#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:260
 msgid "Save as"
 msgstr ""
 
@@ -84,7 +104,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:90
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:102
 msgid "Saved"
 msgstr ""
 
@@ -92,56 +112,64 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Main.qml:145 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
+#: ../qml/Main.qml:157 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:153
+#: ../qml/Main.qml:165
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:164
+#: ../qml/Main.qml:176
 msgid "Undo"
 msgstr ""
 
-#: ../qml/Main.qml:172
+#: ../qml/Main.qml:184
 msgid "Redo"
 msgstr ""
 
-#: ../qml/Main.qml:181 ../qml/ui/SettingsPage.qml:9
+#: ../qml/Main.qml:193 ../qml/ui/SettingsPage.qml:9
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:194
+#: ../qml/Main.qml:206
 msgid "Clear All"
 msgstr ""
 
-#: ../qml/Main.qml:206
+#: ../qml/Main.qml:218
 msgid "Paste from clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:215
+#: ../qml/Main.qml:228
 msgid "Select all"
 msgstr ""
 
-#: ../qml/Main.qml:224
+#: ../qml/Main.qml:237
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:255
+#: ../qml/Main.qml:268
 msgid "Local files"
 msgstr ""
 
-#: ../qml/Main.qml:291
+#: ../qml/Main.qml:304
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:291
+#: ../qml/Main.qml:304
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:307
+#: ../qml/Main.qml:320
 msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr ""
+
+#: ../qml/Main.qml:332
+msgid "Line"
+msgstr ""
+
+#: ../qml/Main.qml:332
+msgid "Characters"
 msgstr ""
 
 #: ../qml/ui/LocalFilePicker.qml:28
@@ -160,11 +188,11 @@ msgstr ""
 msgid "Local files saved"
 msgstr ""
 
-#: ../qml/ui/LocalFilePicker.qml:73
+#: ../qml/ui/LocalFilePicker.qml:74
 msgid "Delete all"
 msgstr ""
 
-#: ../qml/ui/LocalFilePicker.qml:135
+#: ../qml/ui/LocalFilePicker.qml:139
 msgid "Remove"
 msgstr ""
 

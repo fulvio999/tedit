@@ -66,6 +66,7 @@ Page {
      header: PageHeader {
           id: header
           title : i18n.tr("Local files saved")+": "+ localFileslistModel.count
+          
           trailingActionBar.actions: [
 
               Action {
@@ -83,10 +84,13 @@ Page {
      /* when the page become active, load the locally saved files */
      onActiveChanged: {
         if(active) {
-            var fileList = fileIO.getLocalFileList(fileIO.getHomePath() + root.fileSavingPath)
+            var homePath = fileIO.getHomePath();
+            var fileList = fileIO.getLocalFileList(homePath + root.fileSavingPath);
             localFileslistModel.clear();
             for(var i=0; i<fileList.length; i++) {
-               localFileslistModel.append({"file": fileList[i]});
+                var targetFileName = "file://" + homePath + root.fileSavingPath + fileList[i];
+                var fileSize = fileIO.getSize(targetFileName); //bytes
+                localFileslistModel.append({"file": fileList[i], "size": fileSize});
             }
         }
     }
@@ -102,7 +106,7 @@ Page {
             id: closeAction
             /* an item is selected: open it in the textArea */
             onTriggered: {
-                console.log("Selected file to open: "+fileName)
+                //console.log("Selected file to open: "+fileName)
                 var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + fileName;
                 textArea.text = fileIO.read(targetFileName);
                 mainPage.title = fileIO.getFullName(targetFileName);
@@ -115,7 +119,7 @@ Page {
         model: localFileslistModel
         delegate: ListItem.Standard {
             id: standardItem
-            text: modelData
+            text: "<b>"+file+"</b>"+"     (Size: "+size + " bytes)"
             removable: true
             confirmRemoval: true
             backgroundIndicator: Rectangle {

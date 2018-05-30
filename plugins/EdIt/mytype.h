@@ -7,6 +7,7 @@
 #include <QFileInfo>
 #include <QRegularExpression>
 #include <QDir>
+#include <QDateTime>
 
 class MyType : public QObject
 {
@@ -19,6 +20,7 @@ public:
 
     Q_INVOKABLE bool write(QString source, const QString& data);
     Q_INVOKABLE QString read(QString source);
+    Q_INVOKABLE qint64 getSize (QString source);  
     Q_INVOKABLE bool rename(QString source, const QString& fileName);
     Q_INVOKABLE bool remove(QString source);
     Q_INVOKABLE QString getFileName(QString source);
@@ -42,4 +44,3 @@ protected:
 };
 
 #endif // MYTYPE_H
-

@@ -50,6 +50,25 @@ QString MyType::read(QString source)
     return data;
 }
 
+/* Retrun the size of the file in bytes */
+qint64 MyType::getSize(QString source)
+{
+  if (source.isEmpty())
+      return 0;
+
+  if(source.startsWith("file://"))
+      source.remove("file://");
+
+  QFileInfo fi(source);
+  if(fi.exists())
+  {
+      return fi.size();
+  }else {
+    return 0;
+  }
+}
+
+
 bool MyType::rename(QString source, const QString &fileName)
 {
     if (source.isEmpty())

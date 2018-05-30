@@ -15,7 +15,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "1.3.1"
+    property string appVersion : "1.4"
 
     /* application hidden folder where are saved the file. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -64,6 +64,18 @@ MainView {
                 onClicked: PopupUtils.close(po)
             }
         }
+    }
+
+    Component {
+        id: confirmClearAll
+        ConfirmClearAll{}
+
+    }
+
+    Component {
+        id: confirmPasteFromClipboard
+        ConfirmPasteFromClipboard{}
+
     }
 
     /* custom c++ plugin to save file on filesystem */
@@ -194,7 +206,7 @@ MainView {
                          text: i18n.tr("Clear All")
                          iconName: "erase"
                          onTriggered: {
-                           textArea.text = "";
+                            PopupUtils.open(confirmClearAll)
                          }
                      },
 
@@ -206,7 +218,8 @@ MainView {
                          text: i18n.tr("Paste from clipboard")
                          iconName: "edit-paste"
                          onTriggered: {
-                            textArea.paste(Clipboard.data.text);
+                            //textArea.paste(Clipboard.data.text);
+                            PopupUtils.open(confirmPasteFromClipboard)
                          }
                      },
 
@@ -296,7 +309,7 @@ MainView {
              Rectangle{
                  id: textAreaContainer
                  width: parent.width
-                 height: mainPage.height - placeHolderRectangle.height - currentFileOpenedContainer.height - units.gu(4)
+                 height: mainPage.height - placeHolderRectangle.height - currentFileOpenedContainer.height - units.gu(7)
 
                  /* Display the file content */
                  TextArea {
@@ -310,6 +323,15 @@ MainView {
                       onTextChanged: mainPage.saved = false; /* update flag file modified and not saved */
                       wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
                  }
+             }
+
+             Rectangle{
+               width: parent.width
+               height: units.gu(3)
+               Label{
+                 text: i18n.tr("Line")+": "+textArea.lineCount+ "  "+ i18n.tr("Characters")+": "+textArea.length
+                 font.bold: true
+               }
              }
 
           }
