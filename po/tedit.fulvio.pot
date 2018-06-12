@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-12 15:41+0000\n"
+"POT-Creation-Date: 2018-06-12 18:59+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,28 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/components/ConfirmClearAll.qml:10
+#: ../qml/components/ConfirmPasteFromClipboard.qml:10
+msgid "Confirmation"
+msgstr ""
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr ""
+
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/ProductInfo.qml:14
+#: ../qml/components/WebSiteSelector.qml:28
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/ui/LocalFilePicker.qml:36
+msgid "Close"
+msgstr ""
+
+#: ../qml/components/ConfirmClearAll.qml:21
+#: ../qml/components/ConfirmPasteFromClipboard.qml:21
+msgid "Confirm"
+msgstr ""
 
 #: ../qml/components/ProductInfo.qml:10
 msgid "Product Info"
@@ -33,25 +55,59 @@ msgstr ""
 msgid "A simple and basic text, notes editor"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:14
-#: ../qml/components/ConfirmPasteFromClipboard.qml:16
-#: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/WebSiteSelector.qml:28 ../qml/ui/LocalFilePicker.qml:36
-msgid "Close"
+#: ../qml/components/SaveAsDialog.qml:10
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/Main.qml:278
+msgid "Save as"
 msgstr ""
 
-#: ../qml/components/ConfirmPasteFromClipboard.qml:10
-#: ../qml/components/ConfirmClearAll.qml:10
-msgid "Confirmation"
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:22
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/Main.qml:264
+msgid "Save"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:32
+msgid "Couldn't write"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:103
+msgid "Saved"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:44
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:13
+msgid "Import a site as text"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:20
+msgid "A valid http(s) url"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:33
+msgid "Import"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
 msgstr ""
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:11
 msgid "Insert Clipboard content ?"
-msgstr ""
-
-#: ../qml/components/ConfirmPasteFromClipboard.qml:21
-#: ../qml/components/ConfirmClearAll.qml:21
-msgid "Confirm"
 msgstr ""
 
 #: ../qml/components/RemoveFileDialog.qml:8
@@ -68,61 +124,6 @@ msgstr ""
 
 #: ../qml/components/RemoveFileDialog.qml:27
 msgid "No"
-msgstr ""
-
-#: ../qml/components/ConfirmClearAll.qml:11
-msgid "Clear All content ?"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:14
-msgid "Unsaved changes"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:15
-msgid ""
-"There are unsaved changes. Do you want to save this file before closing?"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:18
-#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:264
-msgid "Save"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:32
-#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:278
-msgid "Save as"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:40
-msgid "Close without saving"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:13
-msgid "Import a site as text"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:20
-msgid "A valid http(s) url"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:33
-msgid "Import"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:11
-msgid "Enter a name for the file to save."
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:32
-msgid "Couldn't write"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:103
-msgid "Saved"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:44
-msgid "Cancel"
 msgstr ""
 
 #: ../qml/Main.qml:164 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
