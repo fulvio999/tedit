@@ -1,5 +1,5 @@
 {
-    "policy_groups": [        
+    "policy_groups": [
         "content_exchange",
         "content_exchange_source"
     ],

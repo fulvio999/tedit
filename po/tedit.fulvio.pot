@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-05-30 15:24+0000\n"
+"POT-Creation-Date: 2018-06-12 15:37+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,8 @@ msgstr ""
 
 #: ../qml/components/ProductInfo.qml:14
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
-#: ../qml/components/ConfirmClearAll.qml:16 ../qml/ui/LocalFilePicker.qml:36
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/WebSiteSelector.qml:28 ../qml/ui/LocalFilePicker.qml:36
 msgid "Close"
 msgstr ""
 
@@ -83,17 +84,29 @@ msgid ""
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:18
-#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:246
+#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:264
 msgid "Save"
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:32
-#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:260
+#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:278
 msgid "Save as"
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:40
 msgid "Close without saving"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:13
+msgid "Import a site as text"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:20
+msgid "A valid http(s) url"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:33
+msgid "Import"
 msgstr ""
 
 #: ../qml/components/SaveAsDialog.qml:11
@@ -104,7 +117,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:102
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:103
 msgid "Saved"
 msgstr ""
 
@@ -112,63 +125,67 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Main.qml:157 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
+#: ../qml/Main.qml:164 ../qml/ui/LocalFilePicker.qml:53 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:165
+#: ../qml/Main.qml:172
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:176
+#: ../qml/Main.qml:183
+msgid "Import site text"
+msgstr ""
+
+#: ../qml/Main.qml:194
 msgid "Undo"
 msgstr ""
 
-#: ../qml/Main.qml:184
+#: ../qml/Main.qml:202
 msgid "Redo"
 msgstr ""
 
-#: ../qml/Main.qml:193 ../qml/ui/SettingsPage.qml:9
+#: ../qml/Main.qml:211 ../qml/ui/SettingsPage.qml:9
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:206
+#: ../qml/Main.qml:224
 msgid "Clear All"
 msgstr ""
 
-#: ../qml/Main.qml:218
+#: ../qml/Main.qml:236
 msgid "Paste from clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:228
+#: ../qml/Main.qml:246
 msgid "Select all"
 msgstr ""
 
-#: ../qml/Main.qml:237
+#: ../qml/Main.qml:255
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:268
+#: ../qml/Main.qml:286
 msgid "Local files"
 msgstr ""
 
-#: ../qml/Main.qml:304
+#: ../qml/Main.qml:322
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:304
+#: ../qml/Main.qml:322
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:320
+#: ../qml/Main.qml:338
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:332
+#: ../qml/Main.qml:350
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:332
+#: ../qml/Main.qml:350
 msgid "Characters"
 msgstr ""
 

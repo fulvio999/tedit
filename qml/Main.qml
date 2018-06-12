@@ -8,6 +8,7 @@ import Qt.labs.settings 1.0
 import "components"
 import "ui"
 
+
 MainView {
 
     id: root
@@ -15,7 +16,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "1.4"
+    property string appVersion : "1.5.2"
 
     /* application hidden folder where are saved the file. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -116,6 +117,12 @@ MainView {
        ProductInfo{}
     }
 
+    /* ask for remote web site url where import text */
+    Component {
+       id: webSiteSelector
+       WebSiteSelector{}
+    }
+
     Component {
        id: saveAsDialog
        SaveAsDialog{}
@@ -170,6 +177,17 @@ MainView {
                 ]
 
                 trailingActionBar.actions: [
+
+                Action {
+                    id: importTextSite
+                    text: i18n.tr("Import site text")
+                    iconName: "import"
+                    onTriggered: {
+                        //textArea.undo()
+                          PopupUtils.open(webSiteSelector);
+
+                    }
+                },
 
                      Action {
                          id: undo
