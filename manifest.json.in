@@ -9,7 +9,7 @@
             "desktop":  "tedit.desktop"
         }
     },
-    "version": "1.5.3",
+    "version": "1.6",
     "maintainer": "fulvio <fulvio999@gmail.com>",
     "framework" : "ubuntu-sdk-15.04.5"
 }

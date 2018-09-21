@@ -8,6 +8,9 @@ import Qt.labs.settings 1.0
 import "components"
 import "ui"
 
+/* digest calculator functions */
+import "js/hashes.js" as Hashes
+
 
 MainView {
 
@@ -16,9 +19,9 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "1.5.3"
+    property string appVersion : "1.6"
 
-    /* application hidden folder where are saved the file. (path is fixed due to Appp confinement rules) */
+    /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
 
     automaticOrientation: true
@@ -70,13 +73,11 @@ MainView {
     Component {
         id: confirmClearAll
         ConfirmClearAll{}
-
     }
 
     Component {
         id: confirmPasteFromClipboard
         ConfirmPasteFromClipboard{}
-
     }
 
     /* custom c++ plugin to save file on filesystem */
@@ -105,19 +106,25 @@ MainView {
         mainPage.saved = true;
     }
 
-    /* show a Popup containing the provide input */
+    /* show a Popup containing the provided in argument input */
     function showInfo(info) {
         infoText = "\n" + info + "\n";
         PopupUtils.open(popover);
     }
 
-    /* PopUp with Application info */
+    /* PopUp with the Application info */
     Component {
        id: productInfo
        ProductInfo{}
     }
 
-    /* ask for remote web site url where import text */
+    /* PopUp with the available Hash calculator */
+    Component {
+       id: digestCalculatorChooser
+       DigestCalculator{inputText: textArea.text}
+    }
+
+    /* Ask for remote web-site url where import text to insert in the text area */
     Component {
        id: webSiteSelector
        WebSiteSelector{}
@@ -141,8 +148,38 @@ MainView {
        property Action closeAction
     }
 
+    /* the list of available digest calculator  (ie: the one supported by 'jshashes' library ) */
+    ListModel{
+        id: digesterCalculatorListModel
 
-    PageStack {
+        ListElement {
+           name: "MD5"
+        }
+
+        ListElement {
+           name: "SHA-1"
+        }
+
+        ListElement {
+           name: "SHA-512"
+        }
+
+        ListElement {
+            name: "SHA-256"
+        }
+
+        ListElement {
+            name: "RMD-160"
+        }
+    }
+
+    /* renderer for the entry in the Digest OptionSelector */
+    Component {
+        id: digestChooserDelegate
+        OptionSelectorDelegate {  text: name; }
+    }
+
+     PageStack {
         id: pageStack
 
         Component.onCompleted: {
@@ -173,46 +210,45 @@ MainView {
                           onTriggered:{
                              PopupUtils.open(productInfo)
                           }
+                      },
+
+                      Action {
+                          id:settingsAction
+                          text: i18n.tr("Settings")
+                          iconName: "settings"
+                          onTriggered: {
+                              pageStack.push(settingsPage)
+                              settingsPage.visible = true
+                          }
                       }
                 ]
 
                 trailingActionBar.actions: [
 
-                Action {
-                    id: importTextSite
-                    text: i18n.tr("Import site text")
-                    iconName: "import"
-                    onTriggered: {
-                        //textArea.undo()
-                          PopupUtils.open(webSiteSelector);
-
-                    }
-                },
+                     Action {
+                          id: importTextSite
+                          text: i18n.tr("Import site text")
+                          iconSource: Qt.resolvedUrl("./graphics/import.png")
+                          onTriggered: {
+                              PopupUtils.open(webSiteSelector);
+                          }
+                     },
 
                      Action {
                          id: undo
                          text: i18n.tr("Undo")
-                         iconName: "undo"
+                         iconSource: Qt.resolvedUrl("./graphics/undo.png")
                          onTriggered: {
-                             textArea.undo()
-                         }
-                     },
-                     Action {
-                         id: redo
-                         text: i18n.tr("Redo")
-                         iconName: "redo"
-                         onTriggered: {
-                             textArea.redo()
+                            textArea.undo()
                          }
                      },
 
                      Action {
-                         id:settingsAction
-                         text: i18n.tr("Settings")
-                         iconName: "settings"
+                         id: redo
+                         text: i18n.tr("Redo")
+                         iconSource: Qt.resolvedUrl("./graphics/redo.png")
                          onTriggered: {
-                             pageStack.push(settingsPage)
-                             settingsPage.visible = true
+                             textArea.redo()
                          }
                      },
 
@@ -222,7 +258,7 @@ MainView {
                      Action {
                          id: clearList
                          text: i18n.tr("Clear All")
-                         iconName: "erase"
+                         iconSource: Qt.resolvedUrl("./graphics/clear.png")
                          onTriggered: {
                             PopupUtils.open(confirmClearAll)
                          }
@@ -262,7 +298,7 @@ MainView {
                      Action {
                          id:save
                          text: i18n.tr("Save")
-                         iconName: "save"
+                         iconSource: Qt.resolvedUrl("./graphics/save.png")
                          onTriggered: {
                              if(mainPage.openedFileName == "") { /* true if file is new, never saved  */
                                  //console.log("Saving a new file...")
@@ -273,22 +309,34 @@ MainView {
                              }
                          }
                      },
+
                      Action {
                          id:saveAs
                          text: i18n.tr("Save as")
-                         iconName: "save-as"
+                         iconSource: Qt.resolvedUrl("./graphics/save-as.png")
                          onTriggered: {
                             PopupUtils.open(saveAsDialog)
                          }
                      },
+
                      Action {
                          id: reOpen
-                         text: i18n.tr("Local files")
-                         iconSource: Qt.resolvedUrl("./graphics/reopen.png")
+                         text: i18n.tr("Open saved file")
+                         iconSource: Qt.resolvedUrl("./graphics/open.png")
                          onTriggered: {
                              pageStack.push(localFilePicker);
                          }
+                     },
+
+                     Action {
+                         id: hashCalculator
+                         iconSource: Qt.resolvedUrl("./graphics/digest.png")
+                         text: i18n.tr("Digest")
+                         onTriggered:{
+                            PopupUtils.open(digestCalculatorChooser)
+                         }
                      }
+
                ]
          }
 

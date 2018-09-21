@@ -22,7 +22,6 @@ Page {
      */
      Component{
           id: confirmComponent
-
           Dialog {
               id: confirmDialogue
               title: i18n.tr("Attention")
@@ -61,12 +60,12 @@ Page {
                   }
               }
          }
-    }
+     }
 
      header: PageHeader {
           id: header
-          title : i18n.tr("Local files saved")+": "+ localFileslistModel.count
-          
+          title : i18n.tr("Local files")+": "+ localFileslistModel.count +"  "+ i18n.tr("(swipe for options)")
+
           trailingActionBar.actions: [
 
               Action {
@@ -78,98 +77,30 @@ Page {
                      }
                }
          ]
-     }
+    }
 
-
-     /* when the page become active, load the locally saved files */
-     onActiveChanged: {
-        if(active) {
-            var homePath = fileIO.getHomePath();
-            var fileList = fileIO.getLocalFileList(homePath + root.fileSavingPath);
-            localFileslistModel.clear();
-            for(var i=0; i<fileList.length; i++) {
-                var targetFileName = "file://" + homePath + root.fileSavingPath + fileList[i];
-                var fileSize = fileIO.getSize(targetFileName); //bytes
-                localFileslistModel.append({"file": fileList[i], "size": fileSize});
-            }
-        }
+    /* when the page become active, load the locally saved files in the ListModel */
+    onActiveChanged: {
+         if(active) {
+             var homePath = fileIO.getHomePath();
+             var fileList = fileIO.getLocalFileList(homePath + root.fileSavingPath);
+             localFileslistModel.clear();
+             for(var i=0; i<fileList.length; i++) {
+                 var targetFileName = "file://" + homePath + root.fileSavingPath + fileList[i];
+                 var fileSize = fileIO.getSize(targetFileName); //bytes
+                 localFileslistModel.append({"file": fileList[i], "size": fileSize});
+             }
+         }
     }
 
     /* show the list of locally saved files (the folder is the App one, due to apps confinement) */
     UbuntuListView {
         id: ubuntuListView
         anchors.fill: parent
-        anchors.topMargin: units.gu(7) /* amount of space from the above component */
-
-        Action {
-            property string fileName
-            id: closeAction
-            /* an item is selected: open it in the textArea */
-            onTriggered: {
-                //console.log("Selected file to open: "+fileName)
-                var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + fileName;
-                textArea.text = fileIO.read(targetFileName);
-                mainPage.title = fileIO.getFullName(targetFileName);
-                mainPage.saved = true /* ie: file NOT modified yet */
-                mainPage.openedFileName = fileName;
-                mainPage.currentFileLabelVisible = true
-            }
-        }
-
+        anchors.topMargin: units.gu(6) /* amount of space from the above component */
         model: localFileslistModel
-        delegate: ListItem.Standard {
-            id: standardItem
-            text: "<b>"+file+"</b>"+"     (Size: "+size + " bytes)"
-            removable: true
-            confirmRemoval: true
-            backgroundIndicator: Rectangle {
-                anchors.fill: parent
-                color: UbuntuColors.red
-                Icon {
-                    id: deleteIcon
-                    name: "delete"
-                    color: "white"
-                    height: parent.height - units.gu(1)
-                    width: height
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.right: parent.right
-                    anchors.rightMargin: standardItem.width/4 - width/2
-                }
-                Text {
-                    text: i18n.tr("Remove")
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: deleteIcon.right
-                    color: "white"
-                    font.bold: true
-                }
-            }
+        delegate: SavedFilesListDelegate{}
 
-            onClicked: {
-                    console.log("Opening local file name: "+file)
-                    closeAction.fileName = file
-                    mainPage.pageStack.pop();
-
-                    /* if currently loaded file NOT saved propose 'Save as' dialog */
-                    if(!mainPage.saved) {
-                        unsavedDialog.closeAction = closeAction
-                        PopupUtils.open(unsavedDialog)
-                    } else{
-                        closeAction.trigger()
-                    }
-            }
-
-            onItemRemoved: { /* swipe to right and selected the Trash icon */
-                //console.log("Removing local file name: "+file)
-                fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + file)
-
-                if(mainPage.title == text) { /* the file is the one currently saved */
-                   mainPage.saved = false
-                   textArea.text = ""
-                   mainPage.title = "edit"
-                   mainPage.openedFileName = "";
-                }
-            }
-        }
     }
 
 }
