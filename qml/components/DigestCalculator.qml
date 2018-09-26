@@ -31,7 +31,7 @@ import "../js/hashes.js" as Hashes
            Rectangle{
                id: textAreaContainer
                width: digestPickerDialog.width
-               height: digestPickerDialog.height/4
+               height: digestPickerDialog.height/5
 
                /* Display the file content */
                TextArea {
@@ -58,8 +58,8 @@ import "../js/hashes.js" as Hashes
                      onClicked: {
 
                                 var chosenDigester = digesterCalculatorListModel.get(digestChooserSelector.selectedIndex).name;
-                                console.log('chosen Digester: ' + chosenDigester);
-                                console.log('Input text: ' + digestPickerDialog.inputText);
+                                //console.log('chosen Digester: ' + chosenDigester);
+                                //console.log('Input text: ' + digestPickerDialog.inputText);
 
                                 if( digestPickerDialog.inputText.length > 0) {
 
@@ -90,8 +90,7 @@ import "../js/hashes.js" as Hashes
                                 }else{
                                    digestResultTextArea.text = i18n.tr("Input is empty !");
                                 }
-
-                             }
+                           }
                      }
 
                      Button {

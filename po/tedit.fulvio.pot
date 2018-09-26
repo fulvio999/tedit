@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-21 15:29+0000\n"
+"POT-Creation-Date: 2018-09-26 16:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,30 +17,38 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/components/ProductInfo.qml:10
+#: ../qml/components/ProductInfo.qml:9
 msgid "Product Info"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:11
+#: ../qml/components/ProductInfo.qml:10
 msgid "version"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:11
+#: ../qml/components/ProductInfo.qml:10
 msgid "Author"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:12
+#: ../qml/components/ProductInfo.qml:11
 msgid "A simple and basic text, notes editor"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:13
+#: ../qml/components/ProductInfo.qml:12
 msgid "Thanks at jshashes library for hash Algorithm"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:13
+msgid "Thanks at"
+msgstr ""
+
+#: ../qml/components/ProductInfo.qml:13
+msgid "for Base64 encoder/decoder"
 msgstr ""
 
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
 #: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:98
+#: ../qml/components/DigestCalculator.qml:97
 #: ../qml/components/WebSiteSelector.qml:37 ../qml/ui/LocalFilePicker.qml:35
 msgid "Close"
 msgstr ""
@@ -89,12 +97,12 @@ msgid ""
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:18
-#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:300
+#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:305
 msgid "Save"
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:32
-#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:315
+#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:320
 msgid "Save as"
 msgstr ""
 
@@ -119,6 +127,7 @@ msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr ""
 
 #: ../qml/components/DigestCalculator.qml:91
+#: ../qml/ui/Base64conversionPage.qml:167
 msgid "Input is empty !"
 msgstr ""
 
@@ -142,7 +151,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:104
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:105
 msgid "Saved"
 msgstr ""
 
@@ -150,71 +159,75 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/Main.qml:201 ../qml/ui/LocalFilePicker.qml:52 tedit.desktop.in.h:1
+#: ../qml/Main.qml:206 ../qml/ui/LocalFilePicker.qml:52 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:209
+#: ../qml/Main.qml:214
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:217 ../qml/ui/SettingsPage.qml:9
+#: ../qml/Main.qml:222 ../qml/ui/SettingsPage.qml:9
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:230
+#: ../qml/Main.qml:235
 msgid "Import site text"
 msgstr ""
 
-#: ../qml/Main.qml:239
+#: ../qml/Main.qml:244
 msgid "Undo"
 msgstr ""
 
-#: ../qml/Main.qml:248
+#: ../qml/Main.qml:253
 msgid "Redo"
 msgstr ""
 
-#: ../qml/Main.qml:260
+#: ../qml/Main.qml:265
 msgid "Clear All"
 msgstr ""
 
-#: ../qml/Main.qml:272
+#: ../qml/Main.qml:277
 msgid "Paste from clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:282
+#: ../qml/Main.qml:287
 msgid "Select all"
 msgstr ""
 
-#: ../qml/Main.qml:291
+#: ../qml/Main.qml:296
 msgid "Copy to clipboard"
 msgstr ""
 
-#: ../qml/Main.qml:324
+#: ../qml/Main.qml:329
 msgid "Open saved file"
 msgstr ""
 
-#: ../qml/Main.qml:334
+#: ../qml/Main.qml:339
 msgid "Digest"
 msgstr ""
 
-#: ../qml/Main.qml:370
+#: ../qml/Main.qml:348
+msgid "Base64"
+msgstr ""
+
+#: ../qml/Main.qml:383
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:370
+#: ../qml/Main.qml:383
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:386
+#: ../qml/Main.qml:399
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:398
+#: ../qml/Main.qml:411
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:398
+#: ../qml/Main.qml:411
 msgid "Characters"
 msgstr ""
 
@@ -240,6 +253,42 @@ msgstr ""
 
 #: ../qml/ui/LocalFilePicker.qml:73
 msgid "Delete all"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:18
+msgid "Base 64 encoder/decoder"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:24
+msgid "Clear all"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:56
+msgid "Encode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:56
+msgid "encode to Base 64"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:57
+msgid "Decode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:57
+msgid "decode from Base 64"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:107
+msgid "Insert here the content to encode/decode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:132
+msgid "Conversion Result"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:149
+msgid "Convert"
 msgstr ""
 
 #: ../qml/ui/SettingsPage.qml:25

@@ -11,6 +11,7 @@ import "ui"
 /* digest calculator functions */
 import "js/hashes.js" as Hashes
 
+import "js/base64.js" as Base64enc
 
 MainView {
 
@@ -19,7 +20,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "1.8"
+    property string appVersion : "1.9"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -137,6 +138,10 @@ MainView {
 
     SettingsPage {
        id: settingsPage
+    }
+
+    Base64conversionPage {
+      id: base64conversionPage
     }
 
     LocalFilePicker {
@@ -335,8 +340,16 @@ MainView {
                          onTriggered:{
                             PopupUtils.open(digestCalculatorChooser)
                          }
-                     }
+                     },
 
+                     Action {
+                         id: base64Converter
+                         iconSource: Qt.resolvedUrl("./graphics/base64.png")
+                         text: i18n.tr("Base64")
+                         onTriggered:{
+                            pageStack.push(base64conversionPage);
+                         }
+                     }
                ]
          }
 
@@ -392,16 +405,16 @@ MainView {
              }
 
              Rectangle{
-               width: parent.width
-               height: units.gu(3)
-               Label{
-                 text: i18n.tr("Line")+": "+textArea.lineCount+ "  "+ i18n.tr("Characters")+": "+textArea.length
-                 font.bold: true
-               }
+                 width: parent.width
+                 height: units.gu(3)
+                 Label{
+                   text: i18n.tr("Line")+": "+textArea.lineCount+ "  "+ i18n.tr("Characters")+": "+textArea.length
+                   font.bold: true
+                 }
              }
 
           }
 
       } //mainPage page
-  }
+   }
 }
