@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the tedit.fulvio package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 16:11+0000\n"
+"POT-Creation-Date: 2019-01-07 14:08+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,13 +96,13 @@ msgid ""
 "There are unsaved changes. Do you want to save this file before closing?"
 msgstr ""
 
-#: ../qml/components/UnsavedDialog.qml:18
-#: ../qml/components/SaveAsDialog.qml:22 ../qml/Main.qml:305
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
+#: ../qml/Main.qml:305
 msgid "Save"
 msgstr ""
 
-#: ../qml/components/UnsavedDialog.qml:32
-#: ../qml/components/SaveAsDialog.qml:10 ../qml/Main.qml:320
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
+#: ../qml/Main.qml:320
 msgid "Save as"
 msgstr ""
 
