@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-09-26 16:11+0000\n"
-"PO-Revision-Date: 2018-09-26 18:18+0200\n"
+"POT-Creation-Date: 2019-08-07 12:52+0000\n"
+"PO-Revision-Date: 2019-08-07 15:01+0200\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -48,8 +48,9 @@ msgstr "pare Base64 convertidor"
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
 #: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:97
-#: ../qml/components/WebSiteSelector.qml:37 ../qml/ui/LocalFilePicker.qml:35
+#: ../qml/components/DigestCalculator.qml:124
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/ui/LocalFilePickerPage.qml:44 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
 msgstr "Cerrar"
 
@@ -96,12 +97,11 @@ msgid "There are unsaved changes. Do you want to save this file before closing?"
 msgstr "Hay cambios sin guardar. ¿Quiere guardar este archivo antes de cerrar?"
 
 #: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/Main.qml:305
+#: ../qml/components/MenuOptions.qml:143
 msgid "Save"
 msgstr "Guardar"
 
 #: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
-#: ../qml/Main.qml:320
 msgid "Save as"
 msgstr "Guardar como"
 
@@ -109,28 +109,29 @@ msgstr "Guardar como"
 msgid "Close without saving"
 msgstr "Cerrar sin guardar"
 
-#: ../qml/components/DigestCalculator.qml:12
+#: ../qml/components/DigestCalculator.qml:13
 msgid "Found"
 msgstr "Fncontró"
 
-#: ../qml/components/DigestCalculator.qml:12
+#: ../qml/components/DigestCalculator.qml:13
 msgid "digesters"
 msgstr "algoritmos"
 
-#: ../qml/components/DigestCalculator.qml:55
+#: ../qml/components/DigestCalculator.qml:82
 msgid "Calculate"
 msgstr "Calcular"
 
-#: ../qml/components/DigestCalculator.qml:87
+#: ../qml/components/DigestCalculator.qml:114
 msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr "ERORR, Algorithm not selected or unsupportded value"
 
-#: ../qml/components/DigestCalculator.qml:91
-#: ../qml/ui/Base64conversionPage.qml:167
+#: ../qml/components/DigestCalculator.qml:118
+#: ../qml/ui/Base64conversionPage.qml:169
 msgid "Input is empty !"
 msgstr "La entrada está vacía !"
 
 #: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:478
 msgid "Import a site as text"
 msgstr "Importar un sitio como texto"
 
@@ -150,7 +151,7 @@ msgstr "Nombre el archivo a guardar."
 msgid "Couldn't write"
 msgstr "No se pudo escribir"
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:105
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:125
 msgid "Saved"
 msgstr "Guardado"
 
@@ -158,99 +159,107 @@ msgstr "Guardado"
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: ../qml/Main.qml:206 ../qml/ui/LocalFilePicker.qml:52 tedit.desktop.in.h:1
-msgid "tedit"
-msgstr "tedit"
+#: ../qml/components/MenuOptions.qml:30 ../qml/ui/SavedFilesListDelegate.qml:18
+msgid " "
+msgstr " "
 
-#: ../qml/Main.qml:214
-msgid "About"
-msgstr "Acerca de"
+#: ../qml/components/MenuOptions.qml:98
+msgid "Open"
+msgstr "Abierto"
 
-#: ../qml/Main.qml:222 ../qml/ui/SettingsPage.qml:9
-msgid "Settings"
-msgstr "Configuración"
+#: ../qml/components/MenuOptions.qml:185
+msgid "Save As"
+msgstr "Guardar como"
 
-#: ../qml/Main.qml:235
-msgid "Import site text"
-msgstr "Importar texto del sitio"
+#: ../qml/components/MenuOptions.qml:227
+msgid "Undo last Modification"
+msgstr "Deshacer la última modificación"
 
-#: ../qml/Main.qml:244
-msgid "Undo"
-msgstr "Deshacer"
+#: ../qml/components/MenuOptions.qml:269
+msgid "Redo last Modification"
+msgstr "Rehacer la última modificación"
 
-#: ../qml/Main.qml:253
-msgid "Redo"
-msgstr "Rehacer"
-
-#: ../qml/Main.qml:265
-msgid "Clear All"
-msgstr "Limpiar todo"
-
-#: ../qml/Main.qml:277
-msgid "Paste from clipboard"
-msgstr "Pegar desde el portapapeles"
-
-#: ../qml/Main.qml:287
-msgid "Select all"
+#: ../qml/components/MenuOptions.qml:311
+msgid "Select All"
 msgstr "Seleccionar todo"
 
-#: ../qml/Main.qml:296
-msgid "Copy to clipboard"
+#: ../qml/components/MenuOptions.qml:353
+msgid "Clear Area"
+msgstr "Limpiar todo"
+
+#: ../qml/components/MenuOptions.qml:394
+msgid "Paste from Clipboard"
+msgstr "Pegar desde el portapapeles"
+
+#: ../qml/components/MenuOptions.qml:436
+msgid "Copy to Clipboard"
 msgstr "Copiar al portapapeles"
 
-#: ../qml/Main.qml:329
-msgid "Open saved file"
-msgstr "Abrir archivo"
-
-#: ../qml/Main.qml:339
+#: ../qml/components/MenuOptions.qml:520
 msgid "Digest"
 msgstr "Dlgoritmo"
 
-#: ../qml/Main.qml:348
-msgid "Base64"
+#: ../qml/components/MenuOptions.qml:572
+msgid "Base 64"
 msgstr "Base64"
 
-#: ../qml/Main.qml:383
+#: ../qml/Main.qml:213
+msgid "About"
+msgstr "Acerca de"
+
+#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
+msgid "Settings"
+msgstr "Configuración"
+
+#: ../qml/Main.qml:244 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr "tedit"
+
+#: ../qml/Main.qml:256
+msgid "Menu"
+msgstr "Menú"
+
+#: ../qml/Main.qml:289
 msgid "File"
 msgstr "Archivo"
 
-#: ../qml/Main.qml:383
+#: ../qml/Main.qml:289
 msgid "saved"
 msgstr "guardado"
 
-#: ../qml/Main.qml:399
+#: ../qml/Main.qml:312
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr "¡Bienvenido/a! ¡Escriba lo que quiera y guárdelo! ¡Disfrute!"
 
-#: ../qml/Main.qml:411
+#: ../qml/Main.qml:330
 msgid "Line"
 msgstr "Línea"
 
-#: ../qml/Main.qml:411
+#: ../qml/Main.qml:330
 msgid "Characters"
 msgstr "Caracteres"
 
-#: ../qml/ui/LocalFilePicker.qml:27
+#: ../qml/ui/LocalFilePickerPage.qml:36
 msgid "Attention"
 msgstr "Atención"
 
-#: ../qml/ui/LocalFilePicker.qml:28
+#: ../qml/ui/LocalFilePickerPage.qml:37
 msgid "Remove ALL saved files ? (No restore)"
 msgstr "¿Eliminar TODOS los archivos guardados?  (No se podrán recuperar)"
 
-#: ../qml/ui/LocalFilePicker.qml:41
+#: ../qml/ui/LocalFilePickerPage.qml:50
 msgid "Delete"
 msgstr "Borrar"
 
-#: ../qml/ui/LocalFilePicker.qml:67
+#: ../qml/ui/LocalFilePickerPage.qml:75
 msgid "Local files"
 msgstr "Archivos locales"
 
-#: ../qml/ui/LocalFilePicker.qml:67
+#: ../qml/ui/LocalFilePickerPage.qml:75
 msgid "(swipe for options)"
 msgstr "(deslizar para ver opciones)"
 
-#: ../qml/ui/LocalFilePicker.qml:73
+#: ../qml/ui/LocalFilePickerPage.qml:81
 msgid "Delete all"
 msgstr "Borrar todo"
 
@@ -278,25 +287,81 @@ msgstr "Descodificar"
 msgid "decode from Base 64"
 msgstr "descodificar de Base 64"
 
-#: ../qml/ui/Base64conversionPage.qml:107
+#: ../qml/ui/Base64conversionPage.qml:108
 msgid "Insert here the content to encode/decode"
 msgstr "Inserta aquí el contenido para codificar / decodificar"
 
-#: ../qml/ui/Base64conversionPage.qml:132
+#: ../qml/ui/Base64conversionPage.qml:133
 msgid "Conversion Result"
 msgstr "Resultado de conversión"
 
-#: ../qml/ui/Base64conversionPage.qml:149
+#: ../qml/ui/Base64conversionPage.qml:151
 msgid "Convert"
 msgstr "Convertir"
 
-#: ../qml/ui/SettingsPage.qml:25
+#: ../qml/ui/SettingsPage.qml:27
 msgid "Enable text prediction"
 msgstr "Activar el texto predictivo"
 
-#: ../qml/ui/SettingsPage.qml:29
+#: ../qml/ui/SettingsPage.qml:31
 msgid "Text prediction"
 msgstr "Texto predictivo"
+
+#: ../qml/ui/SettingsPage.qml:45
+msgid "Notes Area Font color"
+msgstr "Color del área de texto"
+
+#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:91
+msgid "Green"
+msgstr "Verde"
+
+#: ../qml/ui/SettingsPage.qml:62
+msgid "Grey"
+msgstr "Gris"
+
+#: ../qml/ui/SettingsPage.qml:71
+msgid "Black"
+msgstr "Negro"
+
+#: ../qml/ui/SettingsPage.qml:83
+msgid "Application Backgroung color"
+msgstr "Color de fondo de la aplicación"
+
+#: ../qml/ui/SettingsPage.qml:101
+msgid "Brown"
+msgstr "Marrón"
+
+#: ../qml/ui/SettingsPage.qml:111
+msgid "White"
+msgstr "Blanco"
+
+#: ../qml/ui/FileInfoPopUp.qml:12
+msgid "File Info"
+msgstr "Archivo"
+
+#: ../qml/ui/FileInfoPopUp.qml:15
+msgid "File Size"
+msgstr "Tamaño del archivo"
+
+#: ../qml/ui/FileInfoPopUp.qml:19
+msgid "Modified"
+msgstr "Modificado"
+
+#: ../qml/ui/FileInfoPopUp.qml:22
+msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
+msgstr "Formato de tiempo"
+
+#~ msgid "Import site text"
+#~ msgstr "Importar texto del sitio"
+
+#~ msgid "Undo"
+#~ msgstr "Deshacer"
+
+#~ msgid "Redo"
+#~ msgstr "Rehacer"
+
+#~ msgid "Open saved file"
+#~ msgstr "Abrir archivo"
 
 #~ msgid "Local files saved"
 #~ msgstr "Guardados los archivos locales"
