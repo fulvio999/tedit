@@ -21,7 +21,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.0"
+    property string appVersion : "2.1"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -60,6 +60,7 @@ MainView {
        property bool textPrediction: false
 
        property string pageBackgroundColor: "white"
+       property string textAreaFontColor: "black"
     }
 
     Component.onCompleted: {
@@ -208,29 +209,26 @@ MainView {
 
                 ClickableHeaderIcon {
                       id: about_button
-                      //iconname: "info"
-                      iconSource: "tedit.png"
-                      text: i18n.tr("About")
+                      iconSource: "menu.png"
+                      text: i18n.tr("Menu")
                       anchors {
-                          //right: settings_button.left
                           leftMargin: units.gu(1)
-                          rightMargin: units.gu(2)
+                          rightMargin: units.gu(5)
                           verticalCenter: header.verticalCenter
                       }
                       onTriggered: {
-                         PopupUtils.open(productInfo)
+                         PopupUtils.open(menuOptions);
                       }
                 }
 
                 ClickableHeaderIcon {
                       id: settings_button
-                      //iconcolor: UbuntuColors.green
                       iconname: "settings"
                       text: i18n.tr("Settings")
                       anchors {
                           left: about_button.right
-                          leftMargin: units.gu(2)
-                          rightMargin: units.gu(1)
+                          leftMargin: units.gu(3)
+                          rightMargin: units.gu(2)
                           verticalCenter: header.verticalCenter
                       }
                       onTriggered: {
@@ -252,15 +250,15 @@ MainView {
                 ClickableHeaderIcon {
                         id: menu_button
                         iconcolor: UbuntuColors.green
-                        iconSource: "menu.png" //Qt.resolvedUrl("./graphics/menu.png")
-                        text: i18n.tr("Menu")
+                        iconSource: "tedit.png" //Qt.resolvedUrl("./graphics/menu.png")
+                        text: i18n.tr("About")
                         anchors {
                               right: header.right
                               rightMargin: units.gu(3)
                               verticalCenter: header.verticalCenter
                          }
                          onTriggered: {
-                            PopupUtils.open(menuOptions);
+                             PopupUtils.open(productInfo)
                          }
                   }
          }
@@ -318,6 +316,10 @@ MainView {
                          currentFileOpenedLabel.color = UbuntuColors.red
                       }
                       wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
+
+                      Component.onCompleted: {
+                          color =  settings.textAreaFontColor
+                      }
                  }
              }
 

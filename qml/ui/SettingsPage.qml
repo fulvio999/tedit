@@ -53,6 +53,7 @@ Page {
            label: i18n.tr("Green")
            itemColor: UbuntuColors.green
            onClicked: {
+               settings.textAreaFontColor = itemColor
                textArea.color = itemColor
                pageStack.pop()
            }
@@ -62,6 +63,7 @@ Page {
           label: i18n.tr("Grey")
           itemColor: UbuntuColors.lightGrey
           onClicked: {
+              settings.textAreaFontColor = itemColor
               textArea.color = itemColor
               pageStack.pop()
           }
@@ -71,6 +73,7 @@ Page {
          label: i18n.tr("Black")
          itemColor: UbuntuColors.black
          onClicked: {
+             settings.textAreaFontColor = itemColor
              textArea.color = itemColor
              pageStack.pop()
          }

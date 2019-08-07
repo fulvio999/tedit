@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 12:52+0000\n"
+"POT-Creation-Date: 2019-08-07 16:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:125
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:126
 msgid "Saved"
 msgstr ""
 
@@ -205,38 +205,38 @@ msgid "Base 64"
 msgstr ""
 
 #: ../qml/Main.qml:213
-msgid "About"
-msgstr ""
-
-#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
-msgid "Settings"
-msgstr ""
-
-#: ../qml/Main.qml:244 tedit.desktop.in.h:1
-msgid "tedit"
-msgstr ""
-
-#: ../qml/Main.qml:256
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:289
+#: ../qml/Main.qml:227 ../qml/ui/SettingsPage.qml:10
+msgid "Settings"
+msgstr ""
+
+#: ../qml/Main.qml:242 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr ""
+
+#: ../qml/Main.qml:254
+msgid "About"
+msgstr ""
+
+#: ../qml/Main.qml:287
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:289
+#: ../qml/Main.qml:287
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:312
+#: ../qml/Main.qml:310
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:330
+#: ../qml/Main.qml:332
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:330
+#: ../qml/Main.qml:332
 msgid "Characters"
 msgstr ""
 
@@ -312,27 +312,27 @@ msgstr ""
 msgid "Notes Area Font color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:91
+#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:94
 msgid "Green"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:62
+#: ../qml/ui/SettingsPage.qml:63
 msgid "Grey"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:71
+#: ../qml/ui/SettingsPage.qml:73
 msgid "Black"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:83
+#: ../qml/ui/SettingsPage.qml:86
 msgid "Application Backgroung color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:101
+#: ../qml/ui/SettingsPage.qml:104
 msgid "Brown"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:111
+#: ../qml/ui/SettingsPage.qml:114
 msgid "White"
 msgstr ""
 
