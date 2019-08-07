@@ -9,10 +9,36 @@ import "../js/hashes.js" as Hashes
   Dialog {
           id: digestPickerDialog
           contentWidth: units.gu(42)
+
           title: i18n.tr("Found")+": "+digesterCalculatorListModel.count +" "+i18n.tr("digesters")
 
           /* the text to calculate di digest (ie: input textArea content) */
           property string inputText : "";
+
+          /* the list of available digest calculator  (ie: the one supported by 'jshashes' library ) */
+          ListModel{
+              id: digesterCalculatorListModel
+
+              ListElement {
+                 name: "MD5"
+              }
+
+              ListElement {
+                 name: "SHA-1"
+              }
+
+              ListElement {
+                 name: "SHA-512"
+              }
+
+              ListElement {
+                  name: "SHA-256"
+              }
+
+              ListElement {
+                  name: "RMD-160"
+              }
+          }
 
           OptionSelector {
                  id: digestChooserSelector
@@ -24,7 +50,7 @@ import "../js/hashes.js" as Hashes
 
                  /* clear old output */
                  onDelegateClicked: {
-                     digestResultTextArea.text = "";
+                    digestResultTextArea.text = "";
                  }
            }
 
@@ -33,7 +59,7 @@ import "../js/hashes.js" as Hashes
                width: digestPickerDialog.width
                height: digestPickerDialog.height/5
 
-               /* Display the file content */
+               /* Display the digest calculation result */
                TextArea {
                     id: digestResultTextArea
                     width: parent.width

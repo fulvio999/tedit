@@ -1,9 +1,10 @@
 
 /*
-   With an Ajax call read as text the contnet of a web site whoes url is in argument
+   Execute an Ajax call to read as text the content of the web site with the given url
  */
 function importSiteText(url) {
-        var doc = new XMLHttpRequest();      
+
+        var doc = new XMLHttpRequest();
         doc.onreadystatechange = function() {
             if (doc.readyState == XMLHttpRequest.DONE) {
                 textArea.text = doc.responseText;

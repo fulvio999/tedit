@@ -50,7 +50,7 @@ QString MyType::read(QString source)
     return data;
 }
 
-/* Retrun the size of the file in bytes */
+/* Return the size of the file in bytes */
 qint64 MyType::getSize(QString source)
 {
   if (source.isEmpty())
@@ -66,6 +66,17 @@ qint64 MyType::getSize(QString source)
   }else {
     return 0;
   }
+}
+
+/* Return the creation time of the file */
+QDateTime  MyType::getFileLastModified(QString source){
+
+  if(source.startsWith("file://"))
+      source.remove("file://");
+
+      QFileInfo fi(source);
+
+      return fi.lastModified();  
 }
 
 

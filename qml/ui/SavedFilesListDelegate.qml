@@ -1,21 +1,33 @@
 import QtQuick 2.4
 
 import Ubuntu.Components 1.3
-
+import EdIt 1.0
 import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Content 1.1
 
 
-/* Delgate object used to display a locally saved object */
+/* Delegate object used to display a locally saved object */
 ListItem {
     id: standardItem
-    width: localFilePage.width  
+    width: localFilePickerPage.width
+    anchors.horizontalCenter: parent.Center
 
     Label {
-        id: label
+         id:placeholderLabel
+          text: i18n.tr(" ")   /* placeholder */
+          anchors {
+                //right: placeholderLabel.left
+                leftMargin: units.gu(2)
+                rightMargin: units.gu(2)
+                verticalCenter: parent.verticalCenter
+          }
+    }
+
+    Label {
+        id: fileLabel
         verticalAlignment: Text.AlignVCenter
-        text: "<b>"+file+"</b>"+"     (Size: "+size + " bytes)"
+        text: "<b>"+file+"</b>"
         height: parent.height
         width: parent.width
         horizontalAlignment: Text.AlignHCenter
@@ -41,11 +53,10 @@ ListItem {
                  localFileslistModel.remove(index);
 
                  if(mainPage.title === fileToDelete) { /* the file to delete is the one currently saved */
-                    //console.log("Removing opened file...")
                     mainPage.saved = false
                     textArea.text = ""
-                    mainPage.title = "edit"
                     mainPage.openedFileName = "";
+                    mainPage.currentFileLabelVisible = false
                  }
 
                  fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + fileToDelete)
@@ -60,8 +71,9 @@ ListItem {
                Action {
                    iconName: "edit"
                    onTriggered: {
-                       //console.log("Selected file to open: "+fileName)
                        var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + file;
+                       //console.log("Full path file to open: "+targetFileName)
+
                        textArea.text = fileIO.read(targetFileName);
                        mainPage.title = fileIO.getFullName(targetFileName);
                        mainPage.saved = true /* ie: file NOT modified yet */
@@ -69,6 +81,20 @@ ListItem {
                        mainPage.currentFileLabelVisible = true
 
                        mainPage.pageStack.pop();
+                   }
+               },
+
+               Action {
+                   iconName: "info"
+                   onTriggered: {
+                       /* full path at the file */
+                       var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + file;
+                       var fileSize = fileIO.getSize(targetFileName); /* bytes */
+                       var lastModifiedDate = fileIO.getFileLastModified(targetFileName);
+
+                       localFilePickerPage.selectedFileModificationDate = lastModifiedDate;
+                       localFilePickerPage.selectedFileSize = fileSize;
+                       PopupUtils.open(fileInfoPopUp);
                    }
                }
          ]

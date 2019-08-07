@@ -96,7 +96,7 @@ Page {
        Rectangle{
            id: inputToConvertContainer
            width: parent.width
-           height: mainPage.height/2 - placeHolderRectangle.height - units.gu(6)
+           height: parent.height/2 - placeHolderRectangle.height - units.gu(6)
 
            /* Display the file content */
            TextArea {
@@ -145,7 +145,7 @@ Page {
            Button{
                id: doConversionButton
                anchors.horizontalCenter: parent.horizontalCenter
-               anchors.verticalCenter: parent.bottom              
+               anchors.verticalCenter: parent.bottom
                text: i18n.tr("Convert")
                width: units.gu(14)
                color: UbuntuColors.green

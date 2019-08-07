@@ -9,8 +9,17 @@ import Ubuntu.Content 1.1
   Allow to delete a file with a Swipe movemet to the left, or open it by selecting a list item
 */
 Page {
-     id: localFilePage
+     id: localFilePickerPage
      visible: false
+
+     /* info about the currently selected file in the listModel */
+     property string selectedFileSize: ""
+     property string selectedFileModificationDate: ""
+
+     Component {
+         id: fileInfoPopUp
+         FileInfoPopUp{}
+     }
 
      /* the list of locally saved files */
      ListModel {
@@ -18,7 +27,7 @@ Page {
      }
 
      /*
-      Ask confirm before remove all locally saved files
+        Ask confirmation before remove all locally saved files
      */
      Component{
           id: confirmComponent
@@ -49,11 +58,10 @@ Page {
                                 localFileslistModel.clear();
                             }
                             /* restore as first time use */
-                            mainPage.title = i18n.tr('tedit')
                             mainPage.saved = true /* ie: file NOT modified yet */
                             mainPage.openedFileName = "";
                             mainPage.currentFileLabelVisible = false;
-                            textArea.text = "";
+                            mainPage.textArea.text = "";
 
                             PopupUtils.close(confirmDialogue)
                       }
@@ -73,7 +81,7 @@ Page {
                      text: i18n.tr("Delete all")
                      iconName: "delete"
                      onTriggered: {
-                          PopupUtils.open(confirmComponent)
+                        PopupUtils.open(confirmComponent)
                      }
                }
          ]
@@ -88,7 +96,8 @@ Page {
              for(var i=0; i<fileList.length; i++) {
                  var targetFileName = "file://" + homePath + root.fileSavingPath + fileList[i];
                  var fileSize = fileIO.getSize(targetFileName); //bytes
-                 localFileslistModel.append({"file": fileList[i], "size": fileSize});
+                 var lastModifiedDate = fileIO.getFileLastModified(targetFileName);
+                 localFileslistModel.append({"file": fileList[i]});
              }
          }
     }
@@ -100,7 +109,5 @@ Page {
         anchors.topMargin: units.gu(6) /* amount of space from the above component */
         model: localFileslistModel
         delegate: SavedFilesListDelegate{}
-
     }
-
 }

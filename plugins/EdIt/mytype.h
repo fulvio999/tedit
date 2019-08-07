@@ -20,7 +20,7 @@ public:
 
     Q_INVOKABLE bool write(QString source, const QString& data);
     Q_INVOKABLE QString read(QString source);
-    Q_INVOKABLE qint64 getSize (QString source);  
+    Q_INVOKABLE qint64 getSize (QString source);
     Q_INVOKABLE bool rename(QString source, const QString& fileName);
     Q_INVOKABLE bool remove(QString source);
     Q_INVOKABLE QString getFileName(QString source);
@@ -30,6 +30,7 @@ public:
     Q_INVOKABLE bool isWritable(QString source);
     Q_INVOKABLE QStringList getLocalFileList(QString path);
     Q_INVOKABLE QString getHomePath();
+    Q_INVOKABLE QDateTime getFileLastModified(QString source);
 //    Q_INVOKABLE void writeAsRoot(QString source, QString dest, QString password);
 
 

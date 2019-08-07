@@ -14,7 +14,7 @@ Dialog {
 
         TextField {
             id: fileName
-            text: mainPage.openedFileName
+            text: root.openedFileName
             inputMethodHints: Qt.ImhNoPredictiveText | Qt.ImhNoAutoUppercase
         }
 
