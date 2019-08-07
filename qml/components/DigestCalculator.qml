@@ -56,6 +56,7 @@ import "../js/hashes.js" as Hashes
 
            Rectangle{
                id: textAreaContainer
+               color: root.backgroundColor
                width: digestPickerDialog.width
                height: digestPickerDialog.height/5
 

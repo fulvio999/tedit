@@ -59,14 +59,14 @@ Page {
 
        Rectangle{
            id: placeHolderRectangle
-            color: "transparent"
+            color: root.backgroundColor
             width: parent.width
             height: units.gu(6)
        }
 
        Rectangle{
             id: titleContainer
-            color: "transparent"
+            color: root.backgroundColor
             width: parent.width
             height: units.gu(10)
 
@@ -95,6 +95,7 @@ Page {
 
        Rectangle{
            id: inputToConvertContainer
+           color: root.backgroundColor
            width: parent.width
            height: parent.height/2 - placeHolderRectangle.height - units.gu(6)
 
@@ -112,8 +113,8 @@ Page {
        }
 
        Rectangle{
-           id: placeHolderRectangle2
-            color: "transparent"
+            id: placeHolderRectangle2
+            color: root.backgroundColor
             width: parent.width
             height: units.gu(1)
        }
@@ -138,6 +139,7 @@ Page {
 
        Rectangle{
            id: doConversionContainer
+           color: root.backgroundColor
            width: parent.width
            height: units.gu(3)
            anchors.topMargin: units.gu(1)

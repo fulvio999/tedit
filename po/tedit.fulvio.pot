@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 12:37+0000\n"
+"POT-Creation-Date: 2019-08-07 12:49+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,7 @@ msgstr ""
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
 #: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:123
+#: ../qml/components/DigestCalculator.qml:124
 #: ../qml/components/WebSiteSelector.qml:37
 #: ../qml/ui/LocalFilePickerPage.qml:44 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
@@ -118,16 +118,16 @@ msgstr ""
 msgid "digesters"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:81
+#: ../qml/components/DigestCalculator.qml:82
 msgid "Calculate"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:113
+#: ../qml/components/DigestCalculator.qml:114
 msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:117
-#: ../qml/ui/Base64conversionPage.qml:167
+#: ../qml/components/DigestCalculator.qml:118
+#: ../qml/ui/Base64conversionPage.qml:169
 msgid "Input is empty !"
 msgstr ""
 
@@ -288,15 +288,15 @@ msgstr ""
 msgid "decode from Base 64"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:107
+#: ../qml/ui/Base64conversionPage.qml:108
 msgid "Insert here the content to encode/decode"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:132
+#: ../qml/ui/Base64conversionPage.qml:133
 msgid "Conversion Result"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:149
+#: ../qml/ui/Base64conversionPage.qml:151
 msgid "Convert"
 msgstr ""
 
