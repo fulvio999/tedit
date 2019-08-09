@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 16:06+0000\n"
+"POT-Creation-Date: 2019-08-09 12:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,7 @@ msgid ""
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/components/MenuOptions.qml:143
+#: ../qml/components/MenuOptions.qml:141
 msgid "Save"
 msgstr ""
 
@@ -132,7 +132,7 @@ msgid "Input is empty !"
 msgstr ""
 
 #: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:478
+#: ../qml/components/MenuOptions.qml:476
 msgid "Import a site as text"
 msgstr ""
 
@@ -152,7 +152,7 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:126
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:128
 msgid "Saved"
 msgstr ""
 
@@ -164,79 +164,79 @@ msgstr ""
 msgid " "
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:98
+#: ../qml/components/MenuOptions.qml:96
 msgid "Open"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:185
+#: ../qml/components/MenuOptions.qml:183
 msgid "Save As"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:227
+#: ../qml/components/MenuOptions.qml:225
 msgid "Undo last Modification"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:269
+#: ../qml/components/MenuOptions.qml:267
 msgid "Redo last Modification"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:311
+#: ../qml/components/MenuOptions.qml:309
 msgid "Select All"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:353
+#: ../qml/components/MenuOptions.qml:351
 msgid "Clear Area"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:394
+#: ../qml/components/MenuOptions.qml:392
 msgid "Paste from Clipboard"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:436
+#: ../qml/components/MenuOptions.qml:434
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:520
+#: ../qml/components/MenuOptions.qml:518
 msgid "Digest"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:572
+#: ../qml/components/MenuOptions.qml:560
 msgid "Base 64"
 msgstr ""
 
-#: ../qml/Main.qml:213
+#: ../qml/Main.qml:215
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:227 ../qml/ui/SettingsPage.qml:10
+#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:242 tedit.desktop.in.h:1
+#: ../qml/Main.qml:244 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:254
+#: ../qml/Main.qml:256
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:287
+#: ../qml/Main.qml:301
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:287
+#: ../qml/Main.qml:301
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:310
+#: ../qml/Main.qml:324
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:332
+#: ../qml/Main.qml:346
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:332
+#: ../qml/Main.qml:346
 msgid "Characters"
 msgstr ""
 
@@ -334,6 +334,10 @@ msgstr ""
 
 #: ../qml/ui/SettingsPage.qml:114
 msgid "White"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:124
+msgid "Blue"
 msgstr ""
 
 #: ../qml/ui/FileInfoPopUp.qml:12

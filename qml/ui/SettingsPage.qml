@@ -92,7 +92,7 @@ Page {
 
       ColorListItem {
          label: i18n.tr("Green")
-         itemColor: "green"
+         itemColor: '#126381'
          onClicked: {
              settings.pageBackgroundColor = itemColor
              root.backgroundColor = itemColor
@@ -102,7 +102,7 @@ Page {
 
       ColorListItem {
          label: i18n.tr("Brown")
-         itemColor:"brown"
+         itemColor: '#8F4B0E'
          onClicked: {
              settings.pageBackgroundColor = itemColor
              root.backgroundColor = itemColor
@@ -113,6 +113,16 @@ Page {
       ColorListItem {
          label: i18n.tr("White")  /* Default */
          itemColor:"white"
+         onClicked: {
+             settings.pageBackgroundColor = itemColor
+             root.backgroundColor = itemColor
+             pageStack.pop()
+         }
+      }
+
+      ColorListItem {
+         label: i18n.tr("Blue")  /* Default */
+         itemColor: '#1E2F3F'
          onClicked: {
              settings.pageBackgroundColor = itemColor
              root.backgroundColor = itemColor

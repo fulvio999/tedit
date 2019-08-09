@@ -10,7 +10,7 @@ import Ubuntu.Components.Popups 1.3
   Dialog {
           id: menuPickerDialog
           contentWidth: units.gu(35)
-          contentHeight: units.gu(68)
+          contentHeight: units.gu(70)
 
           Column{
               id: mainColumn
@@ -59,8 +59,6 @@ import Ubuntu.Components.Popups 1.3
                               PopupUtils.close(menuPickerDialog)
                           }
                      }
-
-
                }
 
               //---------------------- OPEN -------------
@@ -533,16 +531,6 @@ import Ubuntu.Components.Popups 1.3
                               anchors.horizontalCenter: menuPickerDialog.Center
                               height: units.gu(4.5)
                               divider.visible : false
-
-                              Rectangle {
-                                     id: backgroundBase64
-                                     width: parent.width
-                                     height: parent.height
-                                     /* to get the background color of the curreunt theme. Necessary if default theme is not used */
-                                     color: theme.palette.normal.background
-                                     border.color: "transparent"
-                                     radius: 5
-                              }
 
                               Image {
                                   id: base64Icon

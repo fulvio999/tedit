@@ -14,6 +14,8 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import "js/hashes.js" as Hashes
 import "js/base64.js" as Base64enc
 
+import "js/Utility.js" as Utility
+
 MainView {
 
     id: root
@@ -21,7 +23,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.1"
+    property string appVersion : "2.2"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -263,78 +265,94 @@ MainView {
                   }
          }
 
-         Column {
-             id: mainPageLayout
-             anchors.fill: parent
-             spacing: units.gu(1)
+         Flickable {
+               id: resultPageFlickable
+               clip: true
+               contentHeight: Utility.getContentHeight()
+               anchors {
+                      top: parent.top
+                      left: parent.left
+                      right: parent.right
+                      bottom: mainPage.bottom
+                      bottomMargin: units.gu(1)
+               }
 
-             anchors {
-                margins: units.gu(1)
-                topMargin: units.gu(7)
-             }
+               Column {
+                   id: mainPageLayout
+                   anchors.fill: parent
+                   spacing: units.gu(1)
 
-             /* show the name of the currently opened file name */
-             Rectangle{
-                   id: currentFileOpenedContainer
-                   color: root.backgroundColor
-                   width: parent.width
-                   height: units.gu(3)
-
-                   Label{
-                      id: currentFileOpenedLabel
-                      visible: mainPage.currentFileLabelVisible
-                      anchors.verticalCenter: parent.verticalCenter
-                      text: i18n.tr("File")+": "+mainPage.openedFileName+"     ("+i18n.tr("saved")+": "+ mainPage.saved+")"
-                      font.bold: true
-                      /* happen when a new file is opened */
-                      onTextChanged: {
-                          currentFileOpenedLabel.color = UbuntuColors.green
-                      }
+                   anchors {
+                      margins: units.gu(1)
+                      topMargin: units.gu(7)
                    }
-             }
 
-             Rectangle{
-                 id: textAreaContainer
-                 width: parent.width
-                 height: root.height - currentFileOpenedContainer.height - units.gu(12)
+                   /* show the name of the currently opened file name */
+                   Rectangle{
+                         id: currentFileOpenedContainer
+                         color: root.backgroundColor
+                         width: parent.width
+                         height: units.gu(3)
 
-                 border.color : UbuntuColors.black
-                 border.width : units.gu(2)
+                         Label{
+                            id: currentFileOpenedLabel
+                            visible: mainPage.currentFileLabelVisible
+                            anchors.verticalCenter: parent.verticalCenter
+                            text: i18n.tr("File")+": "+mainPage.openedFileName+"     ("+i18n.tr("saved")+": "+ mainPage.saved+")"
+                            font.bold: true
+                            /* happen when a new file is opened */
+                            onTextChanged: {
+                                currentFileOpenedLabel.color = UbuntuColors.green
+                            }
+                         }
+                   }
 
-                 /* Display the file content */
-                 TextArea {
-                      id: textArea
-                      width: parent.width
-                      height: parent.height
-                      textFormat: TextEdit.AutoText
-                      placeholderText: i18n.tr("Welcome ! Write what you want and save it. Enjoy !")
-                      inputMethodHints: settings.textPrediction ? Qt.ImhMultiLine : Qt.ImhMultiLine | Qt.ImhNoPredictiveText
-                      selectByMouse: true
-                      onTextChanged: {
-                         /* update flag file modified and not saved */
-                         mainPage.saved = false;
-                         currentFileOpenedLabel.color = UbuntuColors.red
-                      }
-                      wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
+                   Rectangle{
+                       id: textAreaContainer
+                       width: parent.width
+                       height: root.height - currentFileOpenedContainer.height - units.gu(12)
 
-                      Component.onCompleted: {
-                          color =  settings.textAreaFontColor
-                      }
-                 }
-             }
+                       border.color : UbuntuColors.black
+                       border.width : units.gu(2)
 
-             Rectangle{
-                 id:infoBarContainer
-                 color: root.backgroundColor
-                 width: parent.width
-                 height: units.gu(3)
-                 Label{
-                    text: i18n.tr("Line")+": "+textArea.lineCount+ "  "+ i18n.tr("Characters")+": "+textArea.length
-                    font.bold: true
-                 }
-             }
-          }
-        }
+                       /* Display the file content */
+                       TextArea {
+                            id: textArea
+                            width: parent.width
+                            height: parent.height
+                            textFormat: TextEdit.AutoText
+                            placeholderText: i18n.tr("Welcome ! Write what you want and save it. Enjoy !")
+                            inputMethodHints: settings.textPrediction ? Qt.ImhMultiLine : Qt.ImhMultiLine | Qt.ImhNoPredictiveText
+                            selectByMouse: true
+                            onTextChanged: {
+                               /* update flag file modified and not saved */
+                               mainPage.saved = false;
+                               currentFileOpenedLabel.color = UbuntuColors.red
+                            }
+                            wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
+
+                            Component.onCompleted: {
+                                color =  settings.textAreaFontColor
+                            }
+                       }
+                   }
+
+                   Rectangle{
+                       id:infoBarContainer
+                       color: root.backgroundColor
+                       width: parent.width
+                       height: units.gu(3)
+                       Label{
+                          text: i18n.tr("Line")+": "+textArea.lineCount+ "  "+ i18n.tr("Characters")+": "+textArea.length
+                          font.bold: true
+                       }
+                   }
+
+                } //column
+
+        } //flick
+
+      }
 
    } //pageStack
 }

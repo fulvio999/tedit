@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-08-07 12:52+0000\n"
-"PO-Revision-Date: 2019-08-07 15:01+0200\n"
+"PO-Revision-Date: 2019-08-08 10:34+0200\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
@@ -197,7 +197,7 @@ msgstr "Copiar al portapapeles"
 
 #: ../qml/components/MenuOptions.qml:520
 msgid "Digest"
-msgstr "Dlgoritmo"
+msgstr "Algoritmo"
 
 #: ../qml/components/MenuOptions.qml:572
 msgid "Base 64"
