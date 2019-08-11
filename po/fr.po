@@ -1,0 +1,357 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tedit.fulvio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tedit.fulvio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-09 12:56+0000\n"
+"PO-Revision-Date: 2019-08-11 11:23+0000\n"
+"Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/components/ProductInfo.qml:9
+msgid "Product Info"
+msgstr "Informations"
+
+#: ../qml/components/ProductInfo.qml:10
+msgid "version"
+msgstr "Version"
+
+#: ../qml/components/ProductInfo.qml:10
+msgid "Author"
+msgstr "Auteur"
+
+#: ../qml/components/ProductInfo.qml:11
+msgid "A simple and basic text, notes editor"
+msgstr "Un éditeur de texte simple et basique"
+
+#: ../qml/components/ProductInfo.qml:12
+msgid "Thanks at jshashes library for hash Algorithm"
+msgstr "Merci à la bibliothèque jshashes pour l'algorithme de hachage"
+
+#: ../qml/components/ProductInfo.qml:13
+msgid "Thanks at"
+msgstr "Merci à"
+
+#: ../qml/components/ProductInfo.qml:13
+msgid "for Base64 encoder/decoder"
+msgstr "pour l'encodeur/décodeur Base64"
+
+#: ../qml/components/ProductInfo.qml:15
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/DigestCalculator.qml:124
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/ui/LocalFilePickerPage.qml:44 ../qml/ui/FileInfoPopUp.qml:26
+msgid "Close"
+msgstr "Fermer"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/ConfirmClearAll.qml:10
+msgid "Confirmation"
+msgstr "Confirmation"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:11
+msgid "Insert Clipboard content ?"
+msgstr "Insérer le contenu du presse-papier ?"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/ConfirmClearAll.qml:21
+msgid "Confirm"
+msgstr "Confirmer"
+
+#: ../qml/components/RemoveFileDialog.qml:8
+msgid "Remove file"
+msgstr "Supprimer le fichier"
+
+#: ../qml/components/RemoveFileDialog.qml:9
+msgid "Are you sure you want to remove the selected file?"
+msgstr "Voulez-vous vraiment supprimer le fichier sélectionné ?"
+
+#: ../qml/components/RemoveFileDialog.qml:11
+msgid "Yes"
+msgstr "Oui"
+
+#: ../qml/components/RemoveFileDialog.qml:27
+msgid "No"
+msgstr "Non"
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr "Supprimer tout le contenu ?"
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr "Modifications non enregistrées"
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
+msgstr ""
+"Des modifications n'ont pas été enregistrées. Voulez-vous enregistrer ce fichier avant de fermer ?"
+
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
+#: ../qml/components/MenuOptions.qml:141
+msgid "Save"
+msgstr "Enregistrer"
+
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
+msgid "Save as"
+msgstr "Enregistrer sous"
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
+msgstr "Fermer sans enregistrer"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "Found"
+msgstr "Trouvé"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "digesters"
+msgstr "hacheurs"
+
+#: ../qml/components/DigestCalculator.qml:82
+msgid "Calculate"
+msgstr "Calculer"
+
+#: ../qml/components/DigestCalculator.qml:114
+msgid "ERORR, Algorithm not selected or unsupportded value"
+msgstr "ERREUR, algorithme non sélectionné ou valeur non supportée"
+
+#: ../qml/components/DigestCalculator.qml:118
+#: ../qml/ui/Base64conversionPage.qml:169
+msgid "Input is empty !"
+msgstr "L'entrée est vide !"
+
+#: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:476
+msgid "Import a site as text"
+msgstr "Importer un site en tant que texte"
+
+#: ../qml/components/WebSiteSelector.qml:26
+msgid "A valid http(s) url"
+msgstr "Un lien http(s) valide"
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
+msgstr "Importer"
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr "Saisissez le nom à donner au fichier à enregistrer."
+
+#: ../qml/components/SaveAsDialog.qml:32
+msgid "Couldn't write"
+msgstr "Impossible d'écrire"
+
+#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:128
+msgid "Saved"
+msgstr "Enregistré"
+
+#: ../qml/components/SaveAsDialog.qml:44
+msgid "Cancel"
+msgstr "Annuler"
+
+#: ../qml/components/MenuOptions.qml:30 ../qml/ui/SavedFilesListDelegate.qml:18
+msgid " "
+msgstr " "
+
+#: ../qml/components/MenuOptions.qml:96
+msgid "Open"
+msgstr "Ouvrir"
+
+#: ../qml/components/MenuOptions.qml:183
+msgid "Save As"
+msgstr "Enregistrer sous"
+
+#: ../qml/components/MenuOptions.qml:225
+msgid "Undo last Modification"
+msgstr "Annuler la dernière modification"
+
+#: ../qml/components/MenuOptions.qml:267
+msgid "Redo last Modification"
+msgstr "Rétablir la dernière modification"
+
+#: ../qml/components/MenuOptions.qml:309
+msgid "Select All"
+msgstr "Tout sélectionner"
+
+#: ../qml/components/MenuOptions.qml:351
+msgid "Clear Area"
+msgstr "Vider la zone"
+
+#: ../qml/components/MenuOptions.qml:392
+msgid "Paste from Clipboard"
+msgstr "Coller à partir du presse-papier"
+
+#: ../qml/components/MenuOptions.qml:434
+msgid "Copy to Clipboard"
+msgstr "Copier dans le presse-papier"
+
+#: ../qml/components/MenuOptions.qml:518
+msgid "Digest"
+msgstr "Hacheur"
+
+#: ../qml/components/MenuOptions.qml:560
+msgid "Base 64"
+msgstr "Base 64"
+
+#: ../qml/Main.qml:215
+msgid "Menu"
+msgstr "Menu"
+
+#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
+msgid "Settings"
+msgstr "Paramètres"
+
+#: ../qml/Main.qml:244 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr "tedit"
+
+#: ../qml/Main.qml:256
+msgid "About"
+msgstr "À propos"
+
+#: ../qml/Main.qml:301
+msgid "File"
+msgstr "Fichier"
+
+#: ../qml/Main.qml:301
+msgid "saved"
+msgstr "enregistré"
+
+#: ../qml/Main.qml:324
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr "Bienvenue ! Écrivez ce que vous voulez et enregistrez-le. Amusez-vous bien !"
+
+#: ../qml/Main.qml:346
+msgid "Line"
+msgstr "Ligne"
+
+#: ../qml/Main.qml:346
+msgid "Characters"
+msgstr "Caractères"
+
+#: ../qml/ui/LocalFilePickerPage.qml:36
+msgid "Attention"
+msgstr "Attention"
+
+#: ../qml/ui/LocalFilePickerPage.qml:37
+msgid "Remove ALL saved files ? (No restore)"
+msgstr "Supprimer TOUS les fichiers enregistrés ? (aucune restauration possible)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:50
+msgid "Delete"
+msgstr "Supprimer"
+
+#: ../qml/ui/LocalFilePickerPage.qml:75
+msgid "Local files"
+msgstr "Fichier locaux"
+
+#: ../qml/ui/LocalFilePickerPage.qml:75
+msgid "(swipe for options)"
+msgstr "(faites glisser pour plus d'options)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:81
+msgid "Delete all"
+msgstr "Tout supprimer"
+
+#: ../qml/ui/Base64conversionPage.qml:18
+msgid "Base 64 encoder/decoder"
+msgstr "Encodeur/décodeur Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:24
+msgid "Clear all"
+msgstr "Tout vider"
+
+#: ../qml/ui/Base64conversionPage.qml:56
+msgid "Encode"
+msgstr "Encoder"
+
+#: ../qml/ui/Base64conversionPage.qml:56
+msgid "encode to Base 64"
+msgstr "Encoder en Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:57
+msgid "Decode"
+msgstr "Décodeur"
+
+#: ../qml/ui/Base64conversionPage.qml:57
+msgid "decode from Base 64"
+msgstr "Décoder à partir d'une Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:108
+msgid "Insert here the content to encode/decode"
+msgstr "Insérez ici le contenu à encoder/décoder"
+
+#: ../qml/ui/Base64conversionPage.qml:133
+msgid "Conversion Result"
+msgstr "Résultat de la conversion"
+
+#: ../qml/ui/Base64conversionPage.qml:151
+msgid "Convert"
+msgstr "Convertir"
+
+#: ../qml/ui/SettingsPage.qml:27
+msgid "Enable text prediction"
+msgstr "Activer la prédiction de texte"
+
+#: ../qml/ui/SettingsPage.qml:31
+msgid "Text prediction"
+msgstr "Prédiction de texte"
+
+#: ../qml/ui/SettingsPage.qml:45
+msgid "Notes Area Font color"
+msgstr "Couleur de la police de la zone de notes"
+
+#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:94
+msgid "Green"
+msgstr "Vert"
+
+#: ../qml/ui/SettingsPage.qml:63
+msgid "Grey"
+msgstr "Gris"
+
+#: ../qml/ui/SettingsPage.qml:73
+msgid "Black"
+msgstr "Noir"
+
+#: ../qml/ui/SettingsPage.qml:86
+msgid "Application Backgroung color"
+msgstr "Couleur en arrière-plan de l'application"
+
+#: ../qml/ui/SettingsPage.qml:104
+msgid "Brown"
+msgstr "Marron"
+
+#: ../qml/ui/SettingsPage.qml:114
+msgid "White"
+msgstr "Blanc"
+
+#: ../qml/ui/SettingsPage.qml:124
+msgid "Blue"
+msgstr "Bleu"
+
+#: ../qml/ui/FileInfoPopUp.qml:12
+msgid "File Info"
+msgstr "Informations sur le fichier"
+
+#: ../qml/ui/FileInfoPopUp.qml:15
+msgid "File Size"
+msgstr "Taille du fichier"
+
+#: ../qml/ui/FileInfoPopUp.qml:19
+msgid "Modified"
+msgstr "Modifié"
+
+#: ../qml/ui/FileInfoPopUp.qml:22
+msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
+msgstr "Format de date et d'heure (UTC) : « aaaa-mm-jj-HH:mm:ss »"
