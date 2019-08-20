@@ -23,7 +23,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.2"
+    property string appVersion : "2.3"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -63,6 +63,7 @@ MainView {
 
        property string pageBackgroundColor: "white"
        property string textAreaFontColor: "black"
+       property int pixelSize: 15 /* default */
     }
 
     Component.onCompleted: {
@@ -104,7 +105,6 @@ MainView {
         id: confirmPasteFromClipboard
         ConfirmPasteFromClipboard{}
     }
-
 
     /* custom C++ plugin to save/manage files on filesystem */
     FileIO {
@@ -321,13 +321,14 @@ MainView {
                             width: parent.width
                             height: parent.height
                             textFormat: TextEdit.AutoText
+                            font.pixelSize: settings.pixelSize
                             placeholderText: i18n.tr("Welcome ! Write what you want and save it. Enjoy !")
                             inputMethodHints: settings.textPrediction ? Qt.ImhMultiLine : Qt.ImhMultiLine | Qt.ImhNoPredictiveText
                             selectByMouse: true
                             onTextChanged: {
                                /* update flag file modified and not saved */
                                mainPage.saved = false;
-                               currentFileOpenedLabel.color = UbuntuColors.red
+                               currentFileOpenedLabel.color = '#A40000'
                             }
                             wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
 

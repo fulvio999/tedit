@@ -48,18 +48,10 @@ ListItem {
            Action {
                iconName: "delete"
                onTriggered: {
-                 ubuntuListView.currentIndex = index
-                 var fileToDelete = localFileslistModel.get(index).file; /* without path */
-                 localFileslistModel.remove(index);
+                   ubuntuListView.currentIndex = index
+                   localFilePickerPage.selectedFileIndex = index
+                   PopupUtils.open(confirmDeleteFileDialog)
 
-                 if(mainPage.title === fileToDelete) { /* the file to delete is the one currently saved */
-                    mainPage.saved = false
-                    textArea.text = ""
-                    mainPage.openedFileName = "";
-                    mainPage.currentFileLabelVisible = false
-                 }
-
-                 fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + fileToDelete)
                }
            }
         ]

@@ -4,6 +4,8 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Content 1.1
 
+import "../components"
+
 /*
   Page that list all the loacally saved files.
   Allow to delete a file with a Swipe movemet to the left, or open it by selecting a list item
@@ -15,10 +17,16 @@ Page {
      /* info about the currently selected file in the listModel */
      property string selectedFileSize: ""
      property string selectedFileModificationDate: ""
+     property string selectedFileIndex: ""
 
      Component {
          id: fileInfoPopUp
          FileInfoPopUp{}
+     }
+
+     Component {
+         id: confirmDeleteFileDialog
+         RemoveFileDialog{imageListModelIndex: localFilePickerPage.selectedFileIndex}
      }
 
      /* the list of locally saved files */

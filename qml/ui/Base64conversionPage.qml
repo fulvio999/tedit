@@ -156,15 +156,18 @@ Page {
                  if(inputTextArea.text.length >0)
                  {
                       resultTextArea.text = ""  //clean
+                      try{
+                          if (conversionTypeModel.get(conversionTypeItemSelector.selectedIndex).value === 1){
+                              //console.log("Encode to Base64");
+                              resultTextArea.text = Base64enc.encode(inputTextArea.text)
+                          }else if(conversionTypeModel.get(conversionTypeItemSelector.selectedIndex).value === 2){
+                              //console.log("Decode from Base64");
+                              resultTextArea.text = Base64enc.decode(inputTextArea.text)
+                          }
 
-                      if (conversionTypeModel.get(conversionTypeItemSelector.selectedIndex).value === 1){
-                          //console.log("Encode to Base64");
-                          resultTextArea.text = Base64enc.encode(inputTextArea.text)
-                      }else if(conversionTypeModel.get(conversionTypeItemSelector.selectedIndex).value === 2){
-                          //console.log("Decode from Base64");
-                          resultTextArea.text = Base64enc.decode(inputTextArea.text)
-                      }
-
+                       }catch(InvalidCharacterError){ /* Exception thrown from base64.js file */
+                          resultTextArea.text = i18n.tr("Invalid character: the string to be decoded is not correctly encoded")
+                       }
                   }else{
                      resultTextArea.text = i18n.tr("Input is empty !");
                   }

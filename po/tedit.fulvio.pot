@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-09 12:56+0000\n"
+"POT-Creation-Date: 2019-08-20 10:03+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,14 +47,16 @@ msgstr ""
 
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/RemoveFileDialog.qml:37
 #: ../qml/components/ConfirmClearAll.qml:16
 #: ../qml/components/DigestCalculator.qml:124
 #: ../qml/components/WebSiteSelector.qml:37
-#: ../qml/ui/LocalFilePickerPage.qml:44 ../qml/ui/FileInfoPopUp.qml:26
+#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
 msgstr ""
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
 #: ../qml/components/ConfirmClearAll.qml:10
 msgid "Confirmation"
 msgstr ""
@@ -68,20 +70,16 @@ msgstr ""
 msgid "Confirm"
 msgstr ""
 
-#: ../qml/components/RemoveFileDialog.qml:8
-msgid "Remove file"
-msgstr ""
-
-#: ../qml/components/RemoveFileDialog.qml:9
+#: ../qml/components/RemoveFileDialog.qml:15
 msgid "Are you sure you want to remove the selected file?"
 msgstr ""
 
-#: ../qml/components/RemoveFileDialog.qml:11
-msgid "Yes"
+#: ../qml/components/RemoveFileDialog.qml:45
+msgid "Remove"
 msgstr ""
 
-#: ../qml/components/RemoveFileDialog.qml:27
-msgid "No"
+#: ../qml/components/RemoveFileDialog.qml:61
+msgid "File successfully removed"
 msgstr ""
 
 #: ../qml/components/ConfirmClearAll.qml:11
@@ -127,7 +125,7 @@ msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr ""
 
 #: ../qml/components/DigestCalculator.qml:118
-#: ../qml/ui/Base64conversionPage.qml:169
+#: ../qml/ui/Base64conversionPage.qml:172
 msgid "Input is empty !"
 msgstr ""
 
@@ -148,15 +146,15 @@ msgstr ""
 msgid "Enter a name for the file to save."
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:32
+#: ../qml/components/SaveAsDialog.qml:33
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:128
+#: ../qml/components/SaveAsDialog.qml:35 ../qml/Main.qml:128
 msgid "Saved"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:44
+#: ../qml/components/SaveAsDialog.qml:45
 msgid "Cancel"
 msgstr ""
 
@@ -208,7 +206,7 @@ msgstr ""
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
+#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr ""
 
@@ -228,39 +226,39 @@ msgstr ""
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:324
+#: ../qml/Main.qml:325
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:346
+#: ../qml/Main.qml:347
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:346
+#: ../qml/Main.qml:347
 msgid "Characters"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:36
+#: ../qml/ui/LocalFilePickerPage.qml:44
 msgid "Attention"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:37
+#: ../qml/ui/LocalFilePickerPage.qml:45
 msgid "Remove ALL saved files ? (No restore)"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:50
+#: ../qml/ui/LocalFilePickerPage.qml:58
 msgid "Delete"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:75
+#: ../qml/ui/LocalFilePickerPage.qml:83
 msgid "Local files"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:75
+#: ../qml/ui/LocalFilePickerPage.qml:83
 msgid "(swipe for options)"
 msgstr ""
 
-#: ../qml/ui/LocalFilePickerPage.qml:81
+#: ../qml/ui/LocalFilePickerPage.qml:89
 msgid "Delete all"
 msgstr ""
 
@@ -300,44 +298,52 @@ msgstr ""
 msgid "Convert"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:27
+#: ../qml/ui/Base64conversionPage.qml:169
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:30
 msgid "Enable text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:31
+#: ../qml/ui/SettingsPage.qml:34
 msgid "Text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:45
+#: ../qml/ui/SettingsPage.qml:48
 msgid "Notes Area Font color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:94
+#: ../qml/ui/SettingsPage.qml:56 ../qml/ui/SettingsPage.qml:97
 msgid "Green"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:63
+#: ../qml/ui/SettingsPage.qml:66
 msgid "Grey"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:73
+#: ../qml/ui/SettingsPage.qml:76
 msgid "Black"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:86
+#: ../qml/ui/SettingsPage.qml:89
 msgid "Application Backgroung color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:104
+#: ../qml/ui/SettingsPage.qml:107
 msgid "Brown"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:114
+#: ../qml/ui/SettingsPage.qml:117
 msgid "White"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:124
+#: ../qml/ui/SettingsPage.qml:127
 msgid "Blue"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:138
+msgid "Notes font size"
 msgstr ""
 
 #: ../qml/ui/FileInfoPopUp.qml:12

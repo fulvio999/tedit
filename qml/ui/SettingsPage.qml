@@ -3,6 +3,9 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import Qt.labs.settings 1.0
 
+/*
+  Application settings pages about font and colours
+*/
 Page {
      id: settingsPage
 
@@ -20,7 +23,7 @@ Page {
         Rectangle{
              color: "transparent"
              width: parent.width
-             height: units.gu(8)
+             height: units.gu(7)
         }
 
         ListItem.Standard {
@@ -130,20 +133,22 @@ Page {
          }
       }
 
-      /*
+
       ListItem.Standard {
+            text: i18n.tr("Notes font size")+": "+textArea.font.pixelSize
             control: Slider {
                 id: slider
-                width: parent.parent.width - units.gu(4)
+                //width: parent.parent.width - units.gu(4)
                 function formatValue(v) { return v.toFixed(1) }
-                minimumValue: 0.5
-                maximumValue: 5
-                value: settings.fadingTime / 1000
+                minimumValue: 1
+                maximumValue: 50
+                value: settings.pixelSize
                 live: false
-                onValueChanged: settings.fadingTime = formatValue(value) * 1000
+                onValueChanged: {
+                   textArea.font.pixelSize = formatValue(value) * 1
+                   settings.pixelSize = formatValue(value) * 1
+                }
             }
         }
-        */
-
     }
 }

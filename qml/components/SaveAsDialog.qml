@@ -23,10 +23,11 @@ Dialog {
             color: UbuntuColors.green
             onClicked: {
                 PopupUtils.close(dialogue)
-                //eg: newFileName: file:///tmp/.local/share/tedit.fulvio/due
-                //console.log("fileIO.getHomePath():"+fileIO.getHomePath()); //  /tmp
+                /* eg: newFileName: file:///tmp/.local/share/tedit.fulvio/due
+                  console.log("fileIO.getHomePath():"+fileIO.getHomePath());
+                */
                 var newFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath+fileName.text;
-                //console.log("FileName to save: "+newFileName +" textArea content: "+textArea.text);
+                /* console.log("FileName to save: "+newFileName +" textArea content: "+textArea.text); */
 
                 if(!fileIO.write(newFileName, textArea.text)) {
                     showInfo(i18n.tr("Couldn't write"));
