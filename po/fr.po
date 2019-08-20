@@ -3,18 +3,19 @@
 # This file is distributed under the same license as the tedit.fulvio package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-09 12:56+0000\n"
-"PO-Revision-Date: 2019-08-11 11:23+0000\n"
+"POT-Creation-Date: 2019-08-20 10:03+0000\n"
+"PO-Revision-Date: 2019-08-20 12:14+0200\n"
 "Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
+"Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
 
 #: ../qml/components/ProductInfo.qml:9
 msgid "Product Info"
@@ -22,7 +23,7 @@ msgstr "Informations"
 
 #: ../qml/components/ProductInfo.qml:10
 msgid "version"
-msgstr "Version"
+msgstr "version"
 
 #: ../qml/components/ProductInfo.qml:10
 msgid "Author"
@@ -46,14 +47,16 @@ msgstr "pour l'encodeur/décodeur Base64"
 
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/RemoveFileDialog.qml:37
 #: ../qml/components/ConfirmClearAll.qml:16
 #: ../qml/components/DigestCalculator.qml:124
 #: ../qml/components/WebSiteSelector.qml:37
-#: ../qml/ui/LocalFilePickerPage.qml:44 ../qml/ui/FileInfoPopUp.qml:26
+#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
 msgstr "Fermer"
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
 #: ../qml/components/ConfirmClearAll.qml:10
 msgid "Confirmation"
 msgstr "Confirmation"
@@ -67,21 +70,17 @@ msgstr "Insérer le contenu du presse-papier ?"
 msgid "Confirm"
 msgstr "Confirmer"
 
-#: ../qml/components/RemoveFileDialog.qml:8
-msgid "Remove file"
-msgstr "Supprimer le fichier"
-
-#: ../qml/components/RemoveFileDialog.qml:9
+#: ../qml/components/RemoveFileDialog.qml:15
 msgid "Are you sure you want to remove the selected file?"
 msgstr "Voulez-vous vraiment supprimer le fichier sélectionné ?"
 
-#: ../qml/components/RemoveFileDialog.qml:11
-msgid "Yes"
-msgstr "Oui"
+#: ../qml/components/RemoveFileDialog.qml:45
+msgid "Remove"
+msgstr "Supprimer le fichier"
 
-#: ../qml/components/RemoveFileDialog.qml:27
-msgid "No"
-msgstr "Non"
+#: ../qml/components/RemoveFileDialog.qml:61
+msgid "File successfully removed"
+msgstr "Fichier supprimé avec succès"
 
 #: ../qml/components/ConfirmClearAll.qml:11
 msgid "Clear All content ?"
@@ -95,7 +94,8 @@ msgstr "Modifications non enregistrées"
 msgid ""
 "There are unsaved changes. Do you want to save this file before closing?"
 msgstr ""
-"Des modifications n'ont pas été enregistrées. Voulez-vous enregistrer ce fichier avant de fermer ?"
+"Des modifications n'ont pas été enregistrées. Voulez-vous enregistrer ce "
+"fichier avant de fermer ?"
 
 #: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
 #: ../qml/components/MenuOptions.qml:141
@@ -127,7 +127,7 @@ msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr "ERREUR, algorithme non sélectionné ou valeur non supportée"
 
 #: ../qml/components/DigestCalculator.qml:118
-#: ../qml/ui/Base64conversionPage.qml:169
+#: ../qml/ui/Base64conversionPage.qml:172
 msgid "Input is empty !"
 msgstr "L'entrée est vide !"
 
@@ -148,21 +148,21 @@ msgstr "Importer"
 msgid "Enter a name for the file to save."
 msgstr "Saisissez le nom à donner au fichier à enregistrer."
 
-#: ../qml/components/SaveAsDialog.qml:32
+#: ../qml/components/SaveAsDialog.qml:33
 msgid "Couldn't write"
 msgstr "Impossible d'écrire"
 
-#: ../qml/components/SaveAsDialog.qml:34 ../qml/Main.qml:128
+#: ../qml/components/SaveAsDialog.qml:35 ../qml/Main.qml:128
 msgid "Saved"
 msgstr "Enregistré"
 
-#: ../qml/components/SaveAsDialog.qml:44
+#: ../qml/components/SaveAsDialog.qml:45
 msgid "Cancel"
 msgstr "Annuler"
 
 #: ../qml/components/MenuOptions.qml:30 ../qml/ui/SavedFilesListDelegate.qml:18
 msgid " "
-msgstr " "
+msgstr "  "
 
 #: ../qml/components/MenuOptions.qml:96
 msgid "Open"
@@ -208,7 +208,7 @@ msgstr "Base 64"
 msgid "Menu"
 msgstr "Menu"
 
-#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:10
+#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr "Paramètres"
 
@@ -228,39 +228,41 @@ msgstr "Fichier"
 msgid "saved"
 msgstr "enregistré"
 
-#: ../qml/Main.qml:324
+#: ../qml/Main.qml:325
 msgid "Welcome ! Write what you want and save it. Enjoy !"
-msgstr "Bienvenue ! Écrivez ce que vous voulez et enregistrez-le. Amusez-vous bien !"
+msgstr ""
+"Bienvenue ! Écrivez ce que vous voulez et enregistrez-le. Amusez-vous bien !"
 
-#: ../qml/Main.qml:346
+#: ../qml/Main.qml:347
 msgid "Line"
 msgstr "Ligne"
 
-#: ../qml/Main.qml:346
+#: ../qml/Main.qml:347
 msgid "Characters"
 msgstr "Caractères"
 
-#: ../qml/ui/LocalFilePickerPage.qml:36
+#: ../qml/ui/LocalFilePickerPage.qml:44
 msgid "Attention"
 msgstr "Attention"
 
-#: ../qml/ui/LocalFilePickerPage.qml:37
+#: ../qml/ui/LocalFilePickerPage.qml:45
 msgid "Remove ALL saved files ? (No restore)"
-msgstr "Supprimer TOUS les fichiers enregistrés ? (aucune restauration possible)"
+msgstr ""
+"Supprimer TOUS les fichiers enregistrés ? (aucune restauration possible)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:50
+#: ../qml/ui/LocalFilePickerPage.qml:58
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../qml/ui/LocalFilePickerPage.qml:75
+#: ../qml/ui/LocalFilePickerPage.qml:83
 msgid "Local files"
 msgstr "Fichier locaux"
 
-#: ../qml/ui/LocalFilePickerPage.qml:75
+#: ../qml/ui/LocalFilePickerPage.qml:83
 msgid "(swipe for options)"
 msgstr "(faites glisser pour plus d'options)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:81
+#: ../qml/ui/LocalFilePickerPage.qml:89
 msgid "Delete all"
 msgstr "Tout supprimer"
 
@@ -278,7 +280,7 @@ msgstr "Encoder"
 
 #: ../qml/ui/Base64conversionPage.qml:56
 msgid "encode to Base 64"
-msgstr "Encoder en Base 64"
+msgstr "encoder en Base 64"
 
 #: ../qml/ui/Base64conversionPage.qml:57
 msgid "Decode"
@@ -286,7 +288,7 @@ msgstr "Décodeur"
 
 #: ../qml/ui/Base64conversionPage.qml:57
 msgid "decode from Base 64"
-msgstr "Décoder à partir d'une Base 64"
+msgstr "décoder à partir d'une Base 64"
 
 #: ../qml/ui/Base64conversionPage.qml:108
 msgid "Insert here the content to encode/decode"
@@ -300,45 +302,53 @@ msgstr "Résultat de la conversion"
 msgid "Convert"
 msgstr "Convertir"
 
-#: ../qml/ui/SettingsPage.qml:27
+#: ../qml/ui/Base64conversionPage.qml:169
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr "Caractère invalide: la chaîne à décoder n'est pas correctement encodée"
+
+#: ../qml/ui/SettingsPage.qml:30
 msgid "Enable text prediction"
 msgstr "Activer la prédiction de texte"
 
-#: ../qml/ui/SettingsPage.qml:31
+#: ../qml/ui/SettingsPage.qml:34
 msgid "Text prediction"
 msgstr "Prédiction de texte"
 
-#: ../qml/ui/SettingsPage.qml:45
+#: ../qml/ui/SettingsPage.qml:48
 msgid "Notes Area Font color"
 msgstr "Couleur de la police de la zone de notes"
 
-#: ../qml/ui/SettingsPage.qml:53 ../qml/ui/SettingsPage.qml:94
+#: ../qml/ui/SettingsPage.qml:56 ../qml/ui/SettingsPage.qml:97
 msgid "Green"
 msgstr "Vert"
 
-#: ../qml/ui/SettingsPage.qml:63
+#: ../qml/ui/SettingsPage.qml:66
 msgid "Grey"
 msgstr "Gris"
 
-#: ../qml/ui/SettingsPage.qml:73
+#: ../qml/ui/SettingsPage.qml:76
 msgid "Black"
 msgstr "Noir"
 
-#: ../qml/ui/SettingsPage.qml:86
+#: ../qml/ui/SettingsPage.qml:89
 msgid "Application Backgroung color"
 msgstr "Couleur en arrière-plan de l'application"
 
-#: ../qml/ui/SettingsPage.qml:104
+#: ../qml/ui/SettingsPage.qml:107
 msgid "Brown"
 msgstr "Marron"
 
-#: ../qml/ui/SettingsPage.qml:114
+#: ../qml/ui/SettingsPage.qml:117
 msgid "White"
 msgstr "Blanc"
 
-#: ../qml/ui/SettingsPage.qml:124
+#: ../qml/ui/SettingsPage.qml:127
 msgid "Blue"
 msgstr "Bleu"
+
+#: ../qml/ui/SettingsPage.qml:138
+msgid "Notes font size"
+msgstr "Notes taille de la police"
 
 #: ../qml/ui/FileInfoPopUp.qml:12
 msgid "File Info"
@@ -355,3 +365,9 @@ msgstr "Modifié"
 #: ../qml/ui/FileInfoPopUp.qml:22
 msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr "Format de date et d'heure (UTC) : « aaaa-mm-jj-HH:mm:ss »"
+
+#~ msgid "Yes"
+#~ msgstr "Oui"
+
+#~ msgid "No"
+#~ msgstr "Non"
