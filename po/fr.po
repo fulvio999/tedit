@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-20 10:03+0000\n"
-"PO-Revision-Date: 2019-08-20 12:14+0200\n"
+"POT-Creation-Date: 2019-08-24 09:26+0000\n"
+"PO-Revision-Date: 2019-08-24 11:32+0200\n"
 "Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -47,7 +47,7 @@ msgstr "pour l'encodeur/décodeur Base64"
 
 #: ../qml/components/ProductInfo.qml:15
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
-#: ../qml/components/RemoveFileDialog.qml:37
+#: ../qml/components/RemoveFileDialog.qml:23
 #: ../qml/components/ConfirmClearAll.qml:16
 #: ../qml/components/DigestCalculator.qml:124
 #: ../qml/components/WebSiteSelector.qml:37
@@ -71,14 +71,15 @@ msgid "Confirm"
 msgstr "Confirmer"
 
 #: ../qml/components/RemoveFileDialog.qml:15
-msgid "Are you sure you want to remove the selected file?"
-msgstr "Voulez-vous vraiment supprimer le fichier sélectionné ?"
-
-#: ../qml/components/RemoveFileDialog.qml:45
+#: ../qml/components/RemoveFileDialog.qml:31
 msgid "Remove"
 msgstr "Supprimer le fichier"
 
-#: ../qml/components/RemoveFileDialog.qml:61
+#: ../qml/components/RemoveFileDialog.qml:15
+msgid "file"
+msgstr "fichier"
+
+#: ../qml/components/RemoveFileDialog.qml:47
 msgid "File successfully removed"
 msgstr "Fichier supprimé avec succès"
 
@@ -250,19 +251,23 @@ msgid "Remove ALL saved files ? (No restore)"
 msgstr ""
 "Supprimer TOUS les fichiers enregistrés ? (aucune restauration possible)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:58
+#: ../qml/ui/LocalFilePickerPage.qml:59
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../qml/ui/LocalFilePickerPage.qml:83
+#: ../qml/ui/LocalFilePickerPage.qml:75
+msgid "All Files successfully removed"
+msgstr "Tous les Fichiers supprimé avec succès"
+
+#: ../qml/ui/LocalFilePickerPage.qml:95
 msgid "Local files"
 msgstr "Fichier locaux"
 
-#: ../qml/ui/LocalFilePickerPage.qml:83
+#: ../qml/ui/LocalFilePickerPage.qml:95
 msgid "(swipe for options)"
 msgstr "(faites glisser pour plus d'options)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:89
+#: ../qml/ui/LocalFilePickerPage.qml:101
 msgid "Delete all"
 msgstr "Tout supprimer"
 
@@ -365,6 +370,9 @@ msgstr "Modifié"
 #: ../qml/ui/FileInfoPopUp.qml:22
 msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr "Format de date et d'heure (UTC) : « aaaa-mm-jj-HH:mm:ss »"
+
+#~ msgid "Are you sure you want to remove the selected file?"
+#~ msgstr "Voulez-vous vraiment supprimer le fichier sélectionné ?"
 
 #~ msgid "Yes"
 #~ msgstr "Oui"

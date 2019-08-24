@@ -55,6 +55,7 @@ Page {
                   }
 
                   Button {
+                      id: removeButton
                       text:  i18n.tr("Delete")
                       color: UbuntuColors.red
                       width: units.gu(14)
@@ -69,10 +70,21 @@ Page {
                             mainPage.saved = true /* ie: file NOT modified yet */
                             mainPage.openedFileName = "";
                             mainPage.currentFileLabelVisible = false;
-                            mainPage.textArea.text = "";
+                            textArea.text = "";
 
-                            PopupUtils.close(confirmDialogue)
+                            deleteOperationResult.text = i18n.tr("All Files successfully removed")
+                            removeButton.enabled = false
+                            removeButton.visible = false                          
                       }
+                  }
+              }
+
+              Row{
+                  anchors.horizontalCenter: parent.horizontalCenter
+                  Label{
+                      text: " "
+                      id: deleteOperationResult
+                      font.bold: true
                   }
               }
          }

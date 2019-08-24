@@ -12,66 +12,51 @@ Dialog {
         property string imageListModelIndex;
 
         title: i18n.tr("Confirmation")
-        text: i18n.tr("Are you sure you want to remove the selected file?")
+        text: i18n.tr("Remove")+" "+localFileslistModel.get(imageListModelIndex).file +" "+i18n.tr("file")+ " ?"
 
-        Rectangle {
-            width: 180;
-            height: 50
+        Row{
+            anchors.horizontalCenter: confirmDeleteFileDialog.Center
+            spacing: units.gu(2)
 
-            Item{
-                Column{
-                    spacing: units.gu(1)
+            Button {
+                    id: closeButton
+                    text: i18n.tr("Close")
+                    width: units.gu(12)
+                    onClicked: PopupUtils.close(confirmDeleteFileDialog)
+            }
 
-                    Row{
-                        spacing: units.gu(1)
+            Button {
+                    id: removeButton
+                    width: units.gu(12)
+                    text: i18n.tr("Remove")
+                    color: UbuntuColors.red
+                    onClicked: {
 
-                        /* placeholder */
-                        Rectangle {
-                            color: "transparent"
-                            width: units.gu(3)
-                            height: units.gu(3)
-                        }
+                  			    var fileToDelete = localFileslistModel.get(imageListModelIndex).file; /* without path */
+                  			    localFileslistModel.remove(imageListModelIndex);
 
-                        Button {
-                            id: closeButton
-                            text: i18n.tr("Close")
-                            width: units.gu(12)
-                            onClicked: PopupUtils.close(confirmDeleteFileDialog)
-                        }
+                  					if(mainPage.title === fileToDelete) { /* the file to delete is the one currently saved */
+                        				 mainPage.saved = false
+                        				 textArea.text = ""
+                    					   mainPage.openedFileName = "";
+                      					 mainPage.currentFileLabelVisible = false
+                        		}
 
-                        Button {
-                            id: removeButton
-                            width: units.gu(12)
-                            text: i18n.tr("Remove")
-                            color: UbuntuColors.red
-                            onClicked: {
+                        		fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + fileToDelete)
 
-                        			    var fileToDelete = localFileslistModel.get(imageListModelIndex).file; /* without path */
-                        			    localFileslistModel.remove(imageListModelIndex);
+                            deleteOperationResult.text = i18n.tr("File successfully removed")
+                            removeButton.enabled = false
+                            removeButton.visible = false
+                      }
+                  }
+            }
 
-                        					if(mainPage.title === fileToDelete) { /* the file to delete is the one currently saved */
-                        					   mainPage.saved = false
-                        					   textArea.text = ""
-                        					   mainPage.openedFileName = "";
-                        					   mainPage.currentFileLabelVisible = false
-                        					}
-
-                        					fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + fileToDelete)
-
-                                  deleteOperationResult.text = i18n.tr("File successfully removed")
-                                  removeButton.enabled = false
-                            }
-                        }
-                    }
-
-                    Row{
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        Label{
-                            id: deleteOperationResult
-                            font.bold: true
-                        }
-                    }
+            Row{
+                anchors.horizontalCenter: parent.horizontalCenter
+                Label{
+                    text: " "
+                    id: deleteOperationResult
+                    font.bold: true
                 }
             }
-        }
-}
+    }
