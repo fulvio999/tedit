@@ -18,13 +18,7 @@ Page {
 
      Column {
         anchors.fill: parent
-        visible: parent.visible
-
-        Rectangle{
-             color: "transparent"
-             width: parent.width
-             height: units.gu(7)
-        }
+        visible: parent.visible        
 
         ListItem.Standard {
             text: i18n.tr("Enable text prediction")
@@ -47,8 +41,9 @@ Page {
               Label {
                   text: i18n.tr("Notes Area Font color")
                   font.bold: true
+                  anchors.verticalCenter: parent.verticalCenter
                   anchors.horizontalCenter: parent.horizontalCenter
-                  anchors.topMargin: units.gu(3)
+                  anchors.topMargin: units.gu(1)
               }
         }
 
@@ -88,8 +83,9 @@ Page {
             Label {
                 text: i18n.tr("Application Backgroung color")
                 font.bold: true
+                anchors.verticalCenter: parent.verticalCenter
                 anchors.horizontalCenter: parent.horizontalCenter
-                anchors.topMargin: units.gu(3)
+                anchors.topMargin: units.gu(1)
             }
       }
 
@@ -124,7 +120,7 @@ Page {
       }
 
       ColorListItem {
-         label: i18n.tr("Blue")  /* Default */
+         label: i18n.tr("Blue")
          itemColor: '#1E2F3F'
          onClicked: {
              settings.pageBackgroundColor = itemColor
@@ -138,7 +134,7 @@ Page {
             text: i18n.tr("Notes font size")+": "+textArea.font.pixelSize
             control: Slider {
                 id: slider
-                //width: parent.parent.width - units.gu(4)
+                width: settingsPage.width/2
                 function formatValue(v) { return v.toFixed(1) }
                 minimumValue: 1
                 maximumValue: 50

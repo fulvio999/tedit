@@ -23,7 +23,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.3.1"
+    property string appVersion : "2.3.2"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -46,7 +46,7 @@ MainView {
     /* ----- phone 4.5 (the smallest one) ---- */
     //vertical
     //width: units.gu(50)
-    //height: units.gu(96)
+    //height: units.gu(72)
 
     //horizontal
     //width: units.gu(96)

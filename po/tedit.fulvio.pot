@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-24 09:33+0000\n"
+"POT-Creation-Date: 2019-08-25 09:32+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -307,47 +307,47 @@ msgstr ""
 msgid "Invalid character: the string to be decoded is not correctly encoded"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:30
+#: ../qml/ui/SettingsPage.qml:24
 msgid "Enable text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:34
+#: ../qml/ui/SettingsPage.qml:28
 msgid "Text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:48
+#: ../qml/ui/SettingsPage.qml:42
 msgid "Notes Area Font color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:56 ../qml/ui/SettingsPage.qml:97
+#: ../qml/ui/SettingsPage.qml:51 ../qml/ui/SettingsPage.qml:93
 msgid "Green"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:66
+#: ../qml/ui/SettingsPage.qml:61
 msgid "Grey"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:76
+#: ../qml/ui/SettingsPage.qml:71
 msgid "Black"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:89
+#: ../qml/ui/SettingsPage.qml:84
 msgid "Application Backgroung color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:107
+#: ../qml/ui/SettingsPage.qml:103
 msgid "Brown"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:117
+#: ../qml/ui/SettingsPage.qml:113
 msgid "White"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:127
+#: ../qml/ui/SettingsPage.qml:123
 msgid "Blue"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:138
+#: ../qml/ui/SettingsPage.qml:134
 msgid "Notes font size"
 msgstr ""
 
