@@ -1,6 +1,5 @@
 import QtQuick 2.4
 import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
 import Qt.labs.settings 1.0
 
 /*
@@ -17,12 +16,29 @@ Page {
      property var target
 
      Column {
+        id: settingsColumn
         anchors.fill: parent
-        visible: parent.visible        
+        visible: parent.visible
 
-        ListItem.Standard {
-            text: i18n.tr("Enable text prediction")
-            control: Switch {
+        /* placeholder */
+        Rectangle {
+                color: "transparent"
+                width: parent.width
+                height: units.gu(5)
+        }
+
+        ListItem {
+             Label {
+                   id:enablePredictionLabel
+                   text: i18n.tr("Enable text prediction")
+                   anchors {
+                       leftMargin: units.gu(2)
+                       left: parent.left
+                       verticalCenter: parent.verticalCenter
+                   }
+              }
+
+            Switch {
                 id: pred
                 checked: settings.textPrediction
                 text: i18n.tr("Text prediction")
@@ -33,11 +49,22 @@ Page {
                     else
                         textArea.inputMethodHints = Qt.ImhMultiLine | Qt.ImhNoPredictiveText
                 }
+
+                anchors {
+                      leftMargin: units.gu(3)
+                      left: fontLabel.right
+                      rightMargin: units.gu(2)
+                      right: parent.right
+                      verticalCenter: parent.verticalCenter
+                }
+
             }
+
             onClicked: pred.checked = !pred.checked
+
         }
 
-        ListItem.Standard {
+        ListItem {
               Label {
                   text: i18n.tr("Notes Area Font color")
                   font.bold: true
@@ -79,7 +106,7 @@ Page {
 
       /* ------------ Application background colors -------------- */
 
-      ListItem.Standard {
+      ListItem {
             Label {
                 text: i18n.tr("Application Backgroung color")
                 font.bold: true
@@ -120,6 +147,7 @@ Page {
       }
 
       ColorListItem {
+         id:blueColorChooser
          label: i18n.tr("Blue")
          itemColor: '#1E2F3F'
          onClicked: {
@@ -129,12 +157,22 @@ Page {
          }
       }
 
+      ListItem {
+            id:fontContainer
+            divider.visible : false
+            height: units.gu(12)
+            Label {
+                id:fontLabel
+                text: i18n.tr("Notes font size")+": "+textArea.font.pixelSize
+                anchors {
+                    leftMargin: units.gu(2)
+                    left: parent.left
+                    verticalCenter: parent.verticalCenter
+                }
+            }
 
-      ListItem.Standard {
-            text: i18n.tr("Notes font size")+": "+textArea.font.pixelSize
-            control: Slider {
+            Slider {
                 id: slider
-                width: settingsPage.width/2
                 function formatValue(v) { return v.toFixed(1) }
                 minimumValue: 1
                 maximumValue: 50
@@ -144,7 +182,17 @@ Page {
                    textArea.font.pixelSize = formatValue(value) * 1
                    settings.pixelSize = formatValue(value) * 1
                 }
+
+                anchors {
+                      leftMargin: units.gu(3)
+                      left: fontLabel.right
+                      rightMargin: units.gu(2)
+                      right: parent.right
+                      verticalCenter: parent.verticalCenter
+                }
             }
         }
-    }
+
+    } //col
+
 }
