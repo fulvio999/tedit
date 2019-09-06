@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-25 09:32+0000\n"
+"POT-Creation-Date: 2019-09-06 14:34+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid ""
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/components/MenuOptions.qml:141
+#: ../qml/components/MenuOptions.qml:153
 msgid "Save"
 msgstr ""
 
@@ -131,7 +131,7 @@ msgid "Input is empty !"
 msgstr ""
 
 #: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:476
+#: ../qml/components/MenuOptions.qml:488
 msgid "Import a site as text"
 msgstr ""
 
@@ -159,47 +159,47 @@ msgstr ""
 msgid "Cancel"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:30 ../qml/ui/SavedFilesListDelegate.qml:18
+#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:18
 msgid " "
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:96
+#: ../qml/components/MenuOptions.qml:108
 msgid "Open"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:183
+#: ../qml/components/MenuOptions.qml:195
 msgid "Save As"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:225
+#: ../qml/components/MenuOptions.qml:237
 msgid "Undo last Modification"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:267
+#: ../qml/components/MenuOptions.qml:279
 msgid "Redo last Modification"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:309
+#: ../qml/components/MenuOptions.qml:321
 msgid "Select All"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:351
+#: ../qml/components/MenuOptions.qml:363
 msgid "Clear Area"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:392
+#: ../qml/components/MenuOptions.qml:404
 msgid "Paste from Clipboard"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:434
+#: ../qml/components/MenuOptions.qml:446
 msgid "Copy to Clipboard"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:518
+#: ../qml/components/MenuOptions.qml:530
 msgid "Digest"
 msgstr ""
 
-#: ../qml/components/MenuOptions.qml:560
+#: ../qml/components/MenuOptions.qml:572
 msgid "Base 64"
 msgstr ""
 
@@ -307,47 +307,47 @@ msgstr ""
 msgid "Invalid character: the string to be decoded is not correctly encoded"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:24
+#: ../qml/ui/SettingsPage.qml:45
 msgid "Enable text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:28
+#: ../qml/ui/SettingsPage.qml:56
 msgid "Text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:42
+#: ../qml/ui/SettingsPage.qml:81
 msgid "Notes Area Font color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:51 ../qml/ui/SettingsPage.qml:93
+#: ../qml/ui/SettingsPage.qml:90 ../qml/ui/SettingsPage.qml:132
 msgid "Green"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:61
+#: ../qml/ui/SettingsPage.qml:100
 msgid "Grey"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:71
+#: ../qml/ui/SettingsPage.qml:110
 msgid "Black"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:84
+#: ../qml/ui/SettingsPage.qml:123
 msgid "Application Backgroung color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:103
+#: ../qml/ui/SettingsPage.qml:142
 msgid "Brown"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:113
+#: ../qml/ui/SettingsPage.qml:152
 msgid "White"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:123
+#: ../qml/ui/SettingsPage.qml:163
 msgid "Blue"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:134
+#: ../qml/ui/SettingsPage.qml:178
 msgid "Notes font size"
 msgstr ""
 
