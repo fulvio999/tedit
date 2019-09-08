@@ -9,13 +9,13 @@ import Ubuntu.Components.Popups 1.3
   */
   Dialog {
           id: menuPickerDialog
-          contentWidth: units.gu(35)
+          contentWidth: units.gu(39)
           contentHeight: root.height //get main window height
 
           Flickable {
                  id: settingsPageFlickable2
                  clip: true
-                 contentHeight: units.gu(70)
+                 contentHeight: units.gu(100)
 
                  anchors {
                         top: parent.top
@@ -584,7 +584,7 @@ import Ubuntu.Components.Popups 1.3
              } //Flickable
 
              Scrollbar {
-                  height: units.gu(70)
+                  height: units.gu(55)
                   flickableItem: settingsPageFlickable2
                   align: Qt.AlignTrailing
              }
