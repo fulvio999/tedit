@@ -12,7 +12,7 @@ Page {
      header: PageHeader {
        title: i18n.tr("Settings")
      }
-     
+
      visible: false
 
      Flickable {
@@ -186,8 +186,8 @@ Page {
                 Slider {
                     id: slider
                     function formatValue(v) { return v.toFixed(1) }
-                    minimumValue: 1
-                    maximumValue: 50
+                    minimumValue: 20
+                    maximumValue: 80
                     value: settings.pixelSize
                     live: false
                     onValueChanged: {

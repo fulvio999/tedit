@@ -23,7 +23,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.3.4"
+    property string appVersion : "2.3.5"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -63,7 +63,7 @@ MainView {
 
        property string pageBackgroundColor: "white"
        property string textAreaFontColor: "black"
-       property int pixelSize: 15 /* default */
+       property int pixelSize: 20 /* default */
     }
 
     Component.onCompleted: {
