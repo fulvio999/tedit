@@ -10,7 +10,7 @@ Page {
      id: settingsPage
 
      header: PageHeader {
-       title: i18n.tr("Settings")
+        title: i18n.tr("Settings")
      }
 
      visible: false
@@ -18,7 +18,7 @@ Page {
      Flickable {
           id: settingsPageFlickable
           clip: true
-          contentHeight: units.gu(80)
+          contentHeight: units.gu(90)
           anchors {
                   top: parent.top
                   left: parent.left
@@ -34,9 +34,44 @@ Page {
 
             /* placeholder */
             Rectangle {
-                    color: "transparent"
-                    width: parent.width
-                    height: units.gu(5)
+                color: "transparent"
+                width: parent.width
+                height: units.gu(5)
+            }
+
+            ListItem {
+
+                Label {
+                    id:enableWordWrapLabel
+                    text: i18n.tr("Enable Word wrap")
+                    anchors {
+                        leftMargin: units.gu(2)
+                        left: parent.left
+                        verticalCenter: parent.verticalCenter
+                    }
+                 }
+
+                 Switch {
+                        id: wrap
+                        checked: settings.wordWrap
+                        text: i18n.tr("Word wrap")
+                        onCheckedChanged: {
+                            settings.wordWrap = checked
+                            if(checked)
+                               textArea.wrapMode = TextEdit.Wrap
+                            else
+                               textArea.wrapMode = TextEdit.NoWrap
+                       }
+
+                       anchors {
+                            leftMargin: units.gu(3)
+                            left: fontLabel.right
+                            rightMargin: units.gu(2)
+                            right: parent.right
+                            verticalCenter: parent.verticalCenter
+                       }
+                  }
+               onClicked: wrap.checked = !wrap.checked
             }
 
             ListItem {

@@ -58,7 +58,7 @@ Page {
        }
 
        Rectangle{
-           id: placeHolderRectangle
+            id: placeHolderRectangle
             color: root.backgroundColor
             width: parent.width
             height: units.gu(6)
@@ -137,16 +137,15 @@ Page {
            }
        }
 
-       Rectangle{
-           id: doConversionContainer
-           color: root.backgroundColor
-           width: parent.width
+       Row{
+           id: doConversionContainer                  
            height: units.gu(3)
            anchors.topMargin: units.gu(1)
+           spacing: units.gu(1)
+           anchors.horizontalCenter: parent.horizontalCenter
 
            Button{
                id: doConversionButton
-               anchors.horizontalCenter: parent.horizontalCenter
                anchors.verticalCenter: parent.bottom
                text: i18n.tr("Convert")
                width: units.gu(14)
@@ -172,6 +171,18 @@ Page {
                      resultTextArea.text = i18n.tr("Input is empty !");
                   }
               }
+           }
+
+           /* add the Conversion result at the existing text (if any) in the note area */
+           Button{
+               id:addResultToNoteButton
+               anchors.verticalCenter: parent.bottom
+               text: i18n.tr("Add to note")
+               width: units.gu(14)
+               onClicked: {
+                  textArea.text = textArea.text + resultTextArea.text
+                  pageStack.push(mainPage)
+               }
            }
        }
     }

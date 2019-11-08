@@ -48,7 +48,7 @@ import Ubuntu.Components.Popups 1.3
                                }
 
                                Image {
-                                   id: openIcon2
+                                   id: closeIcon
                                    source: Qt.resolvedUrl("../graphics/close.png")
                                    height: units.gu(3)
                                    width: units.gu(3)
@@ -453,7 +453,7 @@ import Ubuntu.Components.Popups 1.3
                                   }
                             }
 
-                             //--------------------- Import ---------------
+                             //--------------------- Import site as Text---------------
                              ListItem {
                                   id: importContainer
                                   anchors.horizontalCenter : parent.Center
@@ -542,7 +542,7 @@ import Ubuntu.Components.Popups 1.3
                                       id:base64Container
                                       anchors.horizontalCenter: parent.Center
                                       height: units.gu(4.5)
-                                      divider.visible : false
+                                      divider.visible : true
 
                                       Image {
                                           id: base64Icon
@@ -578,7 +578,50 @@ import Ubuntu.Components.Popups 1.3
                                               }
                                         }
                               }
-                              //----------------------------------------
+
+                              //--------------QR Code generator ----------------
+                              ListItem {
+                                   id:qrCodeGeneratorContainer
+                                   anchors.horizontalCenter: parent.Center
+                                   height: units.gu(4.5)
+                                   divider.visible : false
+
+                                   Image {
+                                       id: qrCodeIcon
+                                       source: Qt.resolvedUrl("../graphics/qrcode.png")
+                                       height: units.gu(4)
+                                       width: units.gu(4)
+
+                                       anchors {
+                                             leftMargin: units.gu(2)
+                                             rightMargin: units.gu(2)
+                                             verticalCenter: parent.verticalCenter
+                                       }
+                                    }
+
+                                    MouseArea {
+                                          id: selectableQrCodeGenerator
+                                          width: parent.width
+                                          height: parent.height
+
+                                          onClicked: {
+                                              PopupUtils.open(qrCodeWebSiteSelector);
+                                              PopupUtils.close(menuPickerDialog);
+
+                                          }
+                                     }
+
+                                     Label {
+                                           text: i18n.tr("QR Code")
+                                           anchors {
+                                                 left: qrCodeIcon.right
+                                                 leftMargin: units.gu(2)
+                                                 rightMargin: units.gu(2)
+                                                 verticalCenter: parent.verticalCenter
+                                           }
+                                     }
+                              }
+                              //------------------------------------------------
                      }
 
              } //Flickable

@@ -23,7 +23,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.3.5"
+    property string appVersion : "2.5"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -60,7 +60,7 @@ MainView {
        id: settings
        /* by default disable autocomplete in text area */
        property bool textPrediction: false
-
+       property bool wordWrap: false
        property string pageBackgroundColor: "white"
        property string textAreaFontColor: "black"
        property int pixelSize: 20 /* default */
@@ -165,6 +165,13 @@ MainView {
        WebSiteSelector{}
     }
 
+
+    /* Ask for a web-site url to generate the associated QR Code */
+    Component {
+       id: qrCodeWebSiteSelector
+       QrCodeWebSiteSelector{}
+    }
+
     Component {
        id: saveAsDialog
        SaveAsDialog{}
@@ -172,6 +179,10 @@ MainView {
 
     Base64conversionPage {
       id: base64conversionPage
+    }
+
+    QrCodeGeneratorPage {
+       id: qrCodeGeneratorPage
     }
 
 

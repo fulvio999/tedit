@@ -2,15 +2,15 @@ import QtQuick 2.4
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 
-import "../js/SiteImporter.js" as SiteImporter
-
+/* import folder */
+import "../ui"
 
 /*
-   Ask for a web site url where import is text and place in the text Area
- */
+   Ask for a web site url to generate the corresponding QR Code
+*/
 Dialog {
         id: importDialogue
-        title: i18n.tr("Import a site as text")
+        title: i18n.tr("Generate QR Code")
         contentWidth: root. width - units.gu(5)
 
         Column{
@@ -40,12 +40,19 @@ Dialog {
                    }
 
                    Button {
-                       text: i18n.tr("Import")
+                       text: i18n.tr("Generate")
                        color: UbuntuColors.green
                        width: units.gu(17)
                        onClicked: {
                           if(webSiteUrlText.text !==""){
-                             SiteImporter.importSiteText(webSiteUrlText.text);
+                              PopupUtils.close(importDialogue)
+                              pageStack.push(Qt.resolvedUrl("../ui/QrCodeGeneratorPage.qml"),
+                              {
+                                  /* <pag-variable-name>:<property-value from db> */
+                                  pageUrl: webSiteUrlText.text
+                              }
+
+                            );
                           }
                        }
                    }

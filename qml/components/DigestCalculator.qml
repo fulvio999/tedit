@@ -11,8 +11,9 @@ import "../js/hashes.js" as Hashes
           contentWidth: units.gu(42)
 
           title: i18n.tr("Found")+": "+digesterCalculatorListModel.count +" "+i18n.tr("digesters")
+          text: i18n.tr("Calculate the digest of the note")
 
-          /* the text to calculate di digest (ie: input textArea content) */
+          /* the text to calculate the digest (ie: input textArea content) */
           property string inputText : "";
 
           /* the list of available digest calculator  (ie: the one supported by 'jshashes' library ) */
@@ -40,6 +41,7 @@ import "../js/hashes.js" as Hashes
               }
           }
 
+          /* digester algorithm chooser */
           OptionSelector {
                  id: digestChooserSelector
                  expanded: true
@@ -64,29 +66,46 @@ import "../js/hashes.js" as Hashes
                TextArea {
                     id: digestResultTextArea
                     width: parent.width
-                    height: parent.height
+                    height: units.gu(18) //parent.height
                     textFormat: TextEdit.AutoText
                     readOnly: true
-                    //placeholderText: i18n.tr("Digest")
                     inputMethodHints: Qt.ImhNoPredictiveText
                     selectByMouse: true
                     wrapMode: settings.wordWrap ? TextEdit.Wrap : TextEdit.NoWrap
                }
+
+               Button{
+                    id:addResultToNoteButton
+                    anchors {
+                        bottom: parent.bottom
+                        bottomMargin: units.gu(1)
+                        topMargin: units.gu(3)
+                        horizontalCenter: parent.horizontalCenter
+                    }
+                    visible: false /* visible after calculation */
+                    text: i18n.tr("Copy to note")
+                    width: units.gu(15)
+                    onClicked: {
+                          textArea.text = textArea.text + digestResultTextArea.text
+                          pageStack.push(mainPage)
+                          PopupUtils.close(digestPickerDialog)
+                    }
+               }
            }
 
            Row{
-               spacing:units.gu(2)
+               spacing:units.gu(1)
                anchors.horizontalCenter: parent.horizontalCenter
 
                Button {
                      text: i18n.tr("Calculate")
-                     width: units.gu(14)
+                     width: units.gu(16)
                      color: UbuntuColors.green
                      onClicked: {
 
                                 var chosenDigester = digesterCalculatorListModel.get(digestChooserSelector.selectedIndex).name;
                                 //console.log('chosen Digester: ' + chosenDigester);
-                                //console.log('Input text: ' + digestPickerDialog.inputText);
+                                //console.log('Input text o digest: ' + digestPickerDialog.inputText);
 
                                 if( digestPickerDialog.inputText.length > 0) {
 
@@ -110,22 +129,25 @@ import "../js/hashes.js" as Hashes
                                          var RMD160 = new Hashes.RMD160();
                                          digestResultTextArea.text = RMD160.hex(digestPickerDialog.inputText);
                                     }else{
-                                         console.log("ERORR, Algorithm not selected or unsupportded value");
+                                         console.log("ERORR, Algorithm not selected or unsupported value");
                                          digestResultTextArea.text = i18n.tr("ERORR, Algorithm not selected or unsupportded value");
                                     }
 
+                                    addResultToNoteButton.visible = true
+
                                 }else{
-                                   digestResultTextArea.text = i18n.tr("Input is empty !");
+                                   digestResultTextArea.text = i18n.tr("Notes area is empty !");
                                 }
                            }
-                     }
+                    }
 
-                     Button {
-                         text: i18n.tr("Close")
-                         width: units.gu(14)
-                         onClicked: {
-                             PopupUtils.close(digestPickerDialog)
-                         }
-                     }
-                 }
-             }
+                    Button {
+                           anchors.horizontalCenter: parent.Center
+                           text: i18n.tr("Close")
+                           width: units.gu(16)
+                           onClicked: {
+                               PopupUtils.close(digestPickerDialog)
+                           }
+                    }
+            }
+    }

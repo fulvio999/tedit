@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-09-22 20:11+0000\n"
+"POT-Creation-Date: 2019-11-08 21:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 msgid "Thanks at jshashes library for hash Algorithm"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:13
+#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
 msgid "Thanks at"
 msgstr ""
 
@@ -45,12 +45,13 @@ msgstr ""
 msgid "for Base64 encoder/decoder"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:15
+#: ../qml/components/ProductInfo.qml:16
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
 #: ../qml/components/RemoveFileDialog.qml:23
 #: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:124
+#: ../qml/components/DigestCalculator.qml:146
 #: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/components/QrCodeWebSiteSelector.qml:37
 #: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
 msgstr ""
@@ -117,17 +118,24 @@ msgstr ""
 msgid "digesters"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:82
+#: ../qml/components/DigestCalculator.qml:14
+msgid "Calculate the digest of the note"
+msgstr ""
+
+#: ../qml/components/DigestCalculator.qml:86
+msgid "Copy to note"
+msgstr ""
+
+#: ../qml/components/DigestCalculator.qml:101
 msgid "Calculate"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:114
+#: ../qml/components/DigestCalculator.qml:133
 msgid "ERORR, Algorithm not selected or unsupportded value"
 msgstr ""
 
-#: ../qml/components/DigestCalculator.qml:118
-#: ../qml/ui/Base64conversionPage.qml:172
-msgid "Input is empty !"
+#: ../qml/components/DigestCalculator.qml:139
+msgid "Notes area is empty !"
 msgstr ""
 
 #: ../qml/components/WebSiteSelector.qml:13
@@ -136,11 +144,20 @@ msgid "Import a site as text"
 msgstr ""
 
 #: ../qml/components/WebSiteSelector.qml:26
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
 msgid "A valid http(s) url"
 msgstr ""
 
 #: ../qml/components/WebSiteSelector.qml:43
 msgid "Import"
+msgstr ""
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:13
+msgid "Generate QR Code"
+msgstr ""
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:43
+msgid "Generate"
 msgstr ""
 
 #: ../qml/components/SaveAsDialog.qml:11
@@ -203,40 +220,48 @@ msgstr ""
 msgid "Base 64"
 msgstr ""
 
-#: ../qml/Main.qml:215
+#: ../qml/components/MenuOptions.qml:615
+msgid "QR Code"
+msgstr ""
+
+#: ../qml/Main.qml:226
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:229 ../qml/ui/SettingsPage.qml:13
+#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:244 tedit.desktop.in.h:1
+#: ../qml/Main.qml:255 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:256
+#: ../qml/Main.qml:267
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:301
+#: ../qml/Main.qml:312
 msgid "File"
 msgstr ""
 
-#: ../qml/Main.qml:301
+#: ../qml/Main.qml:312
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:325
+#: ../qml/Main.qml:336
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:347
+#: ../qml/Main.qml:358
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:347
+#: ../qml/Main.qml:358
 msgid "Characters"
+msgstr ""
+
+#: ../qml/ui/QrCodeGeneratorPage.qml:22
+msgid "Page"
 msgstr ""
 
 #: ../qml/ui/LocalFilePickerPage.qml:44
@@ -299,55 +324,71 @@ msgstr ""
 msgid "Conversion Result"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:151
+#: ../qml/ui/Base64conversionPage.qml:150
 msgid "Convert"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:169
+#: ../qml/ui/Base64conversionPage.qml:168
 msgid "Invalid character: the string to be decoded is not correctly encoded"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:45
+#: ../qml/ui/Base64conversionPage.qml:171
+msgid "Input is empty !"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:180
+msgid "Add to note"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:46
+msgid "Enable Word wrap"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:57
+msgid "Word wrap"
+msgstr ""
+
+#: ../qml/ui/SettingsPage.qml:80
 msgid "Enable text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:56
+#: ../qml/ui/SettingsPage.qml:91
 msgid "Text prediction"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:81
+#: ../qml/ui/SettingsPage.qml:116
 msgid "Notes Area Font color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:90 ../qml/ui/SettingsPage.qml:132
+#: ../qml/ui/SettingsPage.qml:125 ../qml/ui/SettingsPage.qml:167
 msgid "Green"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:100
+#: ../qml/ui/SettingsPage.qml:135
 msgid "Grey"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:110
+#: ../qml/ui/SettingsPage.qml:145
 msgid "Black"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:123
+#: ../qml/ui/SettingsPage.qml:158
 msgid "Application Backgroung color"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:142
+#: ../qml/ui/SettingsPage.qml:177
 msgid "Brown"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:152
+#: ../qml/ui/SettingsPage.qml:187
 msgid "White"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:163
+#: ../qml/ui/SettingsPage.qml:198
 msgid "Blue"
 msgstr ""
 
-#: ../qml/ui/SettingsPage.qml:178
+#: ../qml/ui/SettingsPage.qml:213
 msgid "Notes font size"
 msgstr ""
 
