@@ -1,7 +1,7 @@
 {
     "name": "tedit.fulvio",
     "description": "simple notes editor",
-    "architecture": "armhf",
+    "architecture": "@CLICK_ARCH@",
     "title": "tedit",
     "hooks": {
         "tedit": {
@@ -9,7 +9,7 @@
             "desktop":  "tedit.desktop"
         }
     },
-    "version": "2.5",
+    "version": "2.6",
     "maintainer": "fulvio <fulvio999@gmail.com>",
     "framework" : "ubuntu-sdk-16.04"
 }

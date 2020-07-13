@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-08 21:12+0000\n"
+"POT-Creation-Date: 2020-04-12 23:14+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,48 +17,51 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../qml/components/ProductInfo.qml:9
-msgid "Product Info"
+#: ../qml/Main.qml:128 ../qml/components/ConfirmSavingNote.qml:91
+#: ../qml/components/SaveAsDialog.qml:35
+msgid "Saved"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:10
-msgid "version"
+#: ../qml/Main.qml:226
+msgid "Menu"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:10
-msgid "Author"
+#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
+msgid "Settings"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:11
-msgid "A simple and basic text, notes editor"
+#: ../qml/Main.qml:255 tedit.desktop.in.h:1
+msgid "tedit"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:12
-msgid "Thanks at jshashes library for hash Algorithm"
+#: ../qml/Main.qml:267
+msgid "About"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
-msgid "Thanks at"
+#: ../qml/Main.qml:312
+msgid "File"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:13
-msgid "for Base64 encoder/decoder"
+#: ../qml/Main.qml:312
+msgid "saved"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:16
-#: ../qml/components/ConfirmPasteFromClipboard.qml:16
-#: ../qml/components/RemoveFileDialog.qml:23
-#: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:146
-#: ../qml/components/WebSiteSelector.qml:37
-#: ../qml/components/QrCodeWebSiteSelector.qml:37
-#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
-msgid "Close"
+#: ../qml/Main.qml:336
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr ""
+
+#: ../qml/Main.qml:358
+msgid "Line"
+msgstr ""
+
+#: ../qml/Main.qml:358
+msgid "Characters"
 msgstr ""
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:10
-#: ../qml/components/RemoveFileDialog.qml:14
+#: ../qml/components/ConfirmSavingNote.qml:13
 #: ../qml/components/ConfirmClearAll.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
 msgid "Confirmation"
 msgstr ""
 
@@ -66,26 +69,20 @@ msgstr ""
 msgid "Insert Clipboard content ?"
 msgstr ""
 
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/components/DigestCalculator.qml:146
+#: ../qml/components/QrCodeWebSiteSelector.qml:37
+#: ../qml/components/ProductInfo.qml:16
+#: ../qml/components/RemoveFileDialog.qml:23
+#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
+msgid "Close"
+msgstr ""
+
 #: ../qml/components/ConfirmPasteFromClipboard.qml:21
 #: ../qml/components/ConfirmClearAll.qml:21
 msgid "Confirm"
-msgstr ""
-
-#: ../qml/components/RemoveFileDialog.qml:15
-#: ../qml/components/RemoveFileDialog.qml:31
-msgid "Remove"
-msgstr ""
-
-#: ../qml/components/RemoveFileDialog.qml:15
-msgid "file"
-msgstr ""
-
-#: ../qml/components/RemoveFileDialog.qml:47
-msgid "File successfully removed"
-msgstr ""
-
-#: ../qml/components/ConfirmClearAll.qml:11
-msgid "Clear All content ?"
 msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:14
@@ -108,6 +105,57 @@ msgstr ""
 
 #: ../qml/components/UnsavedDialog.qml:40
 msgid "Close without saving"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:14
+msgid "Previous note was modified, save it ?"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:24
+msgid "No"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:43
+msgid "Yes"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:76
+msgid "file name"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:81
+msgid "ok"
+msgstr ""
+
+#: ../qml/components/ConfirmSavingNote.qml:89
+#: ../qml/components/SaveAsDialog.qml:33
+msgid "Couldn't write"
+msgstr ""
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:45
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:488
+msgid "Import a site as text"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:26
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
+msgid "A valid http(s) url"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
 msgstr ""
 
 #: ../qml/components/DigestCalculator.qml:13
@@ -136,44 +184,6 @@ msgstr ""
 
 #: ../qml/components/DigestCalculator.qml:139
 msgid "Notes area is empty !"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:488
-msgid "Import a site as text"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:26
-#: ../qml/components/QrCodeWebSiteSelector.qml:26
-msgid "A valid http(s) url"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:43
-msgid "Import"
-msgstr ""
-
-#: ../qml/components/QrCodeWebSiteSelector.qml:13
-msgid "Generate QR Code"
-msgstr ""
-
-#: ../qml/components/QrCodeWebSiteSelector.qml:43
-msgid "Generate"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:11
-msgid "Enter a name for the file to save."
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:33
-msgid "Couldn't write"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:35 ../qml/Main.qml:128
-msgid "Saved"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:45
-msgid "Cancel"
 msgstr ""
 
 #: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:18
@@ -224,44 +234,53 @@ msgstr ""
 msgid "QR Code"
 msgstr ""
 
-#: ../qml/Main.qml:226
-msgid "Menu"
+#: ../qml/components/QrCodeWebSiteSelector.qml:13
+msgid "Generate QR Code"
 msgstr ""
 
-#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
-msgid "Settings"
+#: ../qml/components/QrCodeWebSiteSelector.qml:43
+msgid "Generate"
 msgstr ""
 
-#: ../qml/Main.qml:255 tedit.desktop.in.h:1
-msgid "tedit"
+#: ../qml/components/ProductInfo.qml:9
+msgid "Product Info"
 msgstr ""
 
-#: ../qml/Main.qml:267
-msgid "About"
+#: ../qml/components/ProductInfo.qml:10
+msgid "version"
 msgstr ""
 
-#: ../qml/Main.qml:312
-msgid "File"
+#: ../qml/components/ProductInfo.qml:10
+msgid "Author"
 msgstr ""
 
-#: ../qml/Main.qml:312
-msgid "saved"
+#: ../qml/components/ProductInfo.qml:11
+msgid "A simple and basic text, notes editor"
 msgstr ""
 
-#: ../qml/Main.qml:336
-msgid "Welcome ! Write what you want and save it. Enjoy !"
+#: ../qml/components/ProductInfo.qml:12
+msgid "Thanks at jshashes library for hash Algorithm"
 msgstr ""
 
-#: ../qml/Main.qml:358
-msgid "Line"
+#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
+msgid "Thanks at"
 msgstr ""
 
-#: ../qml/Main.qml:358
-msgid "Characters"
+#: ../qml/components/ProductInfo.qml:13
+msgid "for Base64 encoder/decoder"
 msgstr ""
 
-#: ../qml/ui/QrCodeGeneratorPage.qml:22
-msgid "Page"
+#: ../qml/components/RemoveFileDialog.qml:15
+#: ../qml/components/RemoveFileDialog.qml:31
+msgid "Remove"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:15
+msgid "file"
+msgstr ""
+
+#: ../qml/components/RemoveFileDialog.qml:47
+msgid "File successfully removed"
 msgstr ""
 
 #: ../qml/ui/LocalFilePickerPage.qml:44
@@ -292,52 +311,60 @@ msgstr ""
 msgid "Delete all"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:18
+#: ../qml/ui/Base64conversionPage.qml:19
 msgid "Base 64 encoder/decoder"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:24
+#: ../qml/ui/Base64conversionPage.qml:25
 msgid "Clear all"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:56
+#: ../qml/ui/Base64conversionPage.qml:62
 msgid "Encode"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:56
+#: ../qml/ui/Base64conversionPage.qml:62
 msgid "encode to Base 64"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:57
+#: ../qml/ui/Base64conversionPage.qml:63
 msgid "Decode"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:57
+#: ../qml/ui/Base64conversionPage.qml:63
 msgid "decode from Base 64"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:108
+#: ../qml/ui/Base64conversionPage.qml:114
 msgid "Insert here the content to encode/decode"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:133
+#: ../qml/ui/Base64conversionPage.qml:139
 msgid "Conversion Result"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:150
+#: ../qml/ui/Base64conversionPage.qml:156
 msgid "Convert"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:168
+#: ../qml/ui/Base64conversionPage.qml:174
 msgid "Invalid character: the string to be decoded is not correctly encoded"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:171
+#: ../qml/ui/Base64conversionPage.qml:177
 msgid "Input is empty !"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:180
+#: ../qml/ui/Base64conversionPage.qml:194
 msgid "Add to note"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:206
+msgid "New note"
+msgstr ""
+
+#: ../qml/ui/QrCodeGeneratorPage.qml:22
+msgid "Page"
 msgstr ""
 
 #: ../qml/ui/SettingsPage.qml:46
