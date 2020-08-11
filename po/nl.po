@@ -1,0 +1,436 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tedit.fulvio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: tedit.fulvio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-12 23:14+0000\n"
+"PO-Revision-Date: 2020-07-13 21:23+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3.1\n"
+"Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: nl\n"
+
+#: ../qml/Main.qml:128 ../qml/components/ConfirmSavingNote.qml:91
+#: ../qml/components/SaveAsDialog.qml:35
+msgid "Saved"
+msgstr "Opgeslagen"
+
+#: ../qml/Main.qml:226
+msgid "Menu"
+msgstr "Menu"
+
+#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
+msgid "Settings"
+msgstr "Instellingen"
+
+#: ../qml/Main.qml:255 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr "tedit"
+
+#: ../qml/Main.qml:267
+msgid "About"
+msgstr "Over"
+
+#: ../qml/Main.qml:312
+msgid "File"
+msgstr "Bestand"
+
+#: ../qml/Main.qml:312
+msgid "saved"
+msgstr "opgeslagen"
+
+#: ../qml/Main.qml:336
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr "Welkom! Schrijf iets op en sla het op. En veel plezier!"
+
+#: ../qml/Main.qml:358
+msgid "Line"
+msgstr "Regel"
+
+#: ../qml/Main.qml:358
+msgid "Characters"
+msgstr "Aantal tekens"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/ConfirmSavingNote.qml:13
+#: ../qml/components/ConfirmClearAll.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
+msgid "Confirmation"
+msgstr "Bevestiging"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:11
+msgid "Insert Clipboard content ?"
+msgstr "Wil je de klembordinhoud plakken?"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/components/DigestCalculator.qml:146
+#: ../qml/components/QrCodeWebSiteSelector.qml:37
+#: ../qml/components/ProductInfo.qml:16
+#: ../qml/components/RemoveFileDialog.qml:23
+#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
+msgid "Close"
+msgstr "Sluiten"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/ConfirmClearAll.qml:21
+msgid "Confirm"
+msgstr "Bevestigen"
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr "Niet-opgeslagen aanpassingen"
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid "There are unsaved changes. Do you want to save this file before closing?"
+msgstr "Er zijn niet-opgeslagen aanpassingen. Wil je ze opslaan voordat je afsluit?"
+
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
+#: ../qml/components/MenuOptions.qml:153
+msgid "Save"
+msgstr "Opslaan"
+
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
+msgid "Save as"
+msgstr "Opslaan als"
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
+msgstr "Sluiten zonder opslaan"
+
+#: ../qml/components/ConfirmSavingNote.qml:14
+msgid "Previous note was modified, save it ?"
+msgstr "De vorige aantekening is aangepast. Wil je deze opslaan?"
+
+#: ../qml/components/ConfirmSavingNote.qml:24
+msgid "No"
+msgstr "Nee"
+
+#: ../qml/components/ConfirmSavingNote.qml:43
+msgid "Yes"
+msgstr "Ja"
+
+#: ../qml/components/ConfirmSavingNote.qml:76
+msgid "file name"
+msgstr "bestandsnaam"
+
+#: ../qml/components/ConfirmSavingNote.qml:81
+msgid "ok"
+msgstr "oké"
+
+#: ../qml/components/ConfirmSavingNote.qml:89
+#: ../qml/components/SaveAsDialog.qml:33
+msgid "Couldn't write"
+msgstr "Wegschrijven mislukt"
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr "Wil je alle inhoud wissen?"
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr "Geef het bestand een naam."
+
+#: ../qml/components/SaveAsDialog.qml:45
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:488
+msgid "Import a site as text"
+msgstr "Website importeren als tekst"
+
+#: ../qml/components/WebSiteSelector.qml:26
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
+msgid "A valid http(s) url"
+msgstr "Een geldige http(s)-url"
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
+msgstr "Importeren"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "Found"
+msgstr "Gevonden"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "digesters"
+msgstr "samenvattingen"
+
+#: ../qml/components/DigestCalculator.qml:14
+msgid "Calculate the digest of the note"
+msgstr "Bereken de samenvatting van de aantekening"
+
+#: ../qml/components/DigestCalculator.qml:86
+msgid "Copy to note"
+msgstr "Kopiëren naar aantekening"
+
+#: ../qml/components/DigestCalculator.qml:101
+msgid "Calculate"
+msgstr "Berekenen"
+
+#: ../qml/components/DigestCalculator.qml:133
+msgid "ERORR, Algorithm not selected or unsupportded value"
+msgstr "FOUT: geen algoritme gekozen of niet-ondersteunde waarde"
+
+#: ../qml/components/DigestCalculator.qml:139
+msgid "Notes area is empty !"
+msgstr "Je hebt geen aantekeningen!"
+
+#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:18
+msgid " "
+msgstr " "
+
+#: ../qml/components/MenuOptions.qml:108
+msgid "Open"
+msgstr "Openen"
+
+#: ../qml/components/MenuOptions.qml:195
+msgid "Save As"
+msgstr "Opslaan als"
+
+#: ../qml/components/MenuOptions.qml:237
+msgid "Undo last Modification"
+msgstr "Recentste aanpassing ongedaan maken"
+
+#: ../qml/components/MenuOptions.qml:279
+msgid "Redo last Modification"
+msgstr "Recentste aanpassing opnieuw uitvoeren"
+
+#: ../qml/components/MenuOptions.qml:321
+msgid "Select All"
+msgstr "Alles selecteren"
+
+#: ../qml/components/MenuOptions.qml:363
+msgid "Clear Area"
+msgstr "Wissen"
+
+#: ../qml/components/MenuOptions.qml:404
+msgid "Paste from Clipboard"
+msgstr "Plakken van klembord"
+
+#: ../qml/components/MenuOptions.qml:446
+msgid "Copy to Clipboard"
+msgstr "Kopiëren naar klembord"
+
+#: ../qml/components/MenuOptions.qml:530
+msgid "Digest"
+msgstr "Samenvatting"
+
+#: ../qml/components/MenuOptions.qml:572
+msgid "Base 64"
+msgstr "Base 64"
+
+#: ../qml/components/MenuOptions.qml:615
+msgid "QR Code"
+msgstr "QR-code"
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:13
+msgid "Generate QR Code"
+msgstr "QR-code genereren"
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:43
+msgid "Generate"
+msgstr "Genereren"
+
+#: ../qml/components/ProductInfo.qml:9
+msgid "Product Info"
+msgstr "Productinformatie"
+
+#: ../qml/components/ProductInfo.qml:10
+msgid "version"
+msgstr "versie"
+
+#: ../qml/components/ProductInfo.qml:10
+msgid "Author"
+msgstr "Maker"
+
+#: ../qml/components/ProductInfo.qml:11
+msgid "A simple and basic text, notes editor"
+msgstr "Een eenvoudige, basale tekst- en aantekeningenapp"
+
+#: ../qml/components/ProductInfo.qml:12
+msgid "Thanks at jshashes library for hash Algorithm"
+msgstr "Met dank aan de jshashes-bibliotheek voor het hash-algoritme"
+
+#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
+msgid "Thanks at"
+msgstr "Met dank aan"
+
+#: ../qml/components/ProductInfo.qml:13
+msgid "for Base64 encoder/decoder"
+msgstr "voor de Base 64-ver- en ontsleuteling"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+#: ../qml/components/RemoveFileDialog.qml:31
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+msgid "file"
+msgstr "bestand"
+
+#: ../qml/components/RemoveFileDialog.qml:47
+msgid "File successfully removed"
+msgstr "Het bestand is verwijderd"
+
+#: ../qml/ui/LocalFilePickerPage.qml:44
+msgid "Attention"
+msgstr "Let op"
+
+#: ../qml/ui/LocalFilePickerPage.qml:45
+msgid "Remove ALL saved files ? (No restore)"
+msgstr "Wil je ALLE opgeslagen bestanden wilt verwijderen? (dit is onomkeerbaar)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:59
+msgid "Delete"
+msgstr "Verwijderen"
+
+#: ../qml/ui/LocalFilePickerPage.qml:75
+msgid "All Files successfully removed"
+msgstr "Alle bestanden zijn verwijderd"
+
+#: ../qml/ui/LocalFilePickerPage.qml:95
+msgid "Local files"
+msgstr "Lokale bestanden"
+
+#: ../qml/ui/LocalFilePickerPage.qml:95
+msgid "(swipe for options)"
+msgstr "(veeg om acties te tonen)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:101
+msgid "Delete all"
+msgstr "Alles verwijderen"
+
+#: ../qml/ui/Base64conversionPage.qml:19
+msgid "Base 64 encoder/decoder"
+msgstr "Base 64-ver- en ontsleuteling"
+
+#: ../qml/ui/Base64conversionPage.qml:25
+msgid "Clear all"
+msgstr "Alles wissen"
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "Encode"
+msgstr "Versleutelen"
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "encode to Base 64"
+msgstr "versleutelen met Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "Decode"
+msgstr "Ontsleutelen"
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "decode from Base 64"
+msgstr "ontsleutelen van Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:114
+msgid "Insert here the content to encode/decode"
+msgstr "Voer hier de te ver-/ontsleutelen inhoud in"
+
+#: ../qml/ui/Base64conversionPage.qml:139
+msgid "Conversion Result"
+msgstr "Conversieresultaat"
+
+#: ../qml/ui/Base64conversionPage.qml:156
+msgid "Convert"
+msgstr "Converteren"
+
+#: ../qml/ui/Base64conversionPage.qml:174
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr "Ongeldig teken: de te ontsleutelen tekenreeks is onjuist versleuteld"
+
+#: ../qml/ui/Base64conversionPage.qml:177
+msgid "Input is empty !"
+msgstr "Geen invoer!"
+
+#: ../qml/ui/Base64conversionPage.qml:194
+msgid "Add to note"
+msgstr "Toevoegen aan aantekening"
+
+#: ../qml/ui/Base64conversionPage.qml:206
+msgid "New note"
+msgstr "Nieuwe aantekening"
+
+#: ../qml/ui/QrCodeGeneratorPage.qml:22
+msgid "Page"
+msgstr "Pagina"
+
+#: ../qml/ui/SettingsPage.qml:46
+msgid "Enable Word wrap"
+msgstr "Woordomslag inschakelen"
+
+#: ../qml/ui/SettingsPage.qml:57
+msgid "Word wrap"
+msgstr "Woordomslag"
+
+#: ../qml/ui/SettingsPage.qml:80
+msgid "Enable text prediction"
+msgstr "Tekstvoorspelling inschakelen"
+
+#: ../qml/ui/SettingsPage.qml:91
+msgid "Text prediction"
+msgstr "Tekstvoorspelling"
+
+#: ../qml/ui/SettingsPage.qml:116
+msgid "Notes Area Font color"
+msgstr "Letterkleur van aantekeningen"
+
+#: ../qml/ui/SettingsPage.qml:125 ../qml/ui/SettingsPage.qml:167
+msgid "Green"
+msgstr "Groen"
+
+#: ../qml/ui/SettingsPage.qml:135
+msgid "Grey"
+msgstr "Grijs"
+
+#: ../qml/ui/SettingsPage.qml:145
+msgid "Black"
+msgstr "Zwart"
+
+#: ../qml/ui/SettingsPage.qml:158
+msgid "Application Backgroung color"
+msgstr "Achtergrondkleur van app"
+
+#: ../qml/ui/SettingsPage.qml:177
+msgid "Brown"
+msgstr "Bruin"
+
+#: ../qml/ui/SettingsPage.qml:187
+msgid "White"
+msgstr "Wit"
+
+#: ../qml/ui/SettingsPage.qml:198
+msgid "Blue"
+msgstr "Blauw"
+
+#: ../qml/ui/SettingsPage.qml:213
+msgid "Notes font size"
+msgstr "Lettergrootte van aantekeningen"
+
+#: ../qml/ui/FileInfoPopUp.qml:12
+msgid "File Info"
+msgstr "Bestandsinformatie"
+
+#: ../qml/ui/FileInfoPopUp.qml:15
+msgid "File Size"
+msgstr "Bestandsgrootte"
+
+#: ../qml/ui/FileInfoPopUp.qml:19
+msgid "Modified"
+msgstr "Aangepast"
+
+#: ../qml/ui/FileInfoPopUp.qml:22
+msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
+msgstr "Tijdopmaak (UTC): 'yyyy-mm-dd-HH:mm:ss'"
