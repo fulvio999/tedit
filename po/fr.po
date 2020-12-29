@@ -7,54 +7,61 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-04-12 23:14+0000\n"
-"PO-Revision-Date: 2020-07-24 20:04+0200\n"
+"POT-Creation-Date: 2020-12-29 11:59+0000\n"
+"PO-Revision-Date: 2020-12-29 15:57+0100\n"
 "Last-Translator: Anne017 <anneonyme017@openmailbox.org>\n"
 "Language-Team: \n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../qml/Main.qml:128 ../qml/components/ConfirmSavingNote.qml:91
-#: ../qml/components/SaveAsDialog.qml:35
+#: ../qml/Main.qml:78
+msgid "Before use encryption feature"
+msgstr "Avant d'utiliser la fonction de cryptage"
+
+#: ../qml/Main.qml:78
+msgid "read help page clicking on pencil icon in the upper right corner"
+msgstr ""
+"lire la page d'aide en cliquant sur l'icône en forme de crayon dans le coin "
+"supérieur droit"
+
+#: ../qml/Main.qml:189 ../qml/components/ConfirmSavingNote.qml:91
+#: ../qml/components/SaveAsDialog.qml:85
 msgid "Saved"
 msgstr "Enregistré"
 
-#: ../qml/Main.qml:226
+#: ../qml/Main.qml:289
 msgid "Menu"
 msgstr "Menu"
 
-#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
+#: ../qml/Main.qml:303 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr "Paramètres"
 
-#: ../qml/Main.qml:255 tedit.desktop.in.h:1
+#: ../qml/Main.qml:318 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr "tedit"
 
-#: ../qml/Main.qml:267
+#: ../qml/Main.qml:330
 msgid "About"
 msgstr "À propos"
 
-#: ../qml/Main.qml:312
-msgid "File"
-msgstr "Fichier"
-
-#: ../qml/Main.qml:312
+#: ../qml/Main.qml:375
 msgid "saved"
 msgstr "enregistré"
 
-#: ../qml/Main.qml:336
+#: ../qml/Main.qml:415
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 "Bienvenue ! Écrivez ce que vous voulez et enregistrez-le. Amusez-vous bien !"
 
-#: ../qml/Main.qml:358
+#: ../qml/Main.qml:437
 msgid "Line"
 msgstr "Ligne"
 
-#: ../qml/Main.qml:358
+#: ../qml/Main.qml:437
 msgid "Characters"
 msgstr "Caractères"
 
@@ -70,17 +77,19 @@ msgid "Insert Clipboard content ?"
 msgstr "Insérer le contenu du presse-papier ?"
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/DecryptKeyInput.qml:37
 #: ../qml/components/ConfirmClearAll.qml:16
 #: ../qml/components/WebSiteSelector.qml:37
 #: ../qml/components/DigestCalculator.qml:146
 #: ../qml/components/QrCodeWebSiteSelector.qml:37
-#: ../qml/components/ProductInfo.qml:16
+#: ../qml/components/ProductInfo.qml:50
 #: ../qml/components/RemoveFileDialog.qml:23
-#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
+#: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
 msgstr "Fermer"
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/DecryptKeyInput.qml:43
 #: ../qml/components/ConfirmClearAll.qml:21
 msgid "Confirm"
 msgstr "Confirmer"
@@ -96,8 +105,8 @@ msgstr ""
 "Des modifications n'ont pas été enregistrées. Voulez-vous enregistrer ce "
 "fichier avant de fermer ?"
 
-#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/components/MenuOptions.qml:153
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:54
+#: ../qml/components/MenuOptions.qml:154
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -108,6 +117,18 @@ msgstr "Enregistrer sous"
 #: ../qml/components/UnsavedDialog.qml:40
 msgid "Close without saving"
 msgstr "Fermer sans enregistrer"
+
+#: ../qml/components/DecryptKeyInput.qml:11
+msgid "Entrer decrypt key"
+msgstr "Clé de déchiffrement"
+
+#: ../qml/components/DecryptKeyInput.qml:26
+msgid "Decryption key"
+msgstr "Clé de déchiffrement"
+
+#: ../qml/components/DecryptKeyInput.qml:54
+msgid "Wrong Password"
+msgstr "mauvais mot de passe"
 
 #: ../qml/components/ConfirmSavingNote.qml:14
 msgid "Previous note was modified, save it ?"
@@ -130,7 +151,7 @@ msgid "ok"
 msgstr "Valider"
 
 #: ../qml/components/ConfirmSavingNote.qml:89
-#: ../qml/components/SaveAsDialog.qml:33
+#: ../qml/components/SaveAsDialog.qml:83
 msgid "Couldn't write"
 msgstr "Impossible d'écrire"
 
@@ -142,12 +163,20 @@ msgstr "Supprimer tout le contenu ?"
 msgid "Enter a name for the file to save."
 msgstr "Saisissez le nom à donner au fichier à enregistrer."
 
-#: ../qml/components/SaveAsDialog.qml:45
+#: ../qml/components/SaveAsDialog.qml:26
+msgid "Save as encrypted file"
+msgstr "Enregistrer en tant que fichier crypté"
+
+#: ../qml/components/SaveAsDialog.qml:47
+msgid "Encryption password"
+msgstr "Mot de passe de cryptage"
+
+#: ../qml/components/SaveAsDialog.qml:96
 msgid "Cancel"
 msgstr "Annuler"
 
 #: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:488
+#: ../qml/components/MenuOptions.qml:489
 msgid "Import a site as text"
 msgstr "Importer un site en tant que texte"
 
@@ -181,14 +210,14 @@ msgid "Calculate"
 msgstr "Calculer"
 
 #: ../qml/components/DigestCalculator.qml:133
-msgid "ERORR, Algorithm not selected or unsupportded value"
+msgid "ERROR, Algorithm not selected or unsupportded value"
 msgstr "ERREUR, algorithme non sélectionné ou valeur non supportée"
 
 #: ../qml/components/DigestCalculator.qml:139
 msgid "Notes area is empty !"
 msgstr "L'entrée est vide !"
 
-#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:18
+#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:19
 msgid " "
 msgstr " "
 
@@ -196,43 +225,43 @@ msgstr " "
 msgid "Open"
 msgstr "Ouvrir"
 
-#: ../qml/components/MenuOptions.qml:195
+#: ../qml/components/MenuOptions.qml:196
 msgid "Save As"
 msgstr "Enregistrer sous"
 
-#: ../qml/components/MenuOptions.qml:237
+#: ../qml/components/MenuOptions.qml:238
 msgid "Undo last Modification"
 msgstr "Annuler la dernière modification"
 
-#: ../qml/components/MenuOptions.qml:279
+#: ../qml/components/MenuOptions.qml:280
 msgid "Redo last Modification"
 msgstr "Rétablir la dernière modification"
 
-#: ../qml/components/MenuOptions.qml:321
+#: ../qml/components/MenuOptions.qml:322
 msgid "Select All"
 msgstr "Tout sélectionner"
 
-#: ../qml/components/MenuOptions.qml:363
+#: ../qml/components/MenuOptions.qml:364
 msgid "Clear Area"
 msgstr "Vider la zone"
 
-#: ../qml/components/MenuOptions.qml:404
+#: ../qml/components/MenuOptions.qml:405
 msgid "Paste from Clipboard"
 msgstr "Coller à partir du presse-papier"
 
-#: ../qml/components/MenuOptions.qml:446
+#: ../qml/components/MenuOptions.qml:447
 msgid "Copy to Clipboard"
 msgstr "Copier dans le presse-papier"
 
-#: ../qml/components/MenuOptions.qml:530
+#: ../qml/components/MenuOptions.qml:531
 msgid "Digest"
 msgstr "Hacheur"
 
-#: ../qml/components/MenuOptions.qml:572
+#: ../qml/components/MenuOptions.qml:573
 msgid "Base 64"
 msgstr "Base 64"
 
-#: ../qml/components/MenuOptions.qml:615
+#: ../qml/components/MenuOptions.qml:616
 msgid "QR Code"
 msgstr "QR Code"
 
@@ -248,29 +277,74 @@ msgstr "Produire"
 msgid "Product Info"
 msgstr "Informations"
 
-#: ../qml/components/ProductInfo.qml:10
+#: ../qml/components/ProductInfo.qml:27
 msgid "version"
 msgstr "version"
 
-#: ../qml/components/ProductInfo.qml:10
+#: ../qml/components/ProductInfo.qml:27
 msgid "Author"
 msgstr "Auteur"
 
-#: ../qml/components/ProductInfo.qml:11
-msgid "A simple and basic text, notes editor"
-msgstr "Un éditeur de texte simple et basique"
-
-#: ../qml/components/ProductInfo.qml:12
-msgid "Thanks at jshashes library for hash Algorithm"
-msgstr "Merci à la bibliothèque jshashes pour l'algorithme de hachage"
-
-#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
+#: ../qml/components/ProductInfo.qml:28
 msgid "Thanks at"
 msgstr "Merci à"
 
-#: ../qml/components/ProductInfo.qml:13
-msgid "for Base64 encoder/decoder"
+#: ../qml/components/ProductInfo.qml:29
+msgid "jshashes library for hash Algorithm"
+msgstr "Merci à jshashes pour l'algorithme de hachage"
+
+#: ../qml/components/ProductInfo.qml:30
+msgid "Developers of"
+msgstr "Développeurs de"
+
+#: ../qml/components/ProductInfo.qml:30
+msgid "for Base64 features"
 msgstr "pour l'encodeur/décodeur Base64"
+
+#: ../qml/components/ProductInfo.qml:31
+msgid "for QML binding for qr.js lib"
+msgstr "pour la liaison QML pour la lib qr.js"
+
+#: ../qml/components/ProductInfo.qml:32
+msgid "Developers of library"
+msgstr "Développeurs de bibliothèque"
+
+#: ../qml/components/ProductInfo.qml:33
+msgid "IMPORTANT notes for Encrypted files"
+msgstr "Remarques importantes pour les fichiers cryptés"
+
+#: ../qml/components/ProductInfo.qml:34
+msgid ""
+"If the encryption key is lost, there is NO restore. The file remains "
+"encrypted"
+msgstr ""
+"Si la clé de chiffrement est perdue, il n'y a PAS de restauration. Le "
+"fichier reste chiffré"
+
+#: ../qml/components/ProductInfo.qml:35
+msgid "Author has no responsibility"
+msgstr "L'auteur n'a aucune responsabilité"
+
+#: ../qml/components/ProductInfo.qml:36
+msgid ""
+"Suggestion: use the same key for all the files to be saved with encryption"
+msgstr ""
+"Suggestion: utilisez la même clé pour tous les fichiers à enregistrer avec "
+"cryptage"
+
+#: ../qml/components/ProductInfo.qml:37
+msgid "instead of different ones so that you need to remember just one key"
+msgstr ""
+"au lieu de différents afin que vous n'ayez à vous souvenir que d'une seule "
+"clé"
+
+#: ../qml/components/ProductInfo.qml:38
+msgid "Encrypted file names have XXX suffix to distinguish them"
+msgstr "Les noms de fichiers chiffrés ont le suffixe XXX pour les distinguer"
+
+#: ../qml/components/ProductInfo.qml:39
+msgid "A padlock is shown when an encrypted file is currently opened"
+msgstr "Un cadenas s'affiche lorsqu'un fichier crypté est actuellement ouvert"
 
 #: ../qml/components/RemoveFileDialog.qml:15
 #: ../qml/components/RemoveFileDialog.qml:31
@@ -285,32 +359,32 @@ msgstr "fichier"
 msgid "File successfully removed"
 msgstr "Fichier supprimé avec succès"
 
-#: ../qml/ui/LocalFilePickerPage.qml:44
+#: ../qml/ui/LocalFilePickerPage.qml:48
 msgid "Attention"
 msgstr "Attention"
 
-#: ../qml/ui/LocalFilePickerPage.qml:45
+#: ../qml/ui/LocalFilePickerPage.qml:49
 msgid "Remove ALL saved files ? (No restore)"
 msgstr ""
 "Supprimer TOUS les fichiers enregistrés ? (aucune restauration possible)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:59
+#: ../qml/ui/LocalFilePickerPage.qml:63
 msgid "Delete"
 msgstr "Supprimer"
 
-#: ../qml/ui/LocalFilePickerPage.qml:75
+#: ../qml/ui/LocalFilePickerPage.qml:79
 msgid "All Files successfully removed"
 msgstr "Tous les Fichiers supprimé avec succès"
 
-#: ../qml/ui/LocalFilePickerPage.qml:95
+#: ../qml/ui/LocalFilePickerPage.qml:99
 msgid "Local files"
 msgstr "Fichier locaux"
 
-#: ../qml/ui/LocalFilePickerPage.qml:95
+#: ../qml/ui/LocalFilePickerPage.qml:99
 msgid "(swipe for options)"
 msgstr "(faites glisser pour plus d'options)"
 
-#: ../qml/ui/LocalFilePickerPage.qml:101
+#: ../qml/ui/LocalFilePickerPage.qml:104
 msgid "Delete all"
 msgstr "Tout supprimer"
 
@@ -437,6 +511,12 @@ msgstr "Modifié"
 #: ../qml/ui/FileInfoPopUp.qml:22
 msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr "Format de date et d'heure (UTC) : « aaaa-mm-jj-HH:mm:ss »"
+
+#~ msgid "File"
+#~ msgstr "Fichier"
+
+#~ msgid "A simple and basic text, notes editor"
+#~ msgstr "Un éditeur de texte simple et basique"
 
 #~ msgid "Are you sure you want to remove the selected file?"
 #~ msgstr "Voulez-vous vraiment supprimer le fichier sélectionné ?"
