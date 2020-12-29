@@ -20,10 +20,10 @@ Component {
             onClicked: {
                 PopupUtils.close(dialogue)
 
-                if(mainPage.openedFileName == "") {
-                    //saveAsDialog.closeAction = unsavedDialog.closeAction
+                if(mainPage.openedFileName == "") {                  
                     PopupUtils.open(saveAsDialog)
                 } else {
+                    /* js function in Main.qml file */
                     saveExistingFile(mainPage.openedFileName,fileIO.getHomePath() + root.fileSavingPath)
                 }
             }

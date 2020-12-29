@@ -7,58 +7,67 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-11-08 15:40+0000\n"
-"PO-Revision-Date: 2019-11-08 17:06+0100\n"
+"POT-Creation-Date: 2020-12-29 11:59+0000\n"
+"PO-Revision-Date: 2020-12-29 13:01+0100\n"
 "Last-Translator: advocatux <advocatux@airpost.net>\n"
 "Language-Team: UBports Spanish Team\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.6\n"
+"X-Generator: Poedit 2.4.2\n"
 
-#: ../qml/components/ProductInfo.qml:9
-msgid "Product Info"
-msgstr "Información del producto"
+#: ../qml/Main.qml:78
+msgid "Before use encryption feature"
+msgstr "Antes de usar la función de cifrado"
 
-#: ../qml/components/ProductInfo.qml:10
-msgid "version"
-msgstr "versión"
+#: ../qml/Main.qml:78
+msgid "read help page clicking on pencil icon in the upper right corner"
+msgstr ""
+"lea la página de ayuda haciendo clic en el icono de lápiz en la esquina "
+"superior derecha"
 
-#: ../qml/components/ProductInfo.qml:10
-msgid "Author"
-msgstr "Autor"
+#: ../qml/Main.qml:189 ../qml/components/ConfirmSavingNote.qml:91
+#: ../qml/components/SaveAsDialog.qml:85
+msgid "Saved"
+msgstr "Guardado"
 
-#: ../qml/components/ProductInfo.qml:11
-msgid "A simple and basic text, notes editor"
-msgstr "Un sencillo y básico editor de texto y notas"
+#: ../qml/Main.qml:289
+msgid "Menu"
+msgstr "Menú"
 
-#: ../qml/components/ProductInfo.qml:12
-msgid "Thanks at jshashes library for hash Algorithm"
-msgstr "Gracias a jshashes library para hash Algoritmo"
+#: ../qml/Main.qml:303 ../qml/ui/SettingsPage.qml:13
+msgid "Settings"
+msgstr "Configuración"
 
-#: ../qml/components/ProductInfo.qml:13 ../qml/components/ProductInfo.qml:14
-msgid "Thanks at"
-msgstr "Gracias a"
+#: ../qml/Main.qml:318 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr "tedit"
 
-#: ../qml/components/ProductInfo.qml:13
-msgid "for Base64 encoder/decoder"
-msgstr "pare Base64 convertidor"
+#: ../qml/Main.qml:330
+msgid "About"
+msgstr "Acerca de"
 
-#: ../qml/components/ProductInfo.qml:16
-#: ../qml/components/ConfirmPasteFromClipboard.qml:16
-#: ../qml/components/RemoveFileDialog.qml:23
-#: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/DigestCalculator.qml:146
-#: ../qml/components/WebSiteSelector.qml:37
-#: ../qml/components/QrCodeWebSiteSelector.qml:37
-#: ../qml/ui/LocalFilePickerPage.qml:52 ../qml/ui/FileInfoPopUp.qml:26
-msgid "Close"
-msgstr "Cerrar"
+#: ../qml/Main.qml:375
+msgid "saved"
+msgstr "guardado"
+
+#: ../qml/Main.qml:415
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr "¡Bienvenido/a! ¡Escriba lo que quiera y guárdelo! ¡Disfrute!"
+
+#: ../qml/Main.qml:437
+msgid "Line"
+msgstr "Línea"
+
+#: ../qml/Main.qml:437
+msgid "Characters"
+msgstr "Caracteres"
 
 #: ../qml/components/ConfirmPasteFromClipboard.qml:10
-#: ../qml/components/RemoveFileDialog.qml:14
+#: ../qml/components/ConfirmSavingNote.qml:13
 #: ../qml/components/ConfirmClearAll.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
 msgid "Confirmation"
 msgstr "Confirmación"
 
@@ -66,38 +75,35 @@ msgstr "Confirmación"
 msgid "Insert Clipboard content ?"
 msgstr "Pegar desde el portapapeles ?"
 
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/DecryptKeyInput.qml:37
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/components/DigestCalculator.qml:146
+#: ../qml/components/QrCodeWebSiteSelector.qml:37
+#: ../qml/components/ProductInfo.qml:50
+#: ../qml/components/RemoveFileDialog.qml:23
+#: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
+msgid "Close"
+msgstr "Cerrar"
+
 #: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/DecryptKeyInput.qml:43
 #: ../qml/components/ConfirmClearAll.qml:21
 msgid "Confirm"
 msgstr "Confirmar"
-
-#: ../qml/components/RemoveFileDialog.qml:15
-#: ../qml/components/RemoveFileDialog.qml:31
-msgid "Remove"
-msgstr "Eliminar"
-
-#: ../qml/components/RemoveFileDialog.qml:15
-msgid "file"
-msgstr "archivo"
-
-#: ../qml/components/RemoveFileDialog.qml:47
-msgid "File successfully removed"
-msgstr "Archivo eliminado con éxito"
-
-#: ../qml/components/ConfirmClearAll.qml:11
-msgid "Clear All content ?"
-msgstr "Limpiar todo ?"
 
 #: ../qml/components/UnsavedDialog.qml:14
 msgid "Unsaved changes"
 msgstr "Cambios sin guardar"
 
 #: ../qml/components/UnsavedDialog.qml:15
-msgid "There are unsaved changes. Do you want to save this file before closing?"
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
 msgstr "Hay cambios sin guardar. ¿Quiere guardar este archivo antes de cerrar?"
 
-#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:22
-#: ../qml/components/MenuOptions.qml:153
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:54
+#: ../qml/components/MenuOptions.qml:154
 msgid "Save"
 msgstr "Guardar"
 
@@ -108,6 +114,77 @@ msgstr "Guardar como"
 #: ../qml/components/UnsavedDialog.qml:40
 msgid "Close without saving"
 msgstr "Cerrar sin guardar"
+
+#: ../qml/components/DecryptKeyInput.qml:11
+msgid "Entrer decrypt key"
+msgstr "Entrer descifrar clave"
+
+#: ../qml/components/DecryptKeyInput.qml:26
+msgid "Decryption key"
+msgstr "Clave de descifrado"
+
+#: ../qml/components/DecryptKeyInput.qml:54
+msgid "Wrong Password"
+msgstr "Contraseña incorrecta"
+
+#: ../qml/components/ConfirmSavingNote.qml:14
+msgid "Previous note was modified, save it ?"
+msgstr "Se modificó la nota anterior, ¿guardarla?"
+
+#: ../qml/components/ConfirmSavingNote.qml:24
+msgid "No"
+msgstr "No"
+
+#: ../qml/components/ConfirmSavingNote.qml:43
+msgid "Yes"
+msgstr "Sí"
+
+#: ../qml/components/ConfirmSavingNote.qml:76
+msgid "file name"
+msgstr "archivo"
+
+#: ../qml/components/ConfirmSavingNote.qml:81
+msgid "ok"
+msgstr "ok"
+
+#: ../qml/components/ConfirmSavingNote.qml:89
+#: ../qml/components/SaveAsDialog.qml:83
+msgid "Couldn't write"
+msgstr "No se pudo escribir"
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr "Limpiar todo ?"
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr "Nombre el archivo a guardar."
+
+#: ../qml/components/SaveAsDialog.qml:26
+msgid "Save as encrypted file"
+msgstr "Guardar como archivo cifrado"
+
+#: ../qml/components/SaveAsDialog.qml:47
+msgid "Encryption password"
+msgstr "Contraseña de cifrado"
+
+#: ../qml/components/SaveAsDialog.qml:96
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:489
+msgid "Import a site as text"
+msgstr "Importar un sitio como texto"
+
+#: ../qml/components/WebSiteSelector.qml:26
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
+msgid "A valid http(s) url"
+msgstr "Una URL de http (s) válida"
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
+msgstr "Importar"
 
 #: ../qml/components/DigestCalculator.qml:13
 msgid "Found"
@@ -130,26 +207,60 @@ msgid "Calculate"
 msgstr "Calcular"
 
 #: ../qml/components/DigestCalculator.qml:133
-msgid "ERORR, Algorithm not selected or unsupportded value"
-msgstr "ERORR, Algorithm not selected or unsupportded value"
+msgid "ERROR, Algorithm not selected or unsupportded value"
+msgstr "ERROR, algoritmo no seleccionado o valor no admitido"
 
 #: ../qml/components/DigestCalculator.qml:139
 msgid "Notes area is empty !"
 msgstr "La entrada está vacía !"
 
-#: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:488
-msgid "Import a site as text"
-msgstr "Importar un sitio como texto"
+#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:19
+msgid " "
+msgstr " "
 
-#: ../qml/components/WebSiteSelector.qml:26
-#: ../qml/components/QrCodeWebSiteSelector.qml:26
-msgid "A valid http(s) url"
-msgstr "Una URL de http (s) válida"
+#: ../qml/components/MenuOptions.qml:108
+msgid "Open"
+msgstr "Abierto"
 
-#: ../qml/components/WebSiteSelector.qml:43
-msgid "Import"
-msgstr "Importar"
+#: ../qml/components/MenuOptions.qml:196
+msgid "Save As"
+msgstr "Guardar como"
+
+#: ../qml/components/MenuOptions.qml:238
+msgid "Undo last Modification"
+msgstr "Deshacer la última modificación"
+
+#: ../qml/components/MenuOptions.qml:280
+msgid "Redo last Modification"
+msgstr "Rehacer la última modificación"
+
+#: ../qml/components/MenuOptions.qml:322
+msgid "Select All"
+msgstr "Seleccionar todo"
+
+#: ../qml/components/MenuOptions.qml:364
+msgid "Clear Area"
+msgstr "Limpiar todo"
+
+#: ../qml/components/MenuOptions.qml:405
+msgid "Paste from Clipboard"
+msgstr "Pegar desde el portapapeles"
+
+#: ../qml/components/MenuOptions.qml:447
+msgid "Copy to Clipboard"
+msgstr "Copiar al portapapeles"
+
+#: ../qml/components/MenuOptions.qml:531
+msgid "Digest"
+msgstr "Algoritmo"
+
+#: ../qml/components/MenuOptions.qml:573
+msgid "Base 64"
+msgstr "Base64"
+
+#: ../qml/components/MenuOptions.qml:616
+msgid "QR Code"
+msgstr "Còdigo QR"
 
 #: ../qml/components/QrCodeWebSiteSelector.qml:13
 msgid "Generate QR Code"
@@ -159,185 +270,175 @@ msgstr "Generar còdigo QR"
 msgid "Generate"
 msgstr "Generar"
 
-#: ../qml/components/SaveAsDialog.qml:11
-msgid "Enter a name for the file to save."
-msgstr "Nombre el archivo a guardar."
+#: ../qml/components/ProductInfo.qml:9
+msgid "Product Info"
+msgstr "Información del producto"
 
-#: ../qml/components/SaveAsDialog.qml:33
-msgid "Couldn't write"
-msgstr "No se pudo escribir"
+#: ../qml/components/ProductInfo.qml:27
+msgid "version"
+msgstr "versión"
 
-#: ../qml/components/SaveAsDialog.qml:35 ../qml/Main.qml:128
-msgid "Saved"
-msgstr "Guardado"
+#: ../qml/components/ProductInfo.qml:27
+msgid "Author"
+msgstr "Autor"
 
-#: ../qml/components/SaveAsDialog.qml:45
-msgid "Cancel"
-msgstr "Cancelar"
+#: ../qml/components/ProductInfo.qml:28
+msgid "Thanks at"
+msgstr "Gracias a"
 
-#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:18
-msgid " "
-msgstr " "
+#: ../qml/components/ProductInfo.qml:29
+msgid "jshashes library for hash Algorithm"
+msgstr "jshashes library para hash Algoritmo"
 
-#: ../qml/components/MenuOptions.qml:108
-msgid "Open"
-msgstr "Abierto"
+#: ../qml/components/ProductInfo.qml:30
+msgid "Developers of"
+msgstr "Desarrolladores de"
 
-#: ../qml/components/MenuOptions.qml:195
-msgid "Save As"
-msgstr "Guardar como"
+#: ../qml/components/ProductInfo.qml:30
+msgid "for Base64 features"
+msgstr "pare Base64 convertidor"
 
-#: ../qml/components/MenuOptions.qml:237
-msgid "Undo last Modification"
-msgstr "Deshacer la última modificación"
+#: ../qml/components/ProductInfo.qml:31
+msgid "for QML binding for qr.js lib"
+msgstr "QML unión para qr.js lib"
 
-#: ../qml/components/MenuOptions.qml:279
-msgid "Redo last Modification"
-msgstr "Rehacer la última modificación"
+#: ../qml/components/ProductInfo.qml:32
+msgid "Developers of library"
+msgstr "Desarrolladores de"
 
-#: ../qml/components/MenuOptions.qml:321
-msgid "Select All"
-msgstr "Seleccionar todo"
+#: ../qml/components/ProductInfo.qml:33
+msgid "IMPORTANT notes for Encrypted files"
+msgstr "Notas IMPORTANTES para archivos cifrados"
 
-#: ../qml/components/MenuOptions.qml:363
-msgid "Clear Area"
+#: ../qml/components/ProductInfo.qml:34
+msgid ""
+"If the encryption key is lost, there is NO restore. The file remains "
+"encrypted"
+msgstr ""
+"Si se pierde la clave de cifrado, NO hay restauración. El archivo permanece "
+"encriptado"
+
+#: ../qml/components/ProductInfo.qml:35
+msgid "Author has no responsibility"
+msgstr "El autor no tiene responsabilidad"
+
+#: ../qml/components/ProductInfo.qml:36
+msgid ""
+"Suggestion: use the same key for all the files to be saved with encryption"
+msgstr ""
+"Sugerencia: use la misma clave para todos los archivos que se guardarán con "
+"cifrado"
+
+#: ../qml/components/ProductInfo.qml:37
+msgid "instead of different ones so that you need to remember just one key"
+msgstr "en lugar de diferentes, por lo que debe recordar solo una clave"
+
+#: ../qml/components/ProductInfo.qml:38
+msgid "Encrypted file names have XXX suffix to distinguish them"
+msgstr ""
+"Los nombres de archivos cifrados tienen el sufijo XXX para distinguirlos"
+
+#: ../qml/components/ProductInfo.qml:39
+msgid "A padlock is shown when an encrypted file is currently opened"
+msgstr "Se muestra un candado cuando se abre un archivo cifrado"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+#: ../qml/components/RemoveFileDialog.qml:31
+msgid "Remove"
+msgstr "Eliminar"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+msgid "file"
+msgstr "archivo"
+
+#: ../qml/components/RemoveFileDialog.qml:47
+msgid "File successfully removed"
+msgstr "Archivo eliminado con éxito"
+
+#: ../qml/ui/LocalFilePickerPage.qml:48
+msgid "Attention"
+msgstr "Atención"
+
+#: ../qml/ui/LocalFilePickerPage.qml:49
+msgid "Remove ALL saved files ? (No restore)"
+msgstr "¿Eliminar TODOS los archivos guardados?  (No se podrán recuperar)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:63
+msgid "Delete"
+msgstr "Borrar"
+
+#: ../qml/ui/LocalFilePickerPage.qml:79
+msgid "All Files successfully removed"
+msgstr "Todos los archivos eliminados correctamente"
+
+#: ../qml/ui/LocalFilePickerPage.qml:99
+msgid "Local files"
+msgstr "Archivos locales"
+
+#: ../qml/ui/LocalFilePickerPage.qml:99
+msgid "(swipe for options)"
+msgstr "(deslizar para ver opciones)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:104
+msgid "Delete all"
+msgstr "Borrar todo"
+
+#: ../qml/ui/Base64conversionPage.qml:19
+msgid "Base 64 encoder/decoder"
+msgstr "Base 64 convertidor"
+
+#: ../qml/ui/Base64conversionPage.qml:25
+msgid "Clear all"
 msgstr "Limpiar todo"
 
-#: ../qml/components/MenuOptions.qml:404
-msgid "Paste from Clipboard"
-msgstr "Pegar desde el portapapeles"
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "Encode"
+msgstr "Codificar"
 
-#: ../qml/components/MenuOptions.qml:446
-msgid "Copy to Clipboard"
-msgstr "Copiar al portapapeles"
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "encode to Base 64"
+msgstr "codificar a Base 64"
 
-#: ../qml/components/MenuOptions.qml:530
-msgid "Digest"
-msgstr "Algoritmo"
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "Decode"
+msgstr "Descodificar"
 
-#: ../qml/components/MenuOptions.qml:572
-msgid "Base 64"
-msgstr "Base64"
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "decode from Base 64"
+msgstr "descodificar de Base 64"
 
-#: ../qml/components/MenuOptions.qml:615
-msgid "QR Code"
-msgstr "Còdigo QR"
+#: ../qml/ui/Base64conversionPage.qml:114
+msgid "Insert here the content to encode/decode"
+msgstr "Inserta aquí el contenido para codificar / decodificar"
 
-#: ../qml/Main.qml:226
-msgid "Menu"
-msgstr "Menú"
+#: ../qml/ui/Base64conversionPage.qml:139
+msgid "Conversion Result"
+msgstr "Resultado de conversión"
 
-#: ../qml/Main.qml:240 ../qml/ui/SettingsPage.qml:13
-msgid "Settings"
-msgstr "Configuración"
+#: ../qml/ui/Base64conversionPage.qml:156
+msgid "Convert"
+msgstr "Convertir"
 
-#: ../qml/Main.qml:255 tedit.desktop.in.h:1
-msgid "tedit"
-msgstr "tedit"
+#: ../qml/ui/Base64conversionPage.qml:174
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr ""
+"Carácter no válido: la cadena a decodificar no está codificada correctamente"
 
-#: ../qml/Main.qml:267
-msgid "About"
-msgstr "Acerca de"
+#: ../qml/ui/Base64conversionPage.qml:177
+msgid "Input is empty !"
+msgstr "La entrada está vacía !"
 
-#: ../qml/Main.qml:312
-msgid "File"
-msgstr "Archivo"
+#: ../qml/ui/Base64conversionPage.qml:194
+msgid "Add to note"
+msgstr "Agregar a la nota"
 
-#: ../qml/Main.qml:312
-msgid "saved"
-msgstr "guardado"
-
-#: ../qml/Main.qml:336
-msgid "Welcome ! Write what you want and save it. Enjoy !"
-msgstr "¡Bienvenido/a! ¡Escriba lo que quiera y guárdelo! ¡Disfrute!"
-
-#: ../qml/Main.qml:358
-msgid "Line"
-msgstr "Línea"
-
-#: ../qml/Main.qml:358
-msgid "Characters"
-msgstr "Caracteres"
+#: ../qml/ui/Base64conversionPage.qml:206
+msgid "New note"
+msgstr "Nueva nota"
 
 #: ../qml/ui/QrCodeGeneratorPage.qml:22
 msgid "Page"
 msgstr "Pàgina"
-
-#: ../qml/ui/LocalFilePickerPage.qml:44
-msgid "Attention"
-msgstr "Atención"
-
-#: ../qml/ui/LocalFilePickerPage.qml:45
-msgid "Remove ALL saved files ? (No restore)"
-msgstr "¿Eliminar TODOS los archivos guardados?  (No se podrán recuperar)"
-
-#: ../qml/ui/LocalFilePickerPage.qml:59
-msgid "Delete"
-msgstr "Borrar"
-
-#: ../qml/ui/LocalFilePickerPage.qml:75
-msgid "All Files successfully removed"
-msgstr "Todos los archivos eliminados correctamente"
-
-#: ../qml/ui/LocalFilePickerPage.qml:95
-msgid "Local files"
-msgstr "Archivos locales"
-
-#: ../qml/ui/LocalFilePickerPage.qml:95
-msgid "(swipe for options)"
-msgstr "(deslizar para ver opciones)"
-
-#: ../qml/ui/LocalFilePickerPage.qml:101
-msgid "Delete all"
-msgstr "Borrar todo"
-
-#: ../qml/ui/Base64conversionPage.qml:18
-msgid "Base 64 encoder/decoder"
-msgstr "Base 64 convertidor"
-
-#: ../qml/ui/Base64conversionPage.qml:24
-msgid "Clear all"
-msgstr "Limpiar todo"
-
-#: ../qml/ui/Base64conversionPage.qml:56
-msgid "Encode"
-msgstr "Codificar"
-
-#: ../qml/ui/Base64conversionPage.qml:56
-msgid "encode to Base 64"
-msgstr "codificar a Base 64"
-
-#: ../qml/ui/Base64conversionPage.qml:57
-msgid "Decode"
-msgstr "Descodificar"
-
-#: ../qml/ui/Base64conversionPage.qml:57
-msgid "decode from Base 64"
-msgstr "descodificar de Base 64"
-
-#: ../qml/ui/Base64conversionPage.qml:108
-msgid "Insert here the content to encode/decode"
-msgstr "Inserta aquí el contenido para codificar / decodificar"
-
-#: ../qml/ui/Base64conversionPage.qml:133
-msgid "Conversion Result"
-msgstr "Resultado de conversión"
-
-#: ../qml/ui/Base64conversionPage.qml:150
-msgid "Convert"
-msgstr "Convertir"
-
-#: ../qml/ui/Base64conversionPage.qml:168
-msgid "Invalid character: the string to be decoded is not correctly encoded"
-msgstr "Carácter no válido: la cadena a decodificar no está codificada correctamente"
-
-#: ../qml/ui/Base64conversionPage.qml:171
-msgid "Input is empty !"
-msgstr "La entrada está vacía !"
-
-#: ../qml/ui/Base64conversionPage.qml:180
-msgid "Add to note"
-msgstr "Agregar a la nota"
 
 #: ../qml/ui/SettingsPage.qml:46
 msgid "Enable Word wrap"
@@ -407,17 +508,17 @@ msgstr "Modificado"
 msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr "Formato de tiempo (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 
+#~ msgid "A simple and basic text, notes editor"
+#~ msgstr "Un sencillo y básico editor de texto y notas"
+
+#~ msgid "File"
+#~ msgstr "Archivo"
+
 #~ msgid "Are you sure you want to remove the selected file?"
 #~ msgstr "¿Seguro que quiere eliminar el archivo seleccionado?"
 
 #~ msgid "Remove file"
 #~ msgstr "Eliminar el archivo"
-
-#~ msgid "Yes"
-#~ msgstr "Sí"
-
-#~ msgid "No"
-#~ msgstr "No"
 
 #~ msgid "Import site text"
 #~ msgstr "Importar texto del sitio"

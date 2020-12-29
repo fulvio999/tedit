@@ -8,7 +8,7 @@ import Ubuntu.Components.Popups 1.3
 Dialog {
         id: confirmDeleteFileDialog
 
-        /* the selected file index position in the LisModel */
+        /* the selected file index position in the ListModel */
         property string imageListModelIndex;
 
         title: i18n.tr("Confirmation")
@@ -19,10 +19,10 @@ Dialog {
             spacing: units.gu(2)
 
             Button {
-                    id: closeButton
-                    text: i18n.tr("Close")
-                    width: units.gu(12)
-                    onClicked: PopupUtils.close(confirmDeleteFileDialog)
+                id: closeButton
+                text: i18n.tr("Close")
+                width: units.gu(12)
+                onClicked: PopupUtils.close(confirmDeleteFileDialog)
             }
 
             Button {

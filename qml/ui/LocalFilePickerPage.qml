@@ -3,12 +3,11 @@ import Ubuntu.Components 1.3
 import Ubuntu.Components.ListItems 1.3 as ListItem
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Content 1.1
-
 import "../components"
 
 /*
-  Page that list all the loacally saved files.
-  Allow to delete a file with a Swipe movemet to the left, or open it by selecting a list item
+  Page that list all the locally saved files.
+  Allow to delete or open a file choosing the operation with a Swipe movement
 */
 Page {
      id: localFilePickerPage
@@ -27,6 +26,11 @@ Page {
      Component {
          id: confirmDeleteFileDialog
          RemoveFileDialog{imageListModelIndex: localFilePickerPage.selectedFileIndex}
+     }
+
+     Component {
+         id: decryptKeyInput
+         DecryptKeyInput{fileListModelIndex: localFilePickerPage.selectedFileIndex}
      }
 
      /* the list of locally saved files */
@@ -63,7 +67,7 @@ Page {
                             var fileList = fileIO.getLocalFileList(fileIO.getHomePath() + root.fileSavingPath);
                             for(var i=0; i<fileList.length; i++) {
                                 fileIO.remove(fileIO.getHomePath() + root.fileSavingPath + fileList[i])
-                                //console.log("Deleting fileName: "+fileList[i]);
+                                /* console.log("Deleting file with name: "+fileList[i]); */
                                 localFileslistModel.clear();
                             }
                             /* restore as first time use */
@@ -74,7 +78,7 @@ Page {
 
                             deleteOperationResult.text = i18n.tr("All Files successfully removed")
                             removeButton.enabled = false
-                            removeButton.visible = false                          
+                            removeButton.visible = false
                       }
                   }
               }
@@ -93,7 +97,6 @@ Page {
      header: PageHeader {
           id: header
           title : i18n.tr("Local files")+": "+ localFileslistModel.count +"  "+ i18n.tr("(swipe for options)")
-
           trailingActionBar.actions: [
 
               Action {
@@ -113,6 +116,7 @@ Page {
              var homePath = fileIO.getHomePath();
              var fileList = fileIO.getLocalFileList(homePath + root.fileSavingPath);
              localFileslistModel.clear();
+
              for(var i=0; i<fileList.length; i++) {
                  var targetFileName = "file://" + homePath + root.fileSavingPath + fileList[i];
                  var fileSize = fileIO.getSize(targetFileName); //bytes
@@ -122,11 +126,11 @@ Page {
          }
     }
 
-    /* show the list of locally saved files (the folder is the App one, due to apps confinement) */
+    /* show the list of locally saved files in the App folder */
     UbuntuListView {
         id: ubuntuListView
         anchors.fill: parent
-        anchors.topMargin: units.gu(6) /* amount of space from the above component */
+        anchors.topMargin: units.gu(6)
         model: localFileslistModel
         delegate: SavedFilesListDelegate{}
     }

@@ -142,7 +142,8 @@ import Ubuntu.Components.Popups 1.3
                                    onClicked: {
                                        if(mainPage.openedFileName == "") { /* true if file is new, never saved  */
                                             PopupUtils.open(saveAsDialog)
-                                       } else { /* file not new: already exist */
+                                       } else { /* file not new: already exist: just update content */
+                                             /* function in Main.qml file */
                                             saveExistingFile(mainPage.openedFileName,fileIO.getHomePath() + root.fileSavingPath)
                                        }
                                        PopupUtils.close(menuPickerDialog)

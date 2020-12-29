@@ -6,8 +6,9 @@ import Ubuntu.Components.ListItems 1.3
 import Ubuntu.Components.Popups 1.3
 import Ubuntu.Content 1.1
 
-
-/* Delegate object used to display a locally saved object */
+/*
+   Delegate object used to display the locally saved files in a ListItem
+*/
 ListItem {
     id: standardItem
     width: localFilePickerPage.width
@@ -17,7 +18,6 @@ ListItem {
          id:placeholderLabel
           text: i18n.tr(" ")   /* placeholder */
           anchors {
-                //right: placeholderLabel.left
                 leftMargin: units.gu(2)
                 rightMargin: units.gu(2)
                 verticalCenter: parent.verticalCenter
@@ -51,7 +51,6 @@ ListItem {
                    ubuntuListView.currentIndex = index
                    localFilePickerPage.selectedFileIndex = index
                    PopupUtils.open(confirmDeleteFileDialog)
-
                }
            }
         ]
@@ -63,23 +62,34 @@ ListItem {
                Action {
                    iconName: "edit"
                    onTriggered: {
+
+                       ubuntuListView.currentIndex = index
+                       localFilePickerPage.selectedFileIndex = index
+
                        var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + file;
-                       //console.log("Full path file to open: "+targetFileName)
+                       /* console.log("File to edit:"+targetFileName); */
+                       if(targetFileName.endsWith("XXX")){  /* file is encrypted */
 
-                       textArea.text = fileIO.read(targetFileName);
-                       mainPage.title = fileIO.getFullName(targetFileName);
-                       mainPage.saved = true /* ie: file NOT modified yet */
-                       mainPage.openedFileName = file;
-                       mainPage.currentFileLabelVisible = true
+                           PopupUtils.open(decryptKeyInput)
 
-                       mainPage.pageStack.pop();
+                       }else{
+                           textArea.text = fileIO.read(targetFileName);
+                           mainPage.title = fileIO.getFullName(targetFileName);
+                           mainPage.saved = true  /* ie: file NOT modified yet */
+                           mainPage.openedFileName = file;
+                           mainPage.fileEncrypted = false;
+                           mainPage.encryptionPassword = "";
+                           mainPage.currentFileLabelVisible = true
+
+                           mainPage.pageStack.pop();
+                       }
                    }
                },
 
                Action {
                    iconName: "info"
                    onTriggered: {
-                       /* full path at the file */
+                       /* full path of the file */
                        var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + file;
                        var fileSize = fileIO.getSize(targetFileName); /* bytes */
                        var lastModifiedDate = fileIO.getFileLastModified(targetFileName);
@@ -91,5 +101,4 @@ ListItem {
                }
          ]
     }
-
 }

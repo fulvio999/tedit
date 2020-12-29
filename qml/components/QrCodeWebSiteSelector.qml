@@ -11,7 +11,7 @@ import "../ui"
 Dialog {
         id: importDialogue
         title: i18n.tr("Generate QR Code")
-        contentWidth: root. width - units.gu(5)
+        contentWidth: root.width - units.gu(5)
 
         Column{
                 id: myDoctorPageColumn

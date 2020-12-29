@@ -14,7 +14,11 @@ import Ubuntu.Components.ListItems 1.3 as ListItem
 import "js/hashes.js" as Hashes
 import "js/base64.js" as Base64enc
 
+/* Crypto lib for file protection */
+import "js/crypto-js/crypto-js.js" as CryptoJSLib
+
 import "js/Utility.js" as Utility
+
 
 MainView {
 
@@ -23,7 +27,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.7"
+    property string appVersion : "2.8"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -39,7 +43,7 @@ MainView {
     //width: units.gu(75)
     //height: units.gu(111)
 
-    //horizontal (rel)
+    //horizontal (for release)
     width: units.gu(100)
     height: units.gu(75)
 
@@ -61,6 +65,7 @@ MainView {
        /* by default disable autocomplete in text area */
        property bool textPrediction: false
        property bool wordWrap: false
+       property string showAlert: "true"
        property string pageBackgroundColor: "white"
        property string textAreaFontColor: "black"
        property int pixelSize: 20 /* default */
@@ -68,6 +73,11 @@ MainView {
 
     Component.onCompleted: {
         root.backgroundColor = settings.pageBackgroundColor
+
+        if(settings.showAlert == "true"){
+           showInfo(i18n.tr("Before use encryption feature")+"<br>"+i18n.tr("read help page clicking on pencil icon in the upper right corner"));
+           settings.showAlert = "false"
+        }
     }
 
     /* To notify messages at the user */
@@ -106,31 +116,82 @@ MainView {
         ConfirmPasteFromClipboard{}
     }
 
-    /* custom C++ plugin to save/manage files on filesystem */
+    /* custom C++ plugin to save/manage files on the filesystem */
     FileIO {
        id: fileIO
     }
 
     /*
-      Using custom plugin FileIO save the file in the App hidden folder
+      Encrypt the provided content using the provided key
     */
-    function saveExistingFile(filename, destinationDir) {
+    function encrypt(content, key) {
+        var iv= '16BytesLengthKey';
+        var CryptoJS = CryptoJSLib.CryptoJS;
+        var AES = CryptoJS.AES;
+        var ivStr  = CryptoJS.enc.Utf8.parse(iv);
+        var keyStr = CryptoJS.enc.Utf8.parse(key);
 
-        /* path and fileName */
-        var destinationFolder = "file://" + destinationDir + fileIO.getFullName(filename);
-
-        /* dummy solution to prevent content append */
-        if(fileIO.exists(destinationFolder)){
-           fileIO.remove(destinationFolder)
-        }
-        console.log("Content to save: "+textArea.text)
-        fileIO.write(destinationFolder, textArea.text);
-        showInfo(i18n.tr("Saved"));
-
-        /* to prevent opening UnSavedDialog */
-        mainPage.saved = true;
-        currentFileOpenedLabel.color = UbuntuColors.green
+        var text = AES.encrypt(content, keyStr, {
+                                   iv: ivStr,
+                                   mode: CryptoJS.mode.OFB,
+                                   padding: CryptoJS.pad.Iso10126
+                               });
+        return text.toString();
     }
+
+    /*
+      DEcrypt the provided ciphertext using the provided key
+    */
+    function decrypt(ciphertext, key) {
+          var iv= '16BytesLengthKey';
+          var CryptoJS = CryptoJSLib.CryptoJS;
+          var AES = CryptoJS.AES;
+          var ivStr  = CryptoJS.enc.Utf8.parse(iv);
+          var keyStr = CryptoJS.enc.Utf8.parse(key);
+
+          /* Note: decrypt works only with this values of 'mode' and 'padding' */
+          var bytes = AES.decrypt(ciphertext, keyStr, {
+                                      iv: ivStr,
+                                      mode: CryptoJS.mode.OFB,
+                                      padding: CryptoJS.pad.Iso10126
+                                  });
+
+          var plaintext = bytes.toString(CryptoJS.enc.Utf8);
+
+          return plaintext.toString();
+    }
+
+    /*
+       Used when the user press "Save" button in the menu for an already saved file
+       whose content is just updated
+    */
+     function saveExistingFile(filename, destinationDir) {
+
+           /* console.log("Saving existing file..."); */
+
+           /* path and fileName */
+           var destinationFolder = "file://" + destinationDir + fileIO.getFullName(filename);
+
+           /* dummy solution to prevent content append */
+           if(fileIO.exists(destinationFolder)){
+              fileIO.remove(destinationFolder)
+           }
+
+           var contentToSave;
+           /* current file could be previously saved as Encrypted or not... */
+           if(mainPage.fileEncrypted === true){
+               contentToSave = encrypt(textArea.text, mainPage.encryptionPassword);
+           }else{
+              contentToSave = textArea.text;
+           }
+
+           fileIO.write(destinationFolder, contentToSave);
+           showInfo(i18n.tr("Saved"));
+
+           /* to prevent opening UnSavedDialog */
+           mainPage.saved = true;
+           currentFileOpenedLabel.color = UbuntuColors.green
+       }
 
     /* show a Popup containing the provided in argument input */
     function showInfo(info) {
@@ -215,6 +276,8 @@ MainView {
             property bool saved: true /* a flag: true if file is NOT currently modified */
             property string openedFileName: ""  /* the currently opened file name */
             property bool currentFileLabelVisible: false /* to hide/show label with the current file name */
+            property bool fileEncrypted: false /* set to "Encrypted" if the file is saved as encrypted */
+            property string encryptionPassword: "" /* the encryptionkey of the currently opened file */
 
             header: PageHeader {
 
@@ -309,20 +372,36 @@ MainView {
                             id: currentFileOpenedLabel
                             visible: mainPage.currentFileLabelVisible
                             anchors.verticalCenter: parent.verticalCenter
-                            text: i18n.tr("File")+": "+mainPage.openedFileName+"     ("+i18n.tr("saved")+": "+ mainPage.saved+")"
+                            text: mainPage.openedFileName+"     ("+i18n.tr("saved")+": "+ mainPage.saved+")"
                             font.bold: true
                             /* happen when a new file is opened */
                             onTextChanged: {
                                 currentFileOpenedLabel.color = UbuntuColors.green
                             }
                          }
+
+                         Image {
+                             id: padlockIcon
+                             visible: mainPage.fileEncrypted
+                             source: Qt.resolvedUrl("./graphics/encrypted.png")
+                             height: units.gu(3)
+                             width: units.gu(3)
+
+                             anchors {
+                                   left: currentFileOpenedLabel.right
+                                   rightMargin: units.gu(2)
+                                   verticalCenter: parent.verticalCenter
+                             }
+                          }
+
+
                    }
+
 
                    Rectangle{
                        id: textAreaContainer
                        width: parent.width
                        height: root.height - currentFileOpenedContainer.height - units.gu(12)
-
                        border.color : UbuntuColors.black
                        border.width : units.gu(2)
 

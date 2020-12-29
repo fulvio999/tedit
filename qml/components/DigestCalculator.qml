@@ -129,8 +129,8 @@ import "../js/hashes.js" as Hashes
                                          var RMD160 = new Hashes.RMD160();
                                          digestResultTextArea.text = RMD160.hex(digestPickerDialog.inputText);
                                     }else{
-                                         console.log("ERORR, Algorithm not selected or unsupported value");
-                                         digestResultTextArea.text = i18n.tr("ERORR, Algorithm not selected or unsupportded value");
+                                         console.log("ERROR, Algorithm not selected or unsupported value");
+                                         digestResultTextArea.text = i18n.tr("ERROR, Algorithm not selected or unsupportded value");
                                     }
 
                                     addResultToNoteButton.visible = true
