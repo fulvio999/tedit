@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 11:59+0000\n"
+"POT-Creation-Date: 2020-12-30 16:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,35 +30,35 @@ msgstr ""
 msgid "Saved"
 msgstr ""
 
-#: ../qml/Main.qml:289
+#: ../qml/Main.qml:287
 msgid "Menu"
 msgstr ""
 
-#: ../qml/Main.qml:303 ../qml/ui/SettingsPage.qml:13
+#: ../qml/Main.qml:301 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr ""
 
-#: ../qml/Main.qml:318 tedit.desktop.in.h:1
+#: ../qml/Main.qml:316 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr ""
 
-#: ../qml/Main.qml:330
+#: ../qml/Main.qml:328
 msgid "About"
 msgstr ""
 
-#: ../qml/Main.qml:375
+#: ../qml/Main.qml:373
 msgid "saved"
 msgstr ""
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:413
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr ""
 
-#: ../qml/Main.qml:437
+#: ../qml/Main.qml:435
 msgid "Line"
 msgstr ""
 
-#: ../qml/Main.qml:437
+#: ../qml/Main.qml:435
 msgid "Characters"
 msgstr ""
 
@@ -79,7 +79,6 @@ msgstr ""
 #: ../qml/components/WebSiteSelector.qml:37
 #: ../qml/components/DigestCalculator.qml:146
 #: ../qml/components/QrCodeWebSiteSelector.qml:37
-#: ../qml/components/ProductInfo.qml:50
 #: ../qml/components/RemoveFileDialog.qml:23
 #: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
@@ -268,73 +267,6 @@ msgstr ""
 msgid "Generate"
 msgstr ""
 
-#: ../qml/components/ProductInfo.qml:9
-msgid "Product Info"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:27
-msgid "version"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:27
-msgid "Author"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:28
-msgid "Thanks at"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:29
-msgid "jshashes library for hash Algorithm"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:30
-msgid "Developers of"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:30
-msgid "for Base64 features"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:31
-msgid "for QML binding for qr.js lib"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:32
-msgid "Developers of library"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:33
-msgid "IMPORTANT notes for Encrypted files"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:34
-msgid ""
-"If the encryption key is lost, there is NO restore. The file remains "
-"encrypted"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:35
-msgid "Author has no responsibility"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:36
-msgid ""
-"Suggestion: use the same key for all the files to be saved with encryption"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:37
-msgid "instead of different ones so that you need to remember just one key"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:38
-msgid "Encrypted file names have XXX suffix to distinguish them"
-msgstr ""
-
-#: ../qml/components/ProductInfo.qml:39
-msgid "A padlock is shown when an encrypted file is currently opened"
-msgstr ""
-
 #: ../qml/components/RemoveFileDialog.qml:15
 #: ../qml/components/RemoveFileDialog.qml:31
 msgid "Remove"
@@ -374,6 +306,73 @@ msgstr ""
 
 #: ../qml/ui/LocalFilePickerPage.qml:104
 msgid "Delete all"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:13
+msgid "Product Info"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:40
+msgid "version"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:41
+msgid "Author"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:42
+msgid "Thanks at"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:43
+msgid "jshashes library for hash Algorithm"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "Developers of"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "for Base64 features"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:45
+msgid "for QML binding for qr.js lib"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:46
+msgid "Developers of library"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:47
+msgid "IMPORTANT notes for Encrypted files"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:48
+msgid ""
+"If the encryption key is lost, there is NO restore. The file remains "
+"encrypted"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:49
+msgid "Author has no responsibility"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:50
+msgid ""
+"Suggestion: use the same key for all the files to be saved with encryption"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:51
+msgid "instead of different ones so that you need to remember just one key"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:52
+msgid "Encrypted file names have XXX suffix to distinguish them"
+msgstr ""
+
+#: ../qml/ui/ProductInfoPage.qml:53
+msgid "A padlock is shown when an encrypted file is currently opened"
 msgstr ""
 
 #: ../qml/ui/Base64conversionPage.qml:19

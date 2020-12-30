@@ -27,7 +27,7 @@ MainView {
 
     /* Note! applicationName needs to match the "name" field of the click manifest */
     applicationName: "tedit.fulvio"
-    property string appVersion : "2.8"
+    property string appVersion : "2.8.1"
 
     /* application hidden folder where are saved the files. (path is fixed due to Appp confinement rules) */
     property string fileSavingPath: "/.local/share/tedit.fulvio/"
@@ -199,14 +199,12 @@ MainView {
         PopupUtils.open(popover);
     }
 
-    /* PopUp with the Application info */
-    Component {
-       id: productInfo
-       ProductInfo{}
-    }
-
     SettingsPage {
        id: settingsPage
+    }
+
+    ProductInfoPage {
+      id: productInfoPage
     }
 
     UnsavedDialog  {
@@ -334,7 +332,7 @@ MainView {
                               verticalCenter: header.verticalCenter
                          }
                          onTriggered: {
-                             PopupUtils.open(productInfo)
+                             pageStack.push(productInfoPage)
                          }
                   }
          }
