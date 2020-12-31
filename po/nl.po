@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-12-29 11:59+0000\n"
-"PO-Revision-Date: 2020-12-29 16:11+0100\n"
+"POT-Creation-Date: 2020-12-30 16:35+0000\n"
+"PO-Revision-Date: 2020-12-31 14:37+0100\n"
 "Last-Translator: Heimen Stoffels <vistausss@outlook.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -20,48 +20,48 @@ msgstr ""
 
 #: ../qml/Main.qml:78
 msgid "Before use encryption feature"
-msgstr "Voordat u de coderingsfunctie gebruikt"
+msgstr "Voordat je de versleutelingsfunctie gebruikt"
 
 #: ../qml/Main.qml:78
 msgid "read help page clicking on pencil icon in the upper right corner"
 msgstr ""
-"lees de helppagina door op het potloodpictogram in de rechterbovenhoek te "
-"klikken"
+"lees de hulppagina door op het potloodpictogram in de rechterbovenhoek te "
+"drukken"
 
 #: ../qml/Main.qml:189 ../qml/components/ConfirmSavingNote.qml:91
 #: ../qml/components/SaveAsDialog.qml:85
 msgid "Saved"
 msgstr "Opgeslagen"
 
-#: ../qml/Main.qml:289
+#: ../qml/Main.qml:287
 msgid "Menu"
 msgstr "Menu"
 
-#: ../qml/Main.qml:303 ../qml/ui/SettingsPage.qml:13
+#: ../qml/Main.qml:301 ../qml/ui/SettingsPage.qml:13
 msgid "Settings"
 msgstr "Instellingen"
 
-#: ../qml/Main.qml:318 tedit.desktop.in.h:1
+#: ../qml/Main.qml:316 tedit.desktop.in.h:1
 msgid "tedit"
 msgstr "tedit"
 
-#: ../qml/Main.qml:330
+#: ../qml/Main.qml:328
 msgid "About"
 msgstr "Over"
 
-#: ../qml/Main.qml:375
+#: ../qml/Main.qml:373
 msgid "saved"
 msgstr "opgeslagen"
 
-#: ../qml/Main.qml:415
+#: ../qml/Main.qml:413
 msgid "Welcome ! Write what you want and save it. Enjoy !"
 msgstr "Welkom! Schrijf iets op en sla het op. En veel plezier!"
 
-#: ../qml/Main.qml:437
+#: ../qml/Main.qml:435
 msgid "Line"
 msgstr "Regel"
 
-#: ../qml/Main.qml:437
+#: ../qml/Main.qml:435
 msgid "Characters"
 msgstr "Aantal tekens"
 
@@ -82,7 +82,6 @@ msgstr "Wil je de klembordinhoud plakken?"
 #: ../qml/components/WebSiteSelector.qml:37
 #: ../qml/components/DigestCalculator.qml:146
 #: ../qml/components/QrCodeWebSiteSelector.qml:37
-#: ../qml/components/ProductInfo.qml:50
 #: ../qml/components/RemoveFileDialog.qml:23
 #: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
 msgid "Close"
@@ -119,7 +118,7 @@ msgstr "Sluiten zonder opslaan"
 
 #: ../qml/components/DecryptKeyInput.qml:11
 msgid "Entrer decrypt key"
-msgstr "Decoderingssleutel van de deelnemer"
+msgstr "Decoderingssleutel van deelnemer"
 
 #: ../qml/components/DecryptKeyInput.qml:26
 msgid "Decryption key"
@@ -272,82 +271,6 @@ msgstr "QR-code genereren"
 msgid "Generate"
 msgstr "Genereren"
 
-#: ../qml/components/ProductInfo.qml:9
-msgid "Product Info"
-msgstr "Productinformatie"
-
-#: ../qml/components/ProductInfo.qml:27
-msgid "version"
-msgstr "versie"
-
-#: ../qml/components/ProductInfo.qml:27
-msgid "Author"
-msgstr "Maker"
-
-#: ../qml/components/ProductInfo.qml:28
-msgid "Thanks at"
-msgstr "Met dank aan"
-
-#: ../qml/components/ProductInfo.qml:29
-msgid "jshashes library for hash Algorithm"
-msgstr "Met dank aan de jshashes-bibliotheek voor het hash-algoritme"
-
-#: ../qml/components/ProductInfo.qml:30
-msgid "Developers of"
-msgstr "Ontwikkelaars van"
-
-#: ../qml/components/ProductInfo.qml:30
-msgid "for Base64 features"
-msgstr "voor de Base 64-ver- en ontsleuteling"
-
-#: ../qml/components/ProductInfo.qml:31
-msgid "for QML binding for qr.js lib"
-msgstr "voor QML-verbinding e  qr.js"
-
-#: ../qml/components/ProductInfo.qml:32
-msgid "Developers of library"
-msgstr "Ontwikkelaars van bibliotheek"
-
-#: ../qml/components/ProductInfo.qml:33
-msgid "IMPORTANT notes for Encrypted files"
-msgstr "BELANGRIJKE opmerkingen voor gecodeerde bestanden"
-
-#: ../qml/components/ProductInfo.qml:34
-msgid ""
-"If the encryption key is lost, there is NO restore. The file remains "
-"encrypted"
-msgstr ""
-"Als de coderingssleutel verloren gaat, is er GEEN herstel mogelijk. Het "
-"bestand blijft versleuteld"
-
-#: ../qml/components/ProductInfo.qml:35
-msgid "Author has no responsibility"
-msgstr "Auteur heeft geen verantwoordelijkheid"
-
-#: ../qml/components/ProductInfo.qml:36
-msgid ""
-"Suggestion: use the same key for all the files to be saved with encryption"
-msgstr ""
-"Suggestie: gebruik dezelfde sleutel voor alle bestanden die versleuteld "
-"moeten worden opgeslagen"
-
-#: ../qml/components/ProductInfo.qml:37
-msgid "instead of different ones so that you need to remember just one key"
-msgstr ""
-"in plaats van verschillende, zodat u slechts één sleutel hoeft te onthouden"
-
-#: ../qml/components/ProductInfo.qml:38
-msgid "Encrypted file names have XXX suffix to distinguish them"
-msgstr ""
-"Versleutelde bestandsnamen hebben het achtervoegsel XXX om ze te "
-"onderscheiden"
-
-#: ../qml/components/ProductInfo.qml:39
-msgid "A padlock is shown when an encrypted file is currently opened"
-msgstr ""
-"Er wordt een hangslot weergegeven wanneer een gecodeerd bestand momenteel "
-"wordt geopend"
-
 #: ../qml/components/RemoveFileDialog.qml:15
 #: ../qml/components/RemoveFileDialog.qml:31
 msgid "Remove"
@@ -367,8 +290,7 @@ msgstr "Let op"
 
 #: ../qml/ui/LocalFilePickerPage.qml:49
 msgid "Remove ALL saved files ? (No restore)"
-msgstr ""
-"Wil je ALLE opgeslagen bestanden wilt verwijderen? (dit is onomkeerbaar)"
+msgstr "jshashes-bibliotheek voor het hash-algoritme"
 
 #: ../qml/ui/LocalFilePickerPage.qml:63
 msgid "Delete"
@@ -389,6 +311,80 @@ msgstr "(veeg om acties te tonen)"
 #: ../qml/ui/LocalFilePickerPage.qml:104
 msgid "Delete all"
 msgstr "Alles verwijderen"
+
+#: ../qml/ui/ProductInfoPage.qml:13
+msgid "Product Info"
+msgstr "Productinformatie"
+
+#: ../qml/ui/ProductInfoPage.qml:40
+msgid "version"
+msgstr "versie"
+
+#: ../qml/ui/ProductInfoPage.qml:41
+msgid "Author"
+msgstr "Maker"
+
+#: ../qml/ui/ProductInfoPage.qml:42
+msgid "Thanks at"
+msgstr "Met dank aan"
+
+#: ../qml/ui/ProductInfoPage.qml:43
+msgid "jshashes library for hash Algorithm"
+msgstr "jshashes-bibliotheek voor het hash-algoritme"
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "Developers of"
+msgstr "Ontwikkelaars van"
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "for Base64 features"
+msgstr "voor de Base 64-ver- en ontsleuteling"
+
+#: ../qml/ui/ProductInfoPage.qml:45
+msgid "for QML binding for qr.js lib"
+msgstr "voor de qml-verbinding voor qr.js"
+
+#: ../qml/ui/ProductInfoPage.qml:46
+msgid "Developers of library"
+msgstr "Ontwikkelaars van bibliotheek"
+
+#: ../qml/ui/ProductInfoPage.qml:47
+msgid "IMPORTANT notes for Encrypted files"
+msgstr "BELANGRIJKE opmerkingen omtrent versleutelde bestanden"
+
+#: ../qml/ui/ProductInfoPage.qml:48
+msgid ""
+"If the encryption key is lost, there is NO restore. The file remains "
+"encrypted"
+msgstr ""
+"Als je de sleutel kwijtraakt, is er GEEN herstel mogelijk. Het bestand "
+"blijft dan versleuteld."
+
+#: ../qml/ui/ProductInfoPage.qml:49
+msgid "Author has no responsibility"
+msgstr "De auteur draagt geen verantwoordelijkheid"
+
+#: ../qml/ui/ProductInfoPage.qml:50
+msgid ""
+"Suggestion: use the same key for all the files to be saved with encryption"
+msgstr ""
+"Tip: gebruik dezelfde sleutel voor alle bestanden die versleuteld moeten "
+"worden opgeslagen"
+
+#: ../qml/ui/ProductInfoPage.qml:51
+msgid "instead of different ones so that you need to remember just one key"
+msgstr ""
+"in plaats van verschillende, zodat je slechts één sleutel hoeft te onthouden"
+
+#: ../qml/ui/ProductInfoPage.qml:52
+msgid "Encrypted file names have XXX suffix to distinguish them"
+msgstr ""
+"Versleutelde bestandsnamen hebben het achtervoegsel XXX om ze te "
+"onderscheiden"
+
+#: ../qml/ui/ProductInfoPage.qml:53
+msgid "A padlock is shown when an encrypted file is currently opened"
+msgstr "Als een versleuteld bestand geopend is, wordt er een hangslot getoond"
 
 #: ../qml/ui/Base64conversionPage.qml:19
 msgid "Base 64 encoder/decoder"
