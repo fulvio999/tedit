@@ -43,7 +43,7 @@ QString MyType::read(QString source)
         source.remove("file://");
 
     QFile file(source);
-    if (!file.open(QFile::ReadOnly | QFile::Truncate))
+    if (!file.open(QFile::ReadOnly))
         return "";
 
     QString data = file.readAll();
@@ -76,7 +76,7 @@ QDateTime  MyType::getFileLastModified(QString source){
 
       QFileInfo fi(source);
 
-      return fi.lastModified();  
+      return fi.lastModified();
 }
 
 
