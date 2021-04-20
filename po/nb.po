@@ -1,0 +1,504 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the tedit.fulvio package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: tedit.fulvio\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-12-30 16:35+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: NORWEGIAN <LL@li.org>\n"
+"Language: nb\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../qml/Main.qml:78
+msgid "Before use encryption feature"
+msgstr "Før du bruker krypteringsfunksjonen"
+
+#: ../qml/Main.qml:78
+msgid "read help page clicking on pencil icon in the upper right corner"
+msgstr "les hjelpesiden ved å klikke på blyantikonet i øvre høyre hjørne"
+
+#: ../qml/Main.qml:189 ../qml/components/ConfirmSavingNote.qml:91
+#: ../qml/components/SaveAsDialog.qml:85
+msgid "Saved"
+msgstr "Lagret"
+
+#: ../qml/Main.qml:287
+msgid "Menu"
+msgstr "Meny"
+
+#: ../qml/Main.qml:301 ../qml/ui/SettingsPage.qml:13
+msgid "Settings"
+msgstr "Innstillinger"
+
+#: ../qml/Main.qml:316 tedit.desktop.in.h:1
+msgid "tedit"
+msgstr "Notatblokk"
+
+#: ../qml/Main.qml:328
+msgid "About"
+msgstr "Om"
+
+#: ../qml/Main.qml:373
+msgid "saved"
+msgstr "lagret"
+
+#: ../qml/Main.qml:413
+msgid "Welcome ! Write what you want and save it. Enjoy !"
+msgstr "Velkommen ! Skriv hva du vil og lagre det. Nyt!"
+
+#: ../qml/Main.qml:435
+msgid "Line"
+msgstr "Linje"
+
+#: ../qml/Main.qml:435
+msgid "Characters"
+msgstr "Tegn"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:10
+#: ../qml/components/ConfirmSavingNote.qml:13
+#: ../qml/components/ConfirmClearAll.qml:10
+#: ../qml/components/RemoveFileDialog.qml:14
+msgid "Confirmation"
+msgstr "Bekreftelse"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:11
+msgid "Insert Clipboard content ?"
+msgstr "Sett inn utklippstavleinnhold ?"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:16
+#: ../qml/components/DecryptKeyInput.qml:37
+#: ../qml/components/ConfirmClearAll.qml:16
+#: ../qml/components/WebSiteSelector.qml:37
+#: ../qml/components/DigestCalculator.qml:146
+#: ../qml/components/QrCodeWebSiteSelector.qml:37
+#: ../qml/components/RemoveFileDialog.qml:23
+#: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
+msgid "Close"
+msgstr "Lukk"
+
+#: ../qml/components/ConfirmPasteFromClipboard.qml:21
+#: ../qml/components/DecryptKeyInput.qml:43
+#: ../qml/components/ConfirmClearAll.qml:21
+msgid "Confirm"
+msgstr "Bekreft"
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr "Ikke lagrede endringer"
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
+msgstr ""
+"Det er ikke lagrede endringer. Vil du lagre denne filen før du lukker den?"
+
+#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:54
+#: ../qml/components/MenuOptions.qml:154
+msgid "Save"
+msgstr "Lagre"
+
+#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
+msgid "Save as"
+msgstr "Lagre som"
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
+msgstr "Lukk uten å lagre"
+
+#: ../qml/components/DecryptKeyInput.qml:11
+msgid "Entrer decrypt key"
+msgstr "Tast inn dekrypteringsnøkkel"
+
+#: ../qml/components/DecryptKeyInput.qml:26
+msgid "Decryption key"
+msgstr "Dekrypteringsnøkkel"
+
+#: ../qml/components/DecryptKeyInput.qml:54
+msgid "Wrong Password"
+msgstr "Feil passord"
+
+#: ../qml/components/ConfirmSavingNote.qml:14
+msgid "Previous note was modified, save it ?"
+msgstr "Forrige notat ble endret, lagre det ?"
+
+#: ../qml/components/ConfirmSavingNote.qml:24
+msgid "No"
+msgstr "Nei"
+
+#: ../qml/components/ConfirmSavingNote.qml:43
+msgid "Yes"
+msgstr "Ja"
+
+#: ../qml/components/ConfirmSavingNote.qml:76
+msgid "file name"
+msgstr "filnavn"
+
+#: ../qml/components/ConfirmSavingNote.qml:81
+msgid "ok"
+msgstr "ok"
+
+#: ../qml/components/ConfirmSavingNote.qml:89
+#: ../qml/components/SaveAsDialog.qml:83
+msgid "Couldn't write"
+msgstr "Kunne ikke skrive"
+
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
+msgstr "Tøm alt innhold ?"
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr "Skriv inn et navn for filen du vil lagre."
+
+#: ../qml/components/SaveAsDialog.qml:26
+msgid "Save as encrypted file"
+msgstr "Lagre som kryptert fil"
+
+#: ../qml/components/SaveAsDialog.qml:47
+msgid "Encryption password"
+msgstr "Krypteringspassord"
+
+#: ../qml/components/SaveAsDialog.qml:96
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: ../qml/components/WebSiteSelector.qml:13
+#: ../qml/components/MenuOptions.qml:489
+msgid "Import a site as text"
+msgstr "Importer et nettsted som tekst"
+
+#: ../qml/components/WebSiteSelector.qml:26
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
+msgid "A valid http(s) url"
+msgstr "En gyldig http(s) url"
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
+msgstr "Importer"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "Found"
+msgstr "Funnet"
+
+#: ../qml/components/DigestCalculator.qml:13
+msgid "digesters"
+msgstr "sammendragere"
+
+#: ../qml/components/DigestCalculator.qml:14
+msgid "Calculate the digest of the note"
+msgstr "Kalkuler sammendrag av notatet"
+
+#: ../qml/components/DigestCalculator.qml:86
+msgid "Copy to note"
+msgstr "Kopier til notat"
+
+#: ../qml/components/DigestCalculator.qml:101
+msgid "Calculate"
+msgstr "Kalkuler"
+
+#: ../qml/components/DigestCalculator.qml:133
+msgid "ERROR, Algorithm not selected or unsupportded value"
+msgstr "FEIL, algoritme ikke valgt eller ikke-støttet verdi"
+
+#: ../qml/components/DigestCalculator.qml:139
+msgid "Notes area is empty !"
+msgstr "Notatområdet er tomt !"
+
+#: ../qml/components/MenuOptions.qml:42 ../qml/ui/SavedFilesListDelegate.qml:19
+msgid " "
+msgstr " "
+
+#: ../qml/components/MenuOptions.qml:108
+msgid "Open"
+msgstr "Åpne"
+
+#: ../qml/components/MenuOptions.qml:196
+msgid "Save As"
+msgstr "Lagre som"
+
+#: ../qml/components/MenuOptions.qml:238
+msgid "Undo last Modification"
+msgstr "Angre siste enddring"
+
+#: ../qml/components/MenuOptions.qml:280
+msgid "Redo last Modification"
+msgstr "Omgjør siste endring"
+
+#: ../qml/components/MenuOptions.qml:322
+msgid "Select All"
+msgstr "Velg alle"
+
+#: ../qml/components/MenuOptions.qml:364
+msgid "Clear Area"
+msgstr "Tøm felt"
+
+#: ../qml/components/MenuOptions.qml:405
+msgid "Paste from Clipboard"
+msgstr "Lim inn fra utklippstavlen"
+
+#: ../qml/components/MenuOptions.qml:447
+msgid "Copy to Clipboard"
+msgstr "Kopier til utklippstavlen"
+
+#: ../qml/components/MenuOptions.qml:531
+msgid "Digest"
+msgstr "Digest"
+
+#: ../qml/components/MenuOptions.qml:573
+msgid "Base 64"
+msgstr "Base 64"
+
+#: ../qml/components/MenuOptions.qml:616
+msgid "QR Code"
+msgstr "QR kode"
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:13
+msgid "Generate QR Code"
+msgstr "Generer QR kode"
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:43
+msgid "Generate"
+msgstr "Generer"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+#: ../qml/components/RemoveFileDialog.qml:31
+msgid "Remove"
+msgstr "Fjern"
+
+#: ../qml/components/RemoveFileDialog.qml:15
+msgid "file"
+msgstr "fil"
+
+#: ../qml/components/RemoveFileDialog.qml:47
+msgid "File successfully removed"
+msgstr "Filen ble fjernet"
+
+#: ../qml/ui/LocalFilePickerPage.qml:48
+msgid "Attention"
+msgstr "Merk følgende"
+
+#: ../qml/ui/LocalFilePickerPage.qml:49
+msgid "Remove ALL saved files ? (No restore)"
+msgstr "Fjern ALLE lagrede filer? (Ingen gjenoppretting)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:63
+msgid "Delete"
+msgstr "Slett"
+
+#: ../qml/ui/LocalFilePickerPage.qml:79
+msgid "All Files successfully removed"
+msgstr ""
+
+#: ../qml/ui/LocalFilePickerPage.qml:99
+msgid "Local files"
+msgstr "Lokale filer"
+
+#: ../qml/ui/LocalFilePickerPage.qml:99
+msgid "(swipe for options)"
+msgstr "(sveip for alternativer)"
+
+#: ../qml/ui/LocalFilePickerPage.qml:104
+msgid "Delete all"
+msgstr "Slett alle"
+
+#: ../qml/ui/ProductInfoPage.qml:13
+msgid "Product Info"
+msgstr "Produktinfo"
+
+#: ../qml/ui/ProductInfoPage.qml:40
+msgid "version"
+msgstr "versjon"
+
+#: ../qml/ui/ProductInfoPage.qml:41
+msgid "Author"
+msgstr "Forfatter"
+
+#: ../qml/ui/ProductInfoPage.qml:42
+msgid "Thanks at"
+msgstr "Takk til"
+
+#: ../qml/ui/ProductInfoPage.qml:43
+msgid "jshashes library for hash Algorithm"
+msgstr "jshashes bibliotek for hash-algoritme"
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "Developers of"
+msgstr "Utviklere av"
+
+#: ../qml/ui/ProductInfoPage.qml:44
+msgid "for Base64 features"
+msgstr "for Base64-funksjoner"
+
+#: ../qml/ui/ProductInfoPage.qml:45
+msgid "for QML binding for qr.js lib"
+msgstr "for QML-binding for qr.js lib"
+
+#: ../qml/ui/ProductInfoPage.qml:46
+msgid "Developers of library"
+msgstr "Utviklere av bibliotek"
+
+#: ../qml/ui/ProductInfoPage.qml:47
+msgid "IMPORTANT notes for Encrypted files"
+msgstr "VIKTIGE merknader for krypterte filer"
+
+#: ../qml/ui/ProductInfoPage.qml:48
+msgid ""
+"If the encryption key is lost, there is NO restore. The file remains "
+"encrypted"
+msgstr ""
+"Hvis krypteringsnøkkelen går tapt, er det INGEN gjenoppretting. Filen "
+"forblir kryptert"
+
+#: ../qml/ui/ProductInfoPage.qml:49
+msgid "Author has no responsibility"
+msgstr "Forfatteren har ikke noe ansvar"
+
+#: ../qml/ui/ProductInfoPage.qml:50
+msgid ""
+"Suggestion: use the same key for all the files to be saved with encryption"
+msgstr ""
+"Forslag: Bruk samme nøkkel for alle filene som skal lagres med kryptering"
+
+#: ../qml/ui/ProductInfoPage.qml:51
+msgid "instead of different ones so that you need to remember just one key"
+msgstr "i stedet for forskjellige slik at du trenger å huske bare én nøkkel"
+
+#: ../qml/ui/ProductInfoPage.qml:52
+msgid "Encrypted file names have XXX suffix to distinguish them"
+msgstr "Krypterte filnavn har XXX-suffiks for å skille dem"
+
+#: ../qml/ui/ProductInfoPage.qml:53
+msgid "A padlock is shown when an encrypted file is currently opened"
+msgstr "En hengelås vises når en kryptert fil for øyeblikket åpnes"
+
+#: ../qml/ui/Base64conversionPage.qml:19
+msgid "Base 64 encoder/decoder"
+msgstr "Base 64 koder/dekoder"
+
+#: ../qml/ui/Base64conversionPage.qml:25
+msgid "Clear all"
+msgstr "Tøm alt"
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "Encode"
+msgstr "Kode"
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "encode to Base 64"
+msgstr "kode til Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "Decode"
+msgstr "Dekode"
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "decode from Base 64"
+msgstr "dekode fra Base 64"
+
+#: ../qml/ui/Base64conversionPage.qml:114
+msgid "Insert here the content to encode/decode"
+msgstr "Sett inn innholdet her for å kode/dekode"
+
+#: ../qml/ui/Base64conversionPage.qml:139
+msgid "Conversion Result"
+msgstr "Konverteringsresultat"
+
+#: ../qml/ui/Base64conversionPage.qml:156
+msgid "Convert"
+msgstr "Konverter"
+
+#: ../qml/ui/Base64conversionPage.qml:174
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr "Ugyldig tegn: Strengen som skal dekodes, er ikke kodet riktig"
+
+#: ../qml/ui/Base64conversionPage.qml:177
+msgid "Input is empty !"
+msgstr "Ingen inndata !"
+
+#: ../qml/ui/Base64conversionPage.qml:194
+msgid "Add to note"
+msgstr "Legg til i notat"
+
+#: ../qml/ui/Base64conversionPage.qml:206
+msgid "New note"
+msgstr "Nytt notat"
+
+#: ../qml/ui/QrCodeGeneratorPage.qml:22
+msgid "Page"
+msgstr "Side"
+
+#: ../qml/ui/SettingsPage.qml:46
+msgid "Enable Word wrap"
+msgstr "Aktiver tekstbryting"
+
+#: ../qml/ui/SettingsPage.qml:57
+msgid "Word wrap"
+msgstr "Tekstbryting"
+
+#: ../qml/ui/SettingsPage.qml:80
+msgid "Enable text prediction"
+msgstr "Aktiver tekstprediksjon"
+
+#: ../qml/ui/SettingsPage.qml:91
+msgid "Text prediction"
+msgstr "Tekstprediksjon"
+
+#: ../qml/ui/SettingsPage.qml:116
+msgid "Notes Area Font color"
+msgstr "Skriftfarge notatområde"
+
+#: ../qml/ui/SettingsPage.qml:125 ../qml/ui/SettingsPage.qml:167
+msgid "Green"
+msgstr "Grønn"
+
+#: ../qml/ui/SettingsPage.qml:135
+msgid "Grey"
+msgstr "Grå"
+
+#: ../qml/ui/SettingsPage.qml:145
+msgid "Black"
+msgstr "Svart"
+
+#: ../qml/ui/SettingsPage.qml:158
+msgid "Application Backgroung color"
+msgstr "Applikasjon bakgrunnsfarge"
+
+#: ../qml/ui/SettingsPage.qml:177
+msgid "Brown"
+msgstr "Brun"
+
+#: ../qml/ui/SettingsPage.qml:187
+msgid "White"
+msgstr "Hvit"
+
+#: ../qml/ui/SettingsPage.qml:198
+msgid "Blue"
+msgstr "Blå"
+
+#: ../qml/ui/SettingsPage.qml:213
+msgid "Notes font size"
+msgstr "Notater skriftstørrelse"
+
+#: ../qml/ui/FileInfoPopUp.qml:12
+msgid "File Info"
+msgstr "Filinfo"
+
+#: ../qml/ui/FileInfoPopUp.qml:15
+msgid "File Size"
+msgstr "Filstørrelse"
+
+#: ../qml/ui/FileInfoPopUp.qml:19
+msgid "Modified"
+msgstr "Endret"
+
+#: ../qml/ui/FileInfoPopUp.qml:22
+msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
+msgstr "Tidsformat (UTC): 'åååå-mm-dd-HH:mm:ss'"
