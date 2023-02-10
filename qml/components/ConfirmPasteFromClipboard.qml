@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 
 
@@ -20,7 +20,7 @@ Dialog {
          Button {
              text: i18n.tr("Confirm")
              width: units.gu(14)
-             color: UbuntuColors.orange
+             color: LomiriColors.orange
              onClicked: {
                 textArea.paste(Clipboard.data.text);
                 PopupUtils.close(confirmDialogue)

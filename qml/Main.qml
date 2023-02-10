@@ -1,14 +1,14 @@
 
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import EdIt 1.0
-import Ubuntu.Content 1.1
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Content 1.1
+import Lomiri.Components.Popups 1.3
 import Qt.labs.settings 1.0
 import "components"
 import "ui"
 
-import Ubuntu.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.ListItems 1.3 as ListItem
 
 /* digest calculator functions */
 import "js/hashes.js" as Hashes
@@ -36,7 +36,7 @@ MainView {
     anchorToKeyboard: true
 
     /* enable to test with dark theme */
-    //theme.name: "Ubuntu.Components.Themes.SuruDark"
+    //theme.name: "Lomiri.Components.Themes.SuruDark"
 
     /*------- Tablet (width >= 110) -------- */
     //vertical
@@ -190,7 +190,7 @@ MainView {
 
            /* to prevent opening UnSavedDialog */
            mainPage.saved = true;
-           currentFileOpenedLabel.color = UbuntuColors.green
+           currentFileOpenedLabel.color = LomiriColors.green
        }
 
     /* show a Popup containing the provided in argument input */
@@ -323,7 +323,7 @@ MainView {
 
                 ClickableHeaderIcon {
                         id: menu_button
-                        iconcolor: UbuntuColors.green
+                        iconcolor: LomiriColors.green
                         iconSource: "tedit.png" //Qt.resolvedUrl("./graphics/menu.png")
                         text: i18n.tr("About")
                         anchors {
@@ -374,7 +374,7 @@ MainView {
                             font.bold: true
                             /* happen when a new file is opened */
                             onTextChanged: {
-                                currentFileOpenedLabel.color = UbuntuColors.green
+                                currentFileOpenedLabel.color = LomiriColors.green
                             }
                          }
 
@@ -400,7 +400,7 @@ MainView {
                        id: textAreaContainer
                        width: parent.width
                        height: root.height - currentFileOpenedContainer.height - units.gu(12)
-                       border.color : UbuntuColors.black
+                       border.color : LomiriColors.black
                        border.width : units.gu(2)
 
                        /* Display the file content */

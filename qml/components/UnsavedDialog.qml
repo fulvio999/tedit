@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 /*
    Alert the user about unsaved changes at the currently opened file and ask what want do:
@@ -16,7 +16,7 @@ Component {
         Component.onCompleted: dialogue.forceActiveFocus()
         Button {
             text: i18n.tr("Save")
-            color: UbuntuColors.green
+            color: LomiriColors.green
             onClicked: {
                 PopupUtils.close(dialogue)
 
@@ -30,7 +30,7 @@ Component {
         }
         Button {
             text: i18n.tr("Save as")
-            color: UbuntuColors.green
+            color: LomiriColors.green
             onClicked: {
                 PopupUtils.close(dialogue)
                 PopupUtils.open(saveAsDialog)
@@ -38,7 +38,7 @@ Component {
         }
         Button {
             text: i18n.tr("Close without saving")
-            color: UbuntuColors.red
+            color: LomiriColors.red
             onClicked: {
                 PopupUtils.close(dialogue)
                 //load file selected

@@ -1,5 +1,5 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import Qt.labs.settings 1.0
 
 
@@ -123,7 +123,7 @@ Page {
 
             ColorListItem {
                label: i18n.tr("Green")
-               itemColor: UbuntuColors.green
+               itemColor: LomiriColors.green
                onClicked: {
                    settings.textAreaFontColor = itemColor
                    textArea.color = itemColor
@@ -133,7 +133,7 @@ Page {
 
            ColorListItem {
               label: i18n.tr("Grey")
-              itemColor: UbuntuColors.lightGrey
+              itemColor: LomiriColors.lightGrey
               onClicked: {
                   settings.textAreaFontColor = itemColor
                   textArea.color = itemColor
@@ -143,7 +143,7 @@ Page {
 
           ColorListItem {
              label: i18n.tr("Black")
-             itemColor: UbuntuColors.black
+             itemColor: LomiriColors.black
              onClicked: {
                  settings.textAreaFontColor = itemColor
                  textArea.color = itemColor

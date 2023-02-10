@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 
 
@@ -41,7 +41,7 @@ Dialog {
          /* user want save note content and after create a new one */
          Button {
              text: i18n.tr("Yes")
-             color: UbuntuColors.orange
+             color: LomiriColors.orange
              width: units.gu(14)
              onClicked: {
                 if(mainPage.openedFileName == "") {
@@ -79,7 +79,7 @@ Dialog {
 
         Button {
             text: i18n.tr("ok")
-            color: UbuntuColors.green
+            color: LomiriColors.green
             width: units.gu(7)
             onClicked: {
 

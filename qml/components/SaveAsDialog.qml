@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 /*
   Popup shown when the user choose "Save" or "Save as" menu entry
@@ -52,7 +52,7 @@ Dialog {
         Button {
             id: saveButton
             text: i18n.tr("Save")
-            color: UbuntuColors.green
+            color: LomiriColors.green
 
             onClicked: {
                 PopupUtils.close(dialogue)
@@ -94,7 +94,7 @@ Dialog {
 
         Button {
             text: i18n.tr("Cancel")
-            color: UbuntuColors.red
+            color: LomiriColors.red
             onClicked: {
                 PopupUtils.close(dialogue)
             }

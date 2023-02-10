@@ -1,10 +1,10 @@
 import QtQuick 2.4
 
-import Ubuntu.Components 1.3
+import Lomiri.Components 1.3
 import EdIt 1.0
-import Ubuntu.Components.ListItems 1.3
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Content 1.1
+import Lomiri.Components.ListItems 1.3
+import Lomiri.Components.Popups 1.3
+import Lomiri.Content 1.1
 
 /*
    Delegate object used to display the locally saved files in a ListItem
@@ -38,7 +38,7 @@ ListItem {
         anchors.fill: parent
         onClicked: {
             /* move the highlight component to the currently selected item */
-            ubuntuListView.currentIndex = index
+            lomiriListView.currentIndex = index
         }
     }
 
@@ -48,7 +48,7 @@ ListItem {
            Action {
                iconName: "delete"
                onTriggered: {
-                   ubuntuListView.currentIndex = index
+                   lomiriListView.currentIndex = index
                    localFilePickerPage.selectedFileIndex = index
                    PopupUtils.open(confirmDeleteFileDialog)
                }
@@ -63,7 +63,7 @@ ListItem {
                    iconName: "edit"
                    onTriggered: {
 
-                       ubuntuListView.currentIndex = index
+                       lomiriListView.currentIndex = index
                        localFilePickerPage.selectedFileIndex = index
 
                        var targetFileName = "file://" + fileIO.getHomePath() + root.fileSavingPath + file;
