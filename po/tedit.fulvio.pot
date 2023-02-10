@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: tedit.fulvio\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-04-20 17:48+0000\n"
+"POT-Creation-Date: 2023-02-10 18:48+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -62,66 +62,36 @@ msgstr ""
 msgid "Characters"
 msgstr ""
 
+#: ../qml/components/ConfirmClearAll.qml:10
 #: ../qml/components/ConfirmPasteFromClipboard.qml:10
 #: ../qml/components/ConfirmSavingNote.qml:13
-#: ../qml/components/ConfirmClearAll.qml:10
 #: ../qml/components/RemoveFileDialog.qml:14
 msgid "Confirmation"
 msgstr ""
 
-#: ../qml/components/ConfirmPasteFromClipboard.qml:11
-msgid "Insert Clipboard content ?"
+#: ../qml/components/ConfirmClearAll.qml:11
+msgid "Clear All content ?"
 msgstr ""
 
+#: ../qml/components/ConfirmClearAll.qml:16
 #: ../qml/components/ConfirmPasteFromClipboard.qml:16
 #: ../qml/components/DecryptKeyInput.qml:37
-#: ../qml/components/ConfirmClearAll.qml:16
-#: ../qml/components/WebSiteSelector.qml:37
 #: ../qml/components/DigestCalculator.qml:146
 #: ../qml/components/QrCodeWebSiteSelector.qml:37
 #: ../qml/components/RemoveFileDialog.qml:23
-#: ../qml/ui/LocalFilePickerPage.qml:56 ../qml/ui/FileInfoPopUp.qml:26
+#: ../qml/components/WebSiteSelector.qml:37 ../qml/ui/FileInfoPopUp.qml:26
+#: ../qml/ui/LocalFilePickerPage.qml:56
 msgid "Close"
 msgstr ""
 
+#: ../qml/components/ConfirmClearAll.qml:21
 #: ../qml/components/ConfirmPasteFromClipboard.qml:21
 #: ../qml/components/DecryptKeyInput.qml:43
-#: ../qml/components/ConfirmClearAll.qml:21
 msgid "Confirm"
 msgstr ""
 
-#: ../qml/components/UnsavedDialog.qml:14
-msgid "Unsaved changes"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:15
-msgid ""
-"There are unsaved changes. Do you want to save this file before closing?"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:18 ../qml/components/SaveAsDialog.qml:54
-#: ../qml/components/MenuOptions.qml:154
-msgid "Save"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:32 ../qml/components/SaveAsDialog.qml:10
-msgid "Save as"
-msgstr ""
-
-#: ../qml/components/UnsavedDialog.qml:40
-msgid "Close without saving"
-msgstr ""
-
-#: ../qml/components/DecryptKeyInput.qml:11
-msgid "Entrer decrypt key"
-msgstr ""
-
-#: ../qml/components/DecryptKeyInput.qml:26
-msgid "Decryption key"
-msgstr ""
-
-#: ../qml/components/DecryptKeyInput.qml:54
-msgid "Wrong Password"
+#: ../qml/components/ConfirmPasteFromClipboard.qml:11
+msgid "Insert Clipboard content ?"
 msgstr ""
 
 #: ../qml/components/ConfirmSavingNote.qml:14
@@ -149,38 +119,16 @@ msgstr ""
 msgid "Couldn't write"
 msgstr ""
 
-#: ../qml/components/ConfirmClearAll.qml:11
-msgid "Clear All content ?"
+#: ../qml/components/DecryptKeyInput.qml:11
+msgid "Entrer decrypt key"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:11
-msgid "Enter a name for the file to save."
+#: ../qml/components/DecryptKeyInput.qml:26
+msgid "Decryption key"
 msgstr ""
 
-#: ../qml/components/SaveAsDialog.qml:26
-msgid "Save as encrypted file"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:47
-msgid "Encryption password"
-msgstr ""
-
-#: ../qml/components/SaveAsDialog.qml:96
-msgid "Cancel"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:13
-#: ../qml/components/MenuOptions.qml:489
-msgid "Import a site as text"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:26
-#: ../qml/components/QrCodeWebSiteSelector.qml:26
-msgid "A valid http(s) url"
-msgstr ""
-
-#: ../qml/components/WebSiteSelector.qml:43
-msgid "Import"
+#: ../qml/components/DecryptKeyInput.qml:54
+msgid "Wrong Password"
 msgstr ""
 
 #: ../qml/components/DigestCalculator.qml:13
@@ -219,6 +167,11 @@ msgstr ""
 msgid "Open"
 msgstr ""
 
+#: ../qml/components/MenuOptions.qml:154 ../qml/components/SaveAsDialog.qml:54
+#: ../qml/components/UnsavedDialog.qml:18
+msgid "Save"
+msgstr ""
+
 #: ../qml/components/MenuOptions.qml:196
 msgid "Save As"
 msgstr ""
@@ -247,6 +200,11 @@ msgstr ""
 msgid "Copy to Clipboard"
 msgstr ""
 
+#: ../qml/components/MenuOptions.qml:489
+#: ../qml/components/WebSiteSelector.qml:13
+msgid "Import a site as text"
+msgstr ""
+
 #: ../qml/components/MenuOptions.qml:531
 msgid "Digest"
 msgstr ""
@@ -261,6 +219,11 @@ msgstr ""
 
 #: ../qml/components/QrCodeWebSiteSelector.qml:13
 msgid "Generate QR Code"
+msgstr ""
+
+#: ../qml/components/QrCodeWebSiteSelector.qml:26
+#: ../qml/components/WebSiteSelector.qml:26
+msgid "A valid http(s) url"
 msgstr ""
 
 #: ../qml/components/QrCodeWebSiteSelector.qml:43
@@ -278,6 +241,111 @@ msgstr ""
 
 #: ../qml/components/RemoveFileDialog.qml:47
 msgid "File successfully removed"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:10 ../qml/components/UnsavedDialog.qml:32
+msgid "Save as"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:11
+msgid "Enter a name for the file to save."
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:26
+msgid "Save as encrypted file"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:47
+msgid "Encryption password"
+msgstr ""
+
+#: ../qml/components/SaveAsDialog.qml:96
+msgid "Cancel"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:14
+msgid "Unsaved changes"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:15
+msgid ""
+"There are unsaved changes. Do you want to save this file before closing?"
+msgstr ""
+
+#: ../qml/components/UnsavedDialog.qml:40
+msgid "Close without saving"
+msgstr ""
+
+#: ../qml/components/WebSiteSelector.qml:43
+msgid "Import"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:19
+msgid "Base 64 encoder/decoder"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:25
+msgid "Clear all"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "Encode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:62
+msgid "encode to Base 64"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "Decode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:63
+msgid "decode from Base 64"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:114
+msgid "Insert here the content to encode/decode"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:139
+msgid "Conversion Result"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:156
+msgid "Convert"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:174
+msgid "Invalid character: the string to be decoded is not correctly encoded"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:177
+msgid "Input is empty !"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:194
+msgid "Add to note"
+msgstr ""
+
+#: ../qml/ui/Base64conversionPage.qml:206
+msgid "New note"
+msgstr ""
+
+#: ../qml/ui/FileInfoPopUp.qml:12
+msgid "File Info"
+msgstr ""
+
+#: ../qml/ui/FileInfoPopUp.qml:15
+msgid "File Size"
+msgstr ""
+
+#: ../qml/ui/FileInfoPopUp.qml:19
+msgid "Modified"
+msgstr ""
+
+#: ../qml/ui/FileInfoPopUp.qml:22
+msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr ""
 
 #: ../qml/ui/LocalFilePickerPage.qml:48
@@ -375,58 +443,6 @@ msgstr ""
 msgid "A padlock is shown when an encrypted file is currently opened"
 msgstr ""
 
-#: ../qml/ui/Base64conversionPage.qml:19
-msgid "Base 64 encoder/decoder"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:25
-msgid "Clear all"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:62
-msgid "Encode"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:62
-msgid "encode to Base 64"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:63
-msgid "Decode"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:63
-msgid "decode from Base 64"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:114
-msgid "Insert here the content to encode/decode"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:139
-msgid "Conversion Result"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:156
-msgid "Convert"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:174
-msgid "Invalid character: the string to be decoded is not correctly encoded"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:177
-msgid "Input is empty !"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:194
-msgid "Add to note"
-msgstr ""
-
-#: ../qml/ui/Base64conversionPage.qml:206
-msgid "New note"
-msgstr ""
-
 #: ../qml/ui/QrCodeGeneratorPage.qml:22
 msgid "Page"
 msgstr ""
@@ -481,20 +497,4 @@ msgstr ""
 
 #: ../qml/ui/SettingsPage.qml:213
 msgid "Notes font size"
-msgstr ""
-
-#: ../qml/ui/FileInfoPopUp.qml:12
-msgid "File Info"
-msgstr ""
-
-#: ../qml/ui/FileInfoPopUp.qml:15
-msgid "File Size"
-msgstr ""
-
-#: ../qml/ui/FileInfoPopUp.qml:19
-msgid "Modified"
-msgstr ""
-
-#: ../qml/ui/FileInfoPopUp.qml:22
-msgid "Time format (UTC): 'yyyy-mm-dd-HH:mm:ss'"
 msgstr ""
