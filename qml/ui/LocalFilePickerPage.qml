@@ -1,8 +1,8 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Content 1.1
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.Popups 1.3
+import Lomiri.Content 1.1
 import "../components"
 
 /*
@@ -61,7 +61,7 @@ Page {
                   Button {
                       id: removeButton
                       text:  i18n.tr("Delete")
-                      color: UbuntuColors.red
+                      color: LomiriColors.red
                       width: units.gu(14)
                       onClicked: {
                             var fileList = fileIO.getLocalFileList(fileIO.getHomePath() + root.fileSavingPath);
@@ -127,8 +127,8 @@ Page {
     }
 
     /* show the list of locally saved files in the App folder */
-    UbuntuListView {
-        id: ubuntuListView
+    LomiriListView {
+        id: lomiriListView
         anchors.fill: parent
         anchors.topMargin: units.gu(6)
         model: localFileslistModel

@@ -4,4 +4,4 @@ Exec=qmlscene qml/Main.qml
 Icon=assets/tedit.png
 Terminal=false
 Type=Application
-X-Ubuntu-Touch=true
+X-Lomiri-Touch=true

@@ -1,4 +1,0 @@
-{
-  "builder": "cmake",
-  "kill": "qmlscene"
-}

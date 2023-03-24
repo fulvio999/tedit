@@ -1,8 +1,8 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.ListItems 1.3 as ListItem
-import Ubuntu.Components.Popups 1.3
-import Ubuntu.Content 1.1
+import Lomiri.Components 1.3
+import Lomiri.Components.ListItems 1.3 as ListItem
+import Lomiri.Components.Popups 1.3
+import Lomiri.Content 1.1
 
 import "../components"
 import "../js/base64.js" as Base64enc
@@ -155,7 +155,7 @@ Page {
                anchors.verticalCenter: parent.bottom
                text: i18n.tr("Convert")
                width: units.gu(14)
-               color: UbuntuColors.green
+               color: LomiriColors.green
                onClicked: {
 
                  if(inputTextArea.text.length >0)

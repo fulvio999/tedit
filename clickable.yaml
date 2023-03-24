@@ -1,0 +1,4 @@
+clickable_minimum_required: 7
+builder: cmake
+kill: qmlscene
+framework: ubuntu-sdk-20.04

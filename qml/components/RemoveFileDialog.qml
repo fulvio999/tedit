@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 /*
    Ask user confirmation before remove from the filesystem the selected file
@@ -29,7 +29,7 @@ Dialog {
                     id: removeButton
                     width: units.gu(12)
                     text: i18n.tr("Remove")
-                    color: UbuntuColors.red
+                    color: LomiriColors.red
                     onClicked: {
 
                   			    var fileToDelete = localFileslistModel.get(imageListModelIndex).file; /* without path */

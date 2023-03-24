@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 import "../js/SiteImporter.js" as SiteImporter
 
@@ -41,7 +41,7 @@ Dialog {
 
                    Button {
                        text: i18n.tr("Import")
-                       color: UbuntuColors.green
+                       color: LomiriColors.green
                        width: units.gu(17)
                        onClicked: {
                           if(webSiteUrlText.text !==""){

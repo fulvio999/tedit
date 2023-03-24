@@ -1,6 +1,6 @@
 import QtQuick 2.4
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 import EdIt 1.0
 
 /*
@@ -41,7 +41,7 @@ Dialog {
 
                    Button {
                        text: i18n.tr("Confirm")
-                       color: UbuntuColors.green
+                       color: LomiriColors.green
                        width: units.gu(17)
                        onClicked: {
 
@@ -52,7 +52,7 @@ Dialog {
 
                              if(decriptedText == ''){
                                 messageLabel.text = i18n.tr("Wrong Password");
-                                messageLabel.color = UbuntuColors.red;
+                                messageLabel.color = LomiriColors.red;
 
                              }else{
                                  textArea.text = decriptedText;

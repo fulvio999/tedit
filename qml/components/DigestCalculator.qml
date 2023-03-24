@@ -1,7 +1,7 @@
 import QtQuick 2.4
 import QtQuick.Layouts 1.1
-import Ubuntu.Components 1.3
-import Ubuntu.Components.Popups 1.3
+import Lomiri.Components 1.3
+import Lomiri.Components.Popups 1.3
 
 /* digest calculator functions */
 import "../js/hashes.js" as Hashes
@@ -100,7 +100,7 @@ import "../js/hashes.js" as Hashes
                Button {
                      text: i18n.tr("Calculate")
                      width: units.gu(16)
-                     color: UbuntuColors.green
+                     color: LomiriColors.green
                      onClicked: {
 
                                 var chosenDigester = digesterCalculatorListModel.get(digestChooserSelector.selectedIndex).name;
